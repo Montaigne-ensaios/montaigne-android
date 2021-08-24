@@ -6,4 +6,6 @@
     <string name="lista_de_ensaios_1">SPT-Ensaio de simples reconhecimento</string>
     <string name="email">montaigne.ensaios@protonmail.com</string>
     <string name="lista_de_ensaios_2">Ensaio proctor-Compactação</string>
+    <string name="Menu">Projetos</string>
+    <string name="Sobre">Sobre</string>
 </resources>
