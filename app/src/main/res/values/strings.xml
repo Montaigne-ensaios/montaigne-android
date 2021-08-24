@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Montaigne - Ensaios Praticos</string>
-<string name="text1">Bem vindos(a)</string>
+    <string name="text1">Bem vindos(a)</string>
+    <string name="text2">Lista de ensaios</string>
+    <string name="text3">Resultados</string>
+    <string name="lista_de_ensaios_1">SPT-Ensaio de simples reconhecimento</string>
+    <string name="email">montaigne.ensaios@protonmail.com</string>
+    <string name="lista_de_ensaios_2">Ensaio proctor-Compactação</string>
 </resources>
