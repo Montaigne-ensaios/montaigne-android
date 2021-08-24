@@ -19,9 +19,11 @@
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:text="@android:string/search_go"
+        android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="145dp" />
+        tools:layout_editor_absoluteY="126dp" />
 
     <TextView
         android:id="@+id/textView6"
@@ -41,8 +43,8 @@
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/text3"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="211dp" />
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="193dp" />
 
     <TextView
         android:id="@+id/textView8"
@@ -102,15 +104,16 @@
         android:id="@+id/imageView7"
         android:layout_width="27dp"
         android:layout_height="40dp"
+        android:scaleType="fitStart"
         app:srcCompat="@drawable/_26672_menu_icon_1_"
-        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteX="44dp"
         tools:layout_editor_absoluteY="37dp" />
 
     <SearchView
         android:layout_width="81dp"
         android:layout_height="41dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginEnd="56dp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="152dp" />
+        tools:layout_editor_absoluteY="126dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
