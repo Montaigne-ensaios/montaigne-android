@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/verde_claro"
+    android:background="@drawable/fundo_png"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="48dp"
         android:text="@string/app_name"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <TextView
         android:id="@+id/textView2"
@@ -27,17 +27,8 @@
         android:text="@string/text1"
         android:textColor="@color/black"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="683dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="178dp"
-        android:layout_height="212dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo_para_sal_o_de_beleza"
-        tools:layout_editor_absoluteY="91dp" />
+        tools:layout_editor_absoluteY="609dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
