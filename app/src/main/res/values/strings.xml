@@ -8,4 +8,14 @@
     <string name="lista_de_ensaios_2">Ensaio proctor-Compactação</string>
     <string name="Menu">Projetos</string>
     <string name="Sobre">Sobre</string>
+    <string name="title_activity_tela_de_ensaios_salvos">tela_de_ensaios_salvos</string>
+    <string name="lista_de_ensaios">Ensaios dos furos</string>
+    <string name="ensaio_1">Ensaio 1</string>
+    <string name="ensaio_2">Ensaio 2</string>
+    <string name="ensaio_3">Ensaio 3</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="title_activity_ensaios_salvos">ensaios_salvos</string>
 </resources>
