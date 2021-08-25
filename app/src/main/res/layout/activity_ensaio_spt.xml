@@ -11,199 +11,232 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="392dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/Amostra_2"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="275dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="548dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/Amostra_1"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="121dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="632dp"
         android:fontFamily="sans-serif"
         android:text="@string/Posição_do_revestimento"
         android:textColor="@color/black"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="86dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="129dp"
-        android:layout_height="43dp"
+        android:layout_width="128dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif"
         android:text="@string/nivel_dágua"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="64dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="356dp"
         android:fontFamily="sans-serif"
         android:text="@string/Golpes_1"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="315dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="496dp"
         android:fontFamily="sans-serif"
         android:text="@string/Golpes_2"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="334dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="288dp"
         android:fontFamily="sans-serif"
         android:text="@string/Golpes_3"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="360dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553" />
 
     <TextView
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="516dp"
         android:fontFamily="sans-serif"
         android:text="@string/Golpes_1"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="153dp" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:text="@string/Golpes_1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="153dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="256dp"
         android:text="@string/Golpes_2"
         android:textColor="@color/black"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="173dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="476dp"
         android:text="@string/Golpes_3"
         android:textColor="@color/black"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="192dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="148dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/ensaio_spt_1"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="66dp" />
+        app:layout_constraintVertical_bias="0.022" />
 
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="95dp"
         android:layout_height="22dp"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="152dp" />
+        android:layout_marginBottom="468dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <SeekBar
         android:id="@+id/seekBar4"
         android:layout_width="95dp"
         android:layout_height="22dp"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="338dp" />
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="356dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <SeekBar
         android:id="@+id/seekBar5"
         android:layout_width="95dp"
-        android:layout_height="22dp"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="363dp" />
+        android:layout_height="30dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="288dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar3"
+        app:layout_constraintVertical_bias="0.0" />
 
     <SeekBar
         android:id="@+id/seekBar6"
         android:layout_width="95dp"
         android:layout_height="22dp"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="315dp" />
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="512dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <SeekBar
         android:id="@+id/seekBar2"
         android:layout_width="95dp"
-        android:layout_height="22dp"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="174dp" />
+        android:layout_height="18dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="492dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <SeekBar
         android:id="@+id/seekBar3"
         android:layout_width="95dp"
         android:layout_height="22dp"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="196dp" />
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="332dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_voltar"
-        tools:layout_editor_absoluteX="14dp" />
+        app:srcCompat="@drawable/ic_voltar" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="27dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_salvar" />
@@ -215,61 +248,70 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_home" />
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="55dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="272dp"
         android:fontFamily="sans-serif"
         android:text="@string/NSPT_1"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.314"
-        tools:layout_editor_absoluteX="59dp" />
+        app:layout_constraintVertical_bias="0.382" />
 
     <TextView
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="288dp"
         android:fontFamily="sans-serif"
         android:text="@string/NSPT_2"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559"
-        tools:layout_editor_absoluteX="59dp" />
+        app:layout_constraintVertical_bias="0.611" />
 
     <TextView
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="428dp"
         android:text="@string/Designação_1"
         android:textColor="@color/black"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="240dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="260dp"
         android:text="@string/Designação_2"
         android:textColor="@color/black"
         android:textSize="12sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="416dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="41dp"
         android:layout_height="38dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="256dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_adicionar"
-        tools:layout_editor_absoluteY="416dp" />
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_adicionar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
