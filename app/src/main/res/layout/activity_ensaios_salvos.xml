@@ -135,28 +135,6 @@
         tools:layout_editor_absoluteX="67dp"
         tools:layout_editor_absoluteY="181dp" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#000000"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="181dp" />
-
-    <Switch
-        android:id="@+id/switch2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="247dp" />
-
-    <Switch
-        android:id="@+id/switch3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="323dp" />
-
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="56dp"
@@ -172,5 +150,29 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:buttonTint="#000000"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="172dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:buttonTint="#000000"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:buttonTint="#000000"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="312dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
