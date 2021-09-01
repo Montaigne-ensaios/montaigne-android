@@ -13,7 +13,7 @@
     <string name="ensaio_1">Ensaio 1</string>
     <string name="ensaio_2">Ensaio 2</string>
     <string name="ensaio_3">Ensaio 3</string>
-<string name="ensaio_spt_1">Ensaio de penetração 1</string>
+    <string name="ensaio_spt_1">Ensaio de penetração 1</string>
     <string name="nivel_dágua">Nivel de água(m):</string>
     <string name="Posição_do_revestimento">Posição do revestimento:</string>
     <string name="Amostra_1">Amostra 1</string>
@@ -28,3 +28,13 @@
     <string name="golpes">Golpes</string>
     <string name="segmentos">Segmentos</string>
     <string name="penetração_15">15</string>
+    <string name="Projeto">Projeto 1 </string>
+    <string name="nome_do_projeto">Nome: </string>
+    <string name="Profundidade">Profundidade </string>
+    <string name="Furo_1">SP01</string>
+    <string name="NSPT">NSPT</string>
+    <string name="Sondagens">Sondagens</string>
+
+
+
+
