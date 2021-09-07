@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class layouyt_edicao_ensaios extends AppCompatActivity {
+public class EnsaiosSalvos extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_layouyt_edicao_ensaios);
+        setContentView(R.layout.activity_ensaios_salvos);
     }
 }

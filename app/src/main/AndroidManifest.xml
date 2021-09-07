@@ -8,18 +8,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MontaigneAndroid">
+        android:theme="@style/Theme.MontaigneAndroid"
+        android:fullBackupContent="true">
         <activity
-            android:name=".layouyt_edicao_ensaios"
+            android:name=".EdicaoEnsaios"
             android:exported="true" />
         <activity
-            android:name=".ensaio_spt"
+            android:name=".EnsaioSpt"
             android:exported="true" />
         <activity
-            android:name=".ensaios_salvos"
+            android:name=".EnsaiosSalvos"
             android:exported="true" />
         <activity
-            android:name=".tela_inicial"
+            android:name=".TelaInicial"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

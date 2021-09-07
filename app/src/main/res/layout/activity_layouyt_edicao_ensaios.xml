@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layouyt_edicao_ensaios">
+    tools:context=".EdicaoEnsaios">
 
     <ImageView
         android:id="@+id/imageView12"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/verde_claro"
-    tools:context=".tela_inicial">
+    tools:context=".TelaInicial">
 
     <EditText
         android:id="@+id/editTextTextPersonName3"

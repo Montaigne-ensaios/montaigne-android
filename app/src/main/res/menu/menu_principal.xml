@@ -8,5 +8,5 @@
     <item
 
         android:title="@string/Sobre"
-        android:id="@+id/itemSobre/>
+        android:id="@+id/itemSobre"/>
 </menu>

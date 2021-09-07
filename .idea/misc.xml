@@ -7,8 +7,13 @@
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_tela_inicial.xml" value="0.22" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/menu/menu_principal.xml" value="0.25" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
-        <entry key="app/src/main/res/layout/activity_ensaio_spt.xml" value="0.19021739130434784" />
+        <entry key="app/src/main/res/layout/activity_ensaio_spt.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_ensaios_salvos.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/activity_layouyt_edicao_ensaios.xml" value="0.67" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/activity_tela_inicial.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2140625" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.12037037037037036" />
       </map>
     </option>
   </component>
