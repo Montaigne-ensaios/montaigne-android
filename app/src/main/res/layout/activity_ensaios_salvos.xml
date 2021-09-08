@@ -132,12 +132,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_adicionar" />
 
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="181dp" />
-
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="56dp"

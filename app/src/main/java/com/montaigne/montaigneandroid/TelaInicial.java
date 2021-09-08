@@ -28,10 +28,7 @@ public class TelaInicial extends AppCompatActivity {
         switch (item.getItemId()){
         case R.id.itemProjetos:
 
-        Toast.makeText(TelaInicial.this,"montaigne.ensaios@protonmail.com",Toast.LENGTH_SHORT).show();
-            break;
-
-    }
+        Toast.makeText(TelaInicial.this,"montaigne.ensaios@protonmail.com",Toast.LENGTH_SHORT).show();}
        return super.onOptionsItemSelected(item);
-}
+    }
 }

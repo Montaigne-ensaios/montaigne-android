@@ -1,10 +1,10 @@
 package com.montaigne.montaigneandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RelativeLayout layout = findViewById(R.id.main_layout);
+        ConstraintLayout layout = findViewById(R.id.main_layout);
         layout.setOnClickListener(view -> startActivity(
                 new Intent(MainActivity.this, TelaInicial.class)
             )
