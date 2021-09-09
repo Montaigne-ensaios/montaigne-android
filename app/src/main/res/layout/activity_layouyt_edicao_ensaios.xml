@@ -71,7 +71,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
     <ImageView
@@ -128,12 +128,104 @@
         android:id="@+id/editTextNumber11"
         android:layout_width="67dp"
         android:layout_height="44dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/black"
-        android:textSize="12sp"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="303dp" />
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView35"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toStartOf="@+id/textView35"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <EditText
+        android:id="@+id/editTextNumber13"
+        android:layout_width="67dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView38"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="54dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView32"
+        app:layout_constraintStart_toStartOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <EditText
+        android:id="@+id/editTextNumber9"
+        android:layout_width="54dp"
+        android:layout_height="31dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber3"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+
+    <EditText
+        android:id="@+id/editTextNumber12"
+        android:layout_width="54dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber3"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <EditText
+        android:id="@+id/editTextNumber14"
+        android:layout_width="54dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber12"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber12"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber12" />
+
+    <EditText
+        android:id="@+id/editTextNumber15"
+        android:layout_width="54dp"
+        android:layout_height="31dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber14"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber14"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber14" />
+
+    <EditText
+        android:id="@+id/editTextNumber10"
+        android:layout_width="54dp"
+        android:layout_height="31dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber9"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber9"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber9" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -171,5 +263,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="20dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="277dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
