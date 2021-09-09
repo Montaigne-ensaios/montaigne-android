@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/verde_claro"
-    tools:context=".EnsaiosSalvos">
+    tools:context=".ensaios_salvos">
 
     <TextView
         android:id="@+id/textView4"
@@ -131,6 +131,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_adicionar" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="181dp" />
 
     <ImageView
         android:id="@+id/imageView10"

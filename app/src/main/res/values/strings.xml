@@ -15,14 +15,12 @@
     <string name="ensaio_3">Ensaio 3</string>
     <string name="ensaio_spt_1">Ensaio de penetração 1</string>
     <string name="nivel_dágua">Nivel de água(m):</string>
-    <string name="Posição_do_revestimento">Posição do revestimento:</string>
+    <string name="Posição_do_revestimento">Cota inicial:</string>
     <string name="Amostra_1">Amostra 1</string>
     <string name="Golpes_1">1</string>
     <string name="Golpes_2"> 2</string>
     <string name="Golpes_3"> 3</string>
     <string name="Amostra_2">Amostra 2</string>
-    <string name="cota_inicia_2">Cota inicial 2:</string>
-    <string name="cota_inicial">Cota inicial :</string>
     <string name="button_1">Finalizar ensaio</string>
     <string name="penetração">Penetração(cm)</string>
     <string name="golpes">Golpes</string>
