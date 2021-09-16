@@ -8,12 +8,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class TelaInicial extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_inicial);
+        setContentView(R.layout.activity_home);
     }
 
     @Override
@@ -28,7 +28,7 @@ public class TelaInicial extends AppCompatActivity {
         switch (item.getItemId()){
         case R.id.itemProjetos:
 
-        Toast.makeText(TelaInicial.this,"montaigne.ensaios@protonmail.com",Toast.LENGTH_SHORT).show();}
+        Toast.makeText(HomeActivity.this,"montaigne.ensaios@protonmail.com",Toast.LENGTH_SHORT).show();}
        return super.onOptionsItemSelected(item);
     }
 }

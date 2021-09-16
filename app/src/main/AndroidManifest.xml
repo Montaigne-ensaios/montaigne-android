@@ -11,16 +11,16 @@
         android:theme="@style/Theme.MontaigneAndroid"
         android:fullBackupContent="true">
         <activity
-            android:name=".EdicaoEnsaios"
+            android:name=".SPTEditar"
             android:exported="true" />
         <activity
-            android:name=".EnsaioSpt"
+            android:name=".SPTCriar"
             android:exported="true" />
         <activity
-            android:name=".EnsaiosSalvos"
+            android:name=".SPTGerenciar"
             android:exported="true" />
         <activity
-            android:name=".TelaInicial"
+            android:name=".HomeActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EdicaoEnsaios">
+    tools:context=".SPTEditar">
 
     <ImageView
         android:id="@+id/imageView12"
@@ -71,21 +71,21 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imgSPTEditarVoltar"
         app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgSPTEditarVoltar"
         android:layout_width="33dp"
         android:layout_height="38dp"
         android:layout_marginStart="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSPTEditarTitulo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView21"
+        app:layout_constraintTop_toTopOf="@+id/txtSPTEditarTitulo"
         app:srcCompat="@drawable/ic_voltar" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/txtSPTEditarTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -97,21 +97,21 @@
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imgSPTEditarVoltar"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/txtSPTEditarNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/nome_do_projeto"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="@+id/txtSPTEditarTitulo"
         app:layout_constraintHorizontal_bias="0.323"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSPTEditarTitulo" />
 
     <TextView
         android:id="@+id/textView37"
@@ -121,8 +121,8 @@
         android:text="@string/Furo_1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/textView25"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintStart_toStartOf="@+id/txtSPTEditarNome"
+        app:layout_constraintTop_toBottomOf="@+id/txtSPTEditarNome" />
 
     <EditText
         android:id="@+id/editTextNumber11"
@@ -233,10 +233,10 @@
         android:layout_height="35dp"
         android:layout_marginStart="120dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSPTEditarTitulo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView21"
-        app:layout_constraintTop_toTopOf="@+id/textView21"
+        app:layout_constraintStart_toEndOf="@+id/txtSPTEditarTitulo"
+        app:layout_constraintTop_toTopOf="@+id/txtSPTEditarTitulo"
         app:srcCompat="@drawable/ic_salvar" />
 
     <Button
@@ -265,15 +265,15 @@
         app:layout_constraintGuide_begin="20dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/fieldSPTEditarNome"
         android:layout_width="277dp"
         android:layout_height="38dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView25"
-        app:layout_constraintStart_toEndOf="@+id/textView25"
-        app:layout_constraintTop_toTopOf="@+id/textView25"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSPTEditarNome"
+        app:layout_constraintStart_toEndOf="@+id/txtSPTEditarNome"
+        app:layout_constraintTop_toTopOf="@+id/txtSPTEditarNome"
         app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

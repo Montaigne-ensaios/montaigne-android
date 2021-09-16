@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
         ConstraintLayout layout = findViewById(R.id.main_layout);
         layout.setOnClickListener(view -> startActivity(
-                new Intent(MainActivity.this, TelaInicial.class)
+                new Intent(MainActivity.this, HomeActivity.class)
             )
         );
     }
