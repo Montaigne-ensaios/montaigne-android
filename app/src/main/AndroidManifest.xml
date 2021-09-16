@@ -11,19 +11,19 @@
         android:theme="@style/Theme.MontaigneAndroid"
         android:fullBackupContent="true">
         <activity
-            android:name=".SPTEditar"
+            android:name=".activity.SPTEditar"
             android:exported="true" />
         <activity
-            android:name=".SPTCriar"
+            android:name=".activity.SPTCriar"
             android:exported="true" />
         <activity
-            android:name=".SPTGerenciar"
+            android:name=".activity.SPTGerenciar"
             android:exported="true" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".activity.HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

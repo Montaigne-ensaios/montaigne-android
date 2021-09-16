@@ -1,4 +1,4 @@
-package com.montaigne.montaigneandroid;
+package com.montaigne.montaigneandroid.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.montaigne.montaigneandroid.R;
 
 public class HomeActivity extends AppCompatActivity {
 

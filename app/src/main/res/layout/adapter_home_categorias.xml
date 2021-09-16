@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="7dp"
+    android:layout_margin="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgCategorias"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/logo_para_sal_o_de_beleza" />
+
+        <TextView
+            android:id="@+id/txtCategoriasNome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/imgCategorias"
+            android:layout_alignBottom="@+id/imgCategorias"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/imgCategorias"
+            android:text="TextView"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgCategorias"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgCategorias"
+            app:layout_constraintTop_toTopOf="@+id/imgCategorias" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

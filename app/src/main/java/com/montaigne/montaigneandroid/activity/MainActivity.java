@@ -1,10 +1,12 @@
-package com.montaigne.montaigneandroid;
+package com.montaigne.montaigneandroid.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.montaigne.montaigneandroid.R;
 
 public class MainActivity extends AppCompatActivity {
 
