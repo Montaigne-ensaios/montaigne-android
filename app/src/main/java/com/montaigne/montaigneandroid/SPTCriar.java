@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class EdicaoEnsaios extends AppCompatActivity {
+public class SPTCriar extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_layouyt_edicao_ensaios);
+        setContentView(R.layout.activity_spt_criar);
     }
 }

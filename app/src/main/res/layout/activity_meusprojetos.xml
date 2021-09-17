@@ -7,16 +7,22 @@
     tools:context=".meusprojetos">
 
     <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_adicionar" />
+
+    <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="35dp"
-        android:layout_height="37dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintEnd_toStartOf="@+id/textView3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView3"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_voltar" />
 
     <TextView
@@ -28,10 +34,10 @@
         android:layout_alignParentEnd="true"
         android:layout_marginStart="60dp"
         android:layout_marginTop="36dp"
-        android:fontFamily="sans-serif-condensed"
+        android:fontFamily="sans-serif-black"
         android:text="@string/Meus_projetos"
         android:textAlignment="viewStart"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,12 +50,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:fontFamily="sans-serif-condensed"
+        android:fontFamily="serif"
         android:text="@string/Projeto_1SPT"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="@string/Projeto_2SPT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,4 +10,7 @@
     <color name="verde_claro">#4c8c4a</color>
     <color name="amarelo">#fbc02d</color>
     <color name="amarelo_claro">#fff263</color>
+<color name="verde_escuro">#0F5212</color>
+    <color name="marrom">#E33609</color>
+    <color name="marrom_claro">#FA5902</color>
 </resources>
