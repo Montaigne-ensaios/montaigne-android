@@ -11,10 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MontaigneAndroid" >
         <activity
-            android:name=".carimbo_spt"
+            android:name=".activity.SPTCarimbo"
             android:exported="true" />
         <activity
-            android:name=".meusprojetos"
+            android:name=".activity.ProjetosSalvos"
             android:exported="true" />
         <activity
             android:name=".activity.SPTEditar"
