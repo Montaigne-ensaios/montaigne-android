@@ -53,33 +53,6 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="176dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="12dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/lista_de_ensaios_1"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="172dp"
-        android:layout_height="102dp"
-        android:layout_marginStart="15dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/lista_de_ensaios_2"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/imageView4" />
-
-    <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -89,25 +62,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="114dp"
-        android:layout_height="112dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:srcCompat="@drawable/logo_para_sal_o_de_beleza" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="114dp"
-        android:layout_height="112dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:srcCompat="@drawable/logo_para_sal_o_de_beleza" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -129,13 +83,13 @@
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"
         app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/spt"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

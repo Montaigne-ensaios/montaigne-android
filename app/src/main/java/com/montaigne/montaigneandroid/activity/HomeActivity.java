@@ -1,37 +1,37 @@
 package com.montaigne.montaigneandroid.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.montaigne.montaigneandroid.R;
+import com.montaigne.montaigneandroid.adapter.HomeCategorias;
+
+import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
-    TextView textView;
-    private Button botao;
+    private RecyclerView recyclerView;
+    private HomeCategorias adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        textView= (TextView) findViewById(R.id.textView8);
-        textView.setOnClickListener(view -> startActivity(
-                new Intent(HomeActivity.this, SPTCarimbo.class)
-                )
-        );
+        adapter = new HomeCategorias(this);
+        recyclerView = findViewById(R.id.recyclerCategorias);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        botao = findViewById(R.id.button3);
-        botao.setOnClickListener(view -> startActivity(
-                new Intent(HomeActivity.this, SPTCarimbo.class)
-                )
-        );
+        ArrayList<String> nomes = new ArrayList<>();
+        nomes.add("SPT - Ensaio de reconhecimento simples");
+        nomes.add("Proctor Normal - Ensaio de compactação"); // todo: adicionar strings nos resources
+        adapter.setNomes(nomes);
     }
 
     @Override
