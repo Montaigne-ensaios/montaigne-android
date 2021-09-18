@@ -84,8 +84,8 @@
 
     <TextView
         android:id="@+id/txtSPTCriarAgua"
-        android:layout_width="162dp"
-        android:layout_height="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="30dp"
         android:fontFamily="sans-serif"
@@ -100,6 +100,7 @@
         android:id="@+id/txtSPTCriarSeg2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:fontFamily="sans-serif"
         android:text="@string/Golpes_2"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -128,6 +129,7 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/Golpes_3"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -140,26 +142,24 @@
         android:id="@+id/txtSPTCriarTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/ensaio_spt_1"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgSPTCriarVoltar"
-        android:layout_width="29dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
         app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarTitulo"
         app:layout_constraintEnd_toStartOf="@+id/txtSPTCriarTitulo"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtSPTCriarTitulo"
         app:srcCompat="@drawable/ic_voltar" />
 
@@ -184,26 +184,14 @@
         app:srcCompat="@drawable/ic_adicionar" />
 
     <EditText
-        android:id="@+id/fieldSPTCriarCota"
-        android:layout_width="62dp"
-        android:layout_height="25dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarCota"
-        app:layout_constraintStart_toEndOf="@+id/txtSPTCriarCota"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarCota" />
-
-    <EditText
         android:id="@+id/fieldSPTCriarGlp1"
         android:layout_width="64dp"
-        android:layout_height="29dp"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarGolpes"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/txtSPTCriarGolpes"
@@ -212,12 +200,12 @@
     <EditText
         android:id="@+id/fieldSPTCriarPen1"
         android:layout_width="64dp"
-        android:layout_height="29dp"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarPenetrações"
         app:layout_constraintStart_toStartOf="@+id/txtSPTCriarPenetrações"
         app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarPenetrações" />
@@ -225,11 +213,11 @@
     <EditText
         android:id="@+id/fieldSPTCriarPen2"
         android:layout_width="64dp"
-        android:layout_height="29dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/fieldSPTCriarPen1"
         app:layout_constraintStart_toStartOf="@+id/fieldSPTCriarPen1"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarPen1" />
@@ -237,23 +225,24 @@
     <EditText
         android:id="@+id/fieldSPTCriarPen3"
         android:layout_width="64dp"
-        android:layout_height="29dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/fieldSPTCriarPen2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/fieldSPTCriarPen2"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarPen2" />
 
     <EditText
         android:id="@+id/fieldSPTCriarGlp2"
         android:layout_width="64dp"
-        android:layout_height="29dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/fieldSPTCriarGlp1"
         app:layout_constraintStart_toStartOf="@+id/fieldSPTCriarGlp1"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarGlp1" />
@@ -261,7 +250,7 @@
     <EditText
         android:id="@+id/fieldSPTCriarGlp3"
         android:layout_width="64dp"
-        android:layout_height="29dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/black"
@@ -270,18 +259,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/fieldSPTCriarGlp2"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarGlp2" />
-
-    <EditText
-        android:id="@+id/fieldSPTCriarAgua"
-        android:layout_width="62dp"
-        android:layout_height="27dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarAgua"
-        app:layout_constraintStart_toEndOf="@+id/txtSPTCriarAgua"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarAgua" />
 
     <ImageView
         android:id="@+id/imageView16"
@@ -298,6 +275,7 @@
         android:layout_width="24dp"
         android:layout_height="30dp"
         android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCriarGlp2"
         app:layout_constraintStart_toEndOf="@+id/fieldSPTCriarGlp2"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarGlp1"
         app:srcCompat="@drawable/ic_mais" />
@@ -329,28 +307,20 @@
         android:id="@+id/imageView20"
         android:layout_width="24dp"
         android:layout_height="30dp"
-        android:layout_marginStart="40dp"
         android:layout_marginEnd="5dp"
         app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCriarGlp1"
         app:layout_constraintEnd_toStartOf="@+id/fieldSPTCriarGlp1"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/txtSPTCriarSeg1"
         app:layout_constraintTop_toTopOf="@+id/fieldSPTCriarGlp1"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_menos" />
 
     <ImageView
         android:id="@+id/imageView13"
         android:layout_width="24dp"
         android:layout_height="30dp"
-        android:layout_marginStart="40dp"
         android:layout_marginEnd="5dp"
         app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCriarGlp2"
         app:layout_constraintEnd_toStartOf="@+id/fieldSPTCriarGlp2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/txtSPTCriarSeg2"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarGlp1"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_menos" />
 
     <ImageView
@@ -365,18 +335,6 @@
         app:layout_constraintStart_toEndOf="@+id/textView18"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarGlp2"
         app:srcCompat="@drawable/ic_menos" />
-
-    <ImageButton
-        android:id="@+id/imgSPTCriarsProx"
-        android:layout_width="82dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="200dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarNAmostra"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarNAmostra"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarNAmostra"
-        app:srcCompat="@drawable/ic_proximo" />
 
     <ImageView
         android:id="@+id/imgSPTCriarIcone1"
@@ -398,6 +356,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtSPTCriarCota"
         app:srcCompat="@drawable/ic_inf" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:text="@string/proxima_amostra"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarSegmentos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarSegmentos"
+        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarSegmentos" />
+
+    <EditText
+        android:id="@+id/editTextNumberSigned"
+        android:layout_width="105dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarAgua"
+        app:layout_constraintStart_toEndOf="@+id/txtSPTCriarAgua"
+        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarAgua" />
+
+    <EditText
+        android:id="@+id/editTextNumberSigned2"
+        android:layout_width="105dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarCota"
+        app:layout_constraintStart_toEndOf="@+id/txtSPTCriarCota"
+        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarCota" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

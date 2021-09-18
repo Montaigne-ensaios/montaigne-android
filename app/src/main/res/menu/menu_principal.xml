@@ -3,10 +3,10 @@
 
     <item
 
-        android:title="@string/Menu"
-        android:id="@+id/itemProjetos"/>
+        android:id="@+id/itemProjetos"
+        android:title="@string/Menu_projeto" />
     <item
 
-        android:title="@string/Sobre"
-        android:id="@+id/itemSobre"/>
+        android:id="@+id/itemSobre"
+        android:title="@string/menu_sobre" />
 </menu>

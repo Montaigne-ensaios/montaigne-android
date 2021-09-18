@@ -65,7 +65,8 @@
         android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="396dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/Profundidade"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -91,7 +92,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-black"
-        android:text="@string/Projeto"
+        android:text="@string/ensaio_1"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/black"
         android:textSize="34sp"
@@ -101,28 +102,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtSPTEditarNome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/nome_do_projeto"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTEditarTitulo"
-        app:layout_constraintHorizontal_bias="0.323"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTEditarTitulo" />
-
-    <TextView
         android:id="@+id/textView37"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
         android:text="@string/Furo_1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTEditarNome"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTEditarNome" />
+        app:layout_constraintStart_toStartOf="@+id/imgSPTEditarVoltar"
+        app:layout_constraintTop_toBottomOf="@+id/imgSPTEditarVoltar" />
 
     <EditText
         android:id="@+id/editTextNumber11"
@@ -263,17 +252,5 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="20dp" />
-
-    <EditText
-        android:id="@+id/fieldSPTEditarNome"
-        android:layout_width="277dp"
-        android:layout_height="38dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTEditarNome"
-        app:layout_constraintStart_toEndOf="@+id/txtSPTEditarNome"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTEditarNome"
-        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
