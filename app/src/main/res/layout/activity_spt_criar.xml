@@ -173,16 +173,6 @@
         app:layout_constraintTop_toTopOf="@+id/btnSPTCriarsFim"
         app:srcCompat="@drawable/ic_home" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="49dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnSPTCriarsFim"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnSPTCriarsFim"
-        app:srcCompat="@drawable/ic_adicionar" />
-
     <EditText
         android:id="@+id/fieldSPTCriarGlp1"
         android:layout_width="64dp"
@@ -294,14 +284,14 @@
         android:id="@+id/btnSPTCriarsFim"
         android:layout_width="182dp"
         android:layout_height="61dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/button_1"
+        android:textColor="@color/black"
         android:textSize="12sp"
-        app:backgroundTint="@color/black"
+        app:backgroundTint="#004A4A4A"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnSPTCriarsHome"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toEndOf="@+id/imageView9" />
+        app:layout_constraintEnd_toStartOf="@+id/btnSPTCriarsHome" />
 
     <ImageView
         android:id="@+id/imageView20"
@@ -390,6 +380,20 @@
         app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarCota"
         app:layout_constraintStart_toEndOf="@+id/txtSPTCriarCota"
         app:layout_constraintTop_toTopOf="@+id/txtSPTCriarCota" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="108dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/furos"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSPTCriarsFim"
+        app:layout_constraintEnd_toStartOf="@+id/btnSPTCriarsFim"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSPTCriarsFim" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

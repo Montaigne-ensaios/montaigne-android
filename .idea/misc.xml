@@ -3,21 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="../../../../../../../layout/custom_preview.xml" value="0.28177083333333336" />
-        <entry key="app/src/main/res/layout/activity_amostras_spt.xml" value="0.26666666666666666" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2708333333333333" />
-        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.20925925925925926" />
-        <entry key="app/src/main/res/layout/activity_meusprojetos.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_projeto_spt.xml" value="0.26666666666666666" />
-        <entry key="app/src/main/res/layout/activity_projeto_sptactivity.xml" value="0.26666666666666666" />
-        <entry key="app/src/main/res/layout/activity_projetos_salvos.xml" value="0.1484375" />
-        <entry key="app/src/main/res/layout/activity_spt_gerenciar.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_sptconfig.xml" value="0.2708333333333333" />
-        <entry key="app/src/main/res/layout/activity_tela_inicial.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/adapter_home_categorias.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/ensaio_adapter.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/home_categorias_adapter.xml" value="0.1484375" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/drawable-anydpi/ic_adicionar.xml" value="0.2203125" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_carimbo_spt.xml" value="0.2" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_ensaio_spt.xml" value="0.22" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_ensaios_salvos.xml" value="0.25" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_layouyt_edicao_ensaios.xml" value="0.33" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_meusprojetos.xml" value="0.18" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_projetocarimbo.xml" value="0.33" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_projetos_salvos.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_criar.xml" value="0.25" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_editar.xml" value="0.25" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_gerenciar.xml" value="0.22" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_tela_inicial.xml" value="0.22" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/adapter_home_categorias.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/content_ensaios_salvos.xml" value="0.25" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/content_tela_de_ensaios_salvo.xml" value="0.33" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/fragment_first.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/fragment_first2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/home_categorias_adapter.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/menu/menu_principal.xml" value="0.22" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
       </map>
     </option>
   </component>
