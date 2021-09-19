@@ -23,11 +23,13 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        // cria o adapter e seta o recycler:
         adapter = new HomeCategorias(this);
         recyclerView = findViewById(R.id.recyclerCategorias);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        // adiciona elementos ao recycler (isso talvez seja movido para outro lugar):
         ArrayList<String> nomes = new ArrayList<>();
         nomes.add("SPT - Ensaio de reconhecimento simples");
         nomes.add("Proctor Normal - Ensaio de compactação"); // todo: adicionar strings nos resources

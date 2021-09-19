@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         layout.setOnClickListener(view -> startActivity(
                 new Intent(MainActivity.this, HomeActivity.class)
             )
-        );
+        );  // intent para a HomeActivity
+        // todo: fazer com que não dê para retornar para essa tela
     }
 }

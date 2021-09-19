@@ -19,16 +19,18 @@ import com.montaigne.montaigneandroid.R;
 import java.util.ArrayList;
 
 public class HomeCategorias extends RecyclerView.Adapter<HomeCategorias.ViewHolder> {
+    // adapter para gerar os itens do recycler view da HomeActivity
     private ArrayList<String> nomes;
     private Context context;
 
     public HomeCategorias(Context context){
-        this.context = context;
+        this.context = context;  // passa o contexto da tela em que o layout é criado
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        // cria as views do layout
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.adapter_home_categorias, parent, false);
         return new ViewHolder(view);
@@ -36,12 +38,14 @@ public class HomeCategorias extends RecyclerView.Adapter<HomeCategorias.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        // configura cada view do recycler de a cordo com suas posições
         holder.txtCategoriaNome.setText(nomes.get(position));
+        // seta o texto do txtViewCategoriaNome de acorodo com a posição da lista nomes
         holder.parent.setOnClickListener(view -> // startActivity(
                 // new Intent(context, SPTCarimbo.class)
                 // )
                 Toast.makeText(context, "Foi clicado", Toast.LENGTH_SHORT).show()
-        );
+        );  // todo: corrigir o Intent (não to conseguindo passar o context)
     }
 
     @Override
@@ -56,6 +60,7 @@ public class HomeCategorias extends RecyclerView.Adapter<HomeCategorias.ViewHold
         private TextView txtCategoriaNome;
 
         public ViewHolder(@NonNull View itemView) {
+            // seta objetos de cada view
             super(itemView);
             parent = itemView.findViewById(R.id.cardHomeCategorias);
             txtCategoriaNome = itemView.findViewById(R.id.txtCategoriasNome);
