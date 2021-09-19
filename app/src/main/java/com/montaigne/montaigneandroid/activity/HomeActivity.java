@@ -12,8 +12,6 @@ import android.widget.Toast;
 import com.montaigne.montaigneandroid.R;
 import com.montaigne.montaigneandroid.adapter.HomeCategorias;
 
-import java.util.ArrayList;
-
 public class HomeActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private HomeCategorias adapter;
@@ -30,10 +28,9 @@ public class HomeActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         // adiciona elementos ao recycler (isso talvez seja movido para outro lugar):
-        ArrayList<String> nomes = new ArrayList<>();
-        nomes.add("SPT - Ensaio de reconhecimento simples");
-        nomes.add("Proctor Normal - Ensaio de compactação"); // todo: adicionar strings nos resources
-        adapter.setNomes(nomes);
+        adapter.addCategoria("SPT - Ensaio de reconhecimento simples", SPTCarimbo.class);
+        adapter.addCategoria("Proctor Normal - Ensaio de compactação", SPTCarimbo.class);
+        // todo: passar string pros resources
     }
 
     @Override

@@ -1,14 +1,11 @@
 package com.montaigne.montaigneandroid.adapter;
 
-//import static androidx.core.content.ContextCompat.startActivity;
-
 import android.content.Context;
-//import android.content.Intent;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -20,11 +17,14 @@ import java.util.ArrayList;
 
 public class HomeCategorias extends RecyclerView.Adapter<HomeCategorias.ViewHolder> {
     // adapter para gerar os itens do recycler view da HomeActivity
-    private ArrayList<String> nomes;
     private Context context;
+    private ArrayList<String> nomes;
+    private ArrayList<Class> destinos;  // recebe a activity de destino de cada categoria
 
     public HomeCategorias(Context context){
         this.context = context;  // passa o contexto da tela em que o layout é criado
+        nomes = new ArrayList<>();
+        destinos = new ArrayList<>();
     }
 
     @NonNull
@@ -41,19 +41,19 @@ public class HomeCategorias extends RecyclerView.Adapter<HomeCategorias.ViewHold
         // configura cada view do recycler de a cordo com suas posições
         holder.txtCategoriaNome.setText(nomes.get(position));
         // seta o texto do txtViewCategoriaNome de acorodo com a posição da lista nomes
-        holder.parent.setOnClickListener(view -> // startActivity(
-                // new Intent(context, SPTCarimbo.class)
-                // )
-                Toast.makeText(context, "Foi clicado", Toast.LENGTH_SHORT).show()
-        );  // todo: corrigir o Intent (não to conseguindo passar o context)
+        holder.parent.setOnClickListener(view -> context.startActivity(
+                 new Intent(context, destinos.get(position))
+                 )
+        );  // intent para abrir outra activity
     }
 
     @Override
-    public int getItemCount() {
-        return nomes.size();
-    }
+    public int getItemCount() { return nomes.size(); }
 
-    public void setNomes(ArrayList<String> nomes) { this.nomes = nomes; }
+    public void addCategoria(String nome, Class destino) {
+        nomes.add(nome);
+        destinos.add(destino);
+    }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private CardView parent;
