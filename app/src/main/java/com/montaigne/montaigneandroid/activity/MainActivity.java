@@ -16,10 +16,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ConstraintLayout layout = findViewById(R.id.main_layout);
-        layout.setOnClickListener(view -> startActivity(
-                new Intent(MainActivity.this, HomeActivity.class)
-            )
-        );  // intent para a HomeActivity
-        // todo: fazer com que não dê para retornar para essa tela
+        layout.setOnClickListener(view -> {
+                    startActivity(
+                            new Intent(MainActivity.this, HomeActivity.class)
+                    );  // intent para a HomeActivity
+                    finish();  // finaliza esta activity
+                }
+        );
     }
 }
