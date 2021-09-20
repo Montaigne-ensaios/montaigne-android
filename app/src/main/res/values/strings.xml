@@ -30,8 +30,8 @@
     <string name="NSPT">NSPT</string>
     <string name="Sondagens">Sondagens</string>
     <string name="Meus_projetos">Meus projetos </string>
-    <string name="Projeto_1SPT">Projeto 1-SPT</string>
-    <string name="Projeto_2SPT">Projeto 2-SPT</string>
+    <string name="Projeto_1SPT">Projeto 1 - SPT</string>
+    <string name="Projeto_2SPT">Projeto 2 - Proctor</string>
     <string name="ensaio_1_carimbo">Ensaio 1 - Carimbo </string>
    <string name="empresa">Empresa:</string>
 <string name="telefone">Telefone:</string>
@@ -43,4 +43,12 @@
     <string name="add_logo">Adicionar logo</string>
     <string name="spt">spt</string>
     <string name="proxima_amostra">Próxima amostra</string>
+    <string name="data_final">Data final:</string>
+   <string name="Referencia_de_nivel">Referência de nível :</string>
+    <string name="nivel_do_meio_fio">nivel do meio fio :</string>
+    <string name="Nivel_do_furo">Nivel do furo(m):</string>
+    <string name="coordernadas">Coodernadas do furo:</string>
+    <string name="GERAR_RELATORIO"> Gerar Relatorio</string>
+    <string name="Carimbo">Carimbo</string>
+    <string name="furos">Furos</string>
 </resources>
