@@ -15,28 +15,41 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeListener {
+    private String idProjeto;  // string recuperada da intent que diz o id do projeto
     private HashMap<String, EditText> fields = new HashMap<>();
-    private ImageView imgLogoEmpresa, imgSalvar;
+    private ImageView imgLogoEmpresa, imgSalvar, imgVoltar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_carimbo_spt);
+        setContentView(R.layout.activity_spt_carimbo);
+
+        idProjeto = getIntent().getStringExtra("idProjeto");
 
         imgLogoEmpresa = findViewById(R.id.imgSPTCarimboImg);
         imgLogoEmpresa.setOnClickListener(view -> {
             Toast.makeText(this, "Recurso de imagem precisa ser implementado",
                     Toast.LENGTH_SHORT).show();
-            // todo: implementar salvamento de imagem
+            // todo: implementar salvamento da imagem
         });
 
         imgSalvar = findViewById(R.id.imgSPTCarimboSalvar);
         imgSalvar.setOnClickListener(view -> {
             // todo: implementar salvamento ou mudar o caráter deste botão
-            startActivity(new Intent(SPTCarimbo.this, SPTCriar.class));
+            if(true) {
+                Intent intent = new Intent(SPTCarimbo.this, SPTCriar.class);
+                intent.putExtra("idProjeto", idProjeto);
+                intent.putExtra("idFuro", "criar");
+                startActivity(intent);
+                // todo: adicionar id do novo projeto de acordo com as regras de geração de id
+            }
             finish();
             // abre a activity de criação do ensaio e fecha essa
         });
+        // botão de voltar
+        imgVoltar = findViewById(R.id.imgSPTCarimboBack);
+        imgVoltar.setOnClickListener(view -> finish());
+        // todo: implementar confirmação de não salvar?
         
         // adiciona cada campo de texto a um hashmap
         fields.put("Nome", (EditText) findViewById(R.id.fieldSPTCarimboNome));
@@ -57,7 +70,8 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
     @Override
     public void onFocusChange(View view, boolean b) {
-        if(!b) {
+        if(!b && !idProjeto.equals("criar")) {
+            // salva as alterações quando um field desfoca, se este não for um projeto novo
             // todo: implementar funções da base de dados para salvamentos
             Toast.makeText(this, "Desfoque de View detectado",
                     Toast.LENGTH_SHORT).show();

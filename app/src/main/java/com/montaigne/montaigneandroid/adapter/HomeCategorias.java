@@ -41,9 +41,12 @@ public class HomeCategorias extends RecyclerView.Adapter<HomeCategorias.ViewHold
         // configura cada view do recycler de a cordo com suas posições
         holder.txtCategoriaNome.setText(nomes.get(position));
         // seta o texto do txtViewCategoriaNome de acorodo com a posição da lista nomes
-        holder.parent.setOnClickListener(view -> context.startActivity(
-                 new Intent(context, destinos.get(position))
-                 )
+        holder.parent.setOnClickListener(view -> {
+                Intent intent = new Intent(context, destinos.get(position));
+                intent.putExtra("idProjeto", "criar");
+            // todo: remover extras do intent (provisório)
+                context.startActivity(intent);
+            }
         );  // intent para abrir outra activity
     }
 
