@@ -36,7 +36,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
         imgSalvar = findViewById(R.id.imgSPTCarimboSalvar);
         imgSalvar.setOnClickListener(view -> {
             // todo: implementar salvamento ou mudar o caráter deste botão
-            if(true) {
+            if(idProjeto.equals("criar")) {
                 Intent intent = new Intent(SPTCarimbo.this, SPTCriar.class);
                 intent.putExtra("idProjeto", idProjeto);
                 intent.putExtra("idFuro", "criar");

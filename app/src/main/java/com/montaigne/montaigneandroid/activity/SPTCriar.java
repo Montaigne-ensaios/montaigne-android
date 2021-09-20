@@ -63,26 +63,33 @@ public class  SPTCriar extends AppCompatActivity {
             // configura cada field e image view
             EditText fieldGolpe = fieldsGolpes[i];
             btnsMais[i].setOnClickListener(view -> {
-                int value = (int) naturalNumberInput(fieldGolpe);
+                Integer value = (int) naturalNumberInput(fieldGolpe);
                 value++;
-                fieldGolpe.setText(value);
+                fieldGolpe.setText(value.toString());
+                // tentar por o texto como int estava crashando
             });  // listener que recupera o valor dos golpes e altera
 
             btnsMenos[i].setOnClickListener(view -> {
-                int value = (int) naturalNumberInput(fieldGolpe);
-                value--;
-                fieldGolpe.setText(value);
+                Integer value = (int) naturalNumberInput(fieldGolpe);
+                if(value > 0) {
+                    value--;
+                    fieldGolpe.setText(value.toString());
+                }
             });  // mesmo que o de cima, só que subtraindo
 
             fieldGolpe.setOnFocusChangeListener((view, b) -> {
                 if(!b){
-                    int value = (int) naturalNumberInput((EditText) view);
-                    ((EditText) view).setText(value);  // isto serve para remover decimais
+                    Integer value = (int) naturalNumberInput((EditText) view);
+                    ((EditText) view).setText(value.toString());  // isto serve para remover decimais
                 }  // trata input se houver alterações manuais
             });
 
             fieldsPenetras[i]
-                    .setOnFocusChangeListener((view, b) -> naturalNumberInput((EditText) view));
+                    .setOnFocusChangeListener((view, b) -> {
+                        if(!b){
+                            naturalNumberInput((EditText) view);
+                        }
+                    });
             // trata input como float
         }
 
