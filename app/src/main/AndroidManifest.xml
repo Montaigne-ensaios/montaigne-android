@@ -14,7 +14,7 @@
             android:name=".activity.SPTCarimbo"
             android:exported="true" />
         <activity
-            android:name=".activity.ProjetosSalvos"
+            android:name=".activity.SPTGerenciarProjs"
             android:exported="true" />
         <activity
             android:name=".activity.SPTEditar"
@@ -23,7 +23,7 @@
             android:name=".activity.SPTCriar"
             android:exported="true" />
         <activity
-            android:name=".activity.SPTGerenciar"
+            android:name=".activity.SPTProjeto"
             android:exported="true" />
         <activity
             android:name=".activity.HomeActivity"

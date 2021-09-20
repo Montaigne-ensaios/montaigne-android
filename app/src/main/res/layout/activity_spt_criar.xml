@@ -155,7 +155,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imgSPTCriarVoltar"
+        android:id="@+id/imgSPTCriarBack"
         android:layout_width="34dp"
         android:layout_height="38dp"
         app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarTitulo"
@@ -261,7 +261,7 @@
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarGlp2" />
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/imgSPTCriarp1"
         android:layout_width="24dp"
         android:layout_height="30dp"
         android:layout_marginStart="5dp"
@@ -271,7 +271,7 @@
         app:srcCompat="@drawable/ic_mais" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/imgSPTCriarp2"
         android:layout_width="24dp"
         android:layout_height="30dp"
         android:layout_marginStart="5dp"
@@ -281,7 +281,7 @@
         app:srcCompat="@drawable/ic_mais" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/imgSPTCriarp3"
         android:layout_width="24dp"
         android:layout_height="30dp"
         android:layout_marginStart="5dp"
@@ -304,7 +304,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageView9" />
 
     <ImageView
-        android:id="@+id/imageView20"
+        android:id="@+id/imgSPTCriarm1"
         android:layout_width="24dp"
         android:layout_height="30dp"
         android:layout_marginEnd="5dp"
@@ -314,7 +314,7 @@
         app:srcCompat="@drawable/ic_menos" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/imgSPTCriarm2"
         android:layout_width="24dp"
         android:layout_height="30dp"
         android:layout_marginEnd="5dp"
@@ -324,7 +324,7 @@
         app:srcCompat="@drawable/ic_menos" />
 
     <ImageView
-        android:id="@+id/imageView17"
+        android:id="@+id/imgSPTCriarm3"
         android:layout_width="24dp"
         android:layout_height="30dp"
         android:layout_marginStart="40dp"

@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.montaigne.montaigneandroid.R;
 
-public class ProjetosSalvos extends AppCompatActivity {
+public class SPTProjeto extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_projetos_salvos);
+        setContentView(R.layout.activity_spt_projeto);
     }
 }
