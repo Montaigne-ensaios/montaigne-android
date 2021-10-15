@@ -35,14 +35,14 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
     private void setupButtons(){
         imgLogoEmpresa = findViewById(R.id.imgSPTCarimboImg);
-        imgLogoEmpresa.setOnClickListener(view -> {
+        imgLogoEmpresa.setOnClickListener(v -> {
             Toast.makeText(this, "Recurso de imagem precisa ser implementado",
                     Toast.LENGTH_SHORT).show();
             // todo: implementar salvamento da imagem
         });
 
         imgSalvar = findViewById(R.id.imgSPTCarimboSalvar);
-        imgSalvar.setOnClickListener(view -> {
+        imgSalvar.setOnClickListener(v -> {
             // todo: implementar salvamento ou mudar o caráter deste botão
             if(idProjeto.equals("criar")) {
                 Intent intent = new Intent(SPTCarimbo.this, SPTCriar.class);
@@ -57,7 +57,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
         // botão de voltar
         imgVoltar = findViewById(R.id.imgSPTCarimboBack);
-        imgVoltar.setOnClickListener(view -> finish());
+        imgVoltar.setOnClickListener(v -> finish());
         // todo: implementar confirmação de não salvar?
     }
 

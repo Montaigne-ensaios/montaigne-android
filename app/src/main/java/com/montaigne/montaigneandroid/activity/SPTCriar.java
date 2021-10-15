@@ -35,18 +35,18 @@ public class  SPTCriar extends AppCompatActivity {
 
     private void setupButtons(){
         imgHome = findViewById(R.id.imgSPTCriarHome);
-        imgHome.setOnClickListener(view -> {
+        imgHome.setOnClickListener(v -> {
             startActivity(
                     new Intent(SPTCriar.this, HomeActivity.class));
             finish();
         });
 
         imgVoltar = findViewById(R.id.imgSPTCriarBack);
-        imgVoltar.setOnClickListener(view -> finish());
+        imgVoltar.setOnClickListener(v -> finish());
         // todo: implementar confirmações de usuário nestes botões de saída
 
         btnProxima = findViewById(R.id.btnSPTCriarProx);
-        btnProxima.setOnClickListener(view -> {
+        btnProxima.setOnClickListener(v -> {
             Intent intent = new Intent(SPTCriar.this, SPTCriar.class);
             intent.putExtra("idProjeto", idProjeto);
             intent.putExtra("idFuro", idFuro);
@@ -55,7 +55,7 @@ public class  SPTCriar extends AppCompatActivity {
         });
 
         btnFinalizar = findViewById(R.id.btnSPTCriarFim);
-        btnFinalizar.setOnClickListener(view -> finish());
+        btnFinalizar.setOnClickListener(v -> finish());
 
         // todo: adicionar métodos de banco de dados e salvamento antes de finalizar activity
     }
@@ -86,14 +86,14 @@ public class  SPTCriar extends AppCompatActivity {
         // configura cada field e image view:
         for (int i=0; i<fieldsGolpes.length; i++){
             EditText fieldGolpe = fieldsGolpes[i];
-            btnsMais[i].setOnClickListener(view -> {
+            btnsMais[i].setOnClickListener(v -> {
                 Integer value = (int) naturalNumberInput(fieldGolpe);
                 value++;
                 fieldGolpe.setText(value.toString());
                 // tentar por o texto como int estava crashando
             });  // listener que recupera o valor dos golpes e altera
 
-            btnsMenos[i].setOnClickListener(view -> {
+            btnsMenos[i].setOnClickListener(v -> {
                 Integer value = (int) naturalNumberInput(fieldGolpe);
                 if(value > 0) {
                     value--;
@@ -101,17 +101,17 @@ public class  SPTCriar extends AppCompatActivity {
                 }
             });  // mesmo que o de cima, só que subtraindo
 
-            fieldGolpe.setOnFocusChangeListener((view, b) -> {
+            fieldGolpe.setOnFocusChangeListener((v, b) -> {
                 if(!b){
-                    Integer value = (int) naturalNumberInput((EditText) view);
-                    ((EditText) view).setText(value.toString());  // isto serve para remover decimais
+                    Integer value = (int) naturalNumberInput((EditText) v);
+                    ((EditText) v).setText(value.toString());  // isto serve para remover decimais
                 }  // trata input se houver alterações manuais
             });
 
             fieldsPenetras[i]
-                    .setOnFocusChangeListener((view, b) -> {
+                    .setOnFocusChangeListener((v, b) -> {
                         if(!b){
-                            naturalNumberInput((EditText) view);
+                            naturalNumberInput((EditText) v);
                         }
                     });
             // trata input como float
@@ -119,9 +119,9 @@ public class  SPTCriar extends AppCompatActivity {
 
         // cria listeners para tratar alterações das inputs
         fieldCota = findViewById(R.id.fieldSPTCriarCota);
-        fieldCota.setOnFocusChangeListener((view, b) -> naturalNumberInput((EditText) view));
+        fieldCota.setOnFocusChangeListener((v, b) -> naturalNumberInput((EditText) v));
         fieldNAgua = findViewById(R.id.fieldSPTCriarAgua);
-        fieldNAgua.setOnFocusChangeListener((view, b) -> naturalNumberInput((EditText) view));
+        fieldNAgua.setOnFocusChangeListener((v, b) -> naturalNumberInput((EditText) v));
     }
 
     private static float naturalNumberInput(EditText input){

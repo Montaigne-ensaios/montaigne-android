@@ -19,7 +19,7 @@ public class HomeCategorias extends RecyclerView.Adapter<HomeCategorias.ViewHold
     // adapter para gerar os itens do recycler view da HomeActivity
     private Context context;
     private ArrayList<String> nomes;
-    private ArrayList<Class> destinos;  // recebe a activity de destino de cada categoria
+    private ArrayList<Class> destinos;  // activity de destino de cada categoria
 
     public HomeCategorias(Context context){
         this.context = context;  // passa o contexto da tela em que o layout é criado
@@ -41,10 +41,10 @@ public class HomeCategorias extends RecyclerView.Adapter<HomeCategorias.ViewHold
         // configura cada view do recycler de a cordo com suas posições
         holder.txtCategoriaNome.setText(nomes.get(position));
         // seta o texto do txtViewCategoriaNome de acorodo com a posição da lista nomes
-        holder.parent.setOnClickListener(view -> {
+        holder.parent.setOnClickListener(v -> {
                 Intent intent = new Intent(context, destinos.get(position));
                 intent.putExtra("idProjeto", "criar");
-            // todo: remover extras do intent (provisório)
+                // todo: alterar extras do intent (provisório)
                 context.startActivity(intent);
             }
         );  // intent para abrir outra activity
@@ -66,7 +66,7 @@ public class HomeCategorias extends RecyclerView.Adapter<HomeCategorias.ViewHold
             // seta objetos de cada view
             super(itemView);
             parent = itemView.findViewById(R.id.cardHomeCategorias);
-            txtCategoriaNome = itemView.findViewById(R.id.txtCategoriasNome);
+            txtCategoriaNome = itemView.findViewById(R.id.txtSPTGerenciarNome);
         }
     }
 }

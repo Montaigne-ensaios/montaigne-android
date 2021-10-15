@@ -64,7 +64,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imgSPTGerenciarBack"
         android:layout_width="32dp"
         android:layout_height="34dp"
         android:scaleType="fitStart"

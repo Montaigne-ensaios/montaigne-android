@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -42,10 +43,14 @@ public class HomeActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-        case R.id.itemProjetos:
+        int id = item.getItemId();
 
-        Toast.makeText(HomeActivity.this,"montaigne.ensaios@protonmail.com",Toast.LENGTH_SHORT).show();}
+        if(id == R.id.itemProjetos){
+            startActivity(new Intent(HomeActivity.this, SPTGerenciarProjs.class));
+        } else if (id == R.id.itemSobre){
+            Toast.makeText(HomeActivity.this,
+                    "montaigne.ensaios@protonmail.com", Toast.LENGTH_SHORT).show();
+        }
        return super.onOptionsItemSelected(item);
     }
 }

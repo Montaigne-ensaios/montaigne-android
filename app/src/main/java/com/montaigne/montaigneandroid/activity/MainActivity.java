@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ConstraintLayout layout = findViewById(R.id.main_layout);
-        layout.setOnClickListener(view -> {
+        layout.setOnClickListener(v -> {
                     startActivity(
                             new Intent(MainActivity.this, HomeActivity.class)
                     );  // intent para a HomeActivity
