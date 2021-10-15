@@ -8,7 +8,7 @@
     tools:context=".activity.SPTProjeto">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txtSPTProjetoTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -26,88 +26,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="190dp"
-        android:layout_height="45dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="10dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="@string/ensaio_1"
-        android:textAlignment="viewStart"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
-        app:layout_constraintStart_toEndOf="@+id/checkBox3"
-        app:layout_constraintTop_toTopOf="@+id/checkBox3"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="190dp"
-        android:layout_height="45dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:fontFamily="sans-serif-condensed"
-        android:text="@string/ensaio_3"
-        android:textAlignment="viewStart"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView15"
-        app:layout_constraintStart_toStartOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="190dp"
-        android:layout_height="45dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:fontFamily="sans-serif-condensed"
-        android:text="@string/ensaio_2"
-        android:textAlignment="viewStart"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
-        app:layout_constraintEnd_toEndOf="@+id/textView10"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imgSPTProjetoBack"
         android:layout_width="47dp"
         android:layout_height="45dp"
         android:layout_marginStart="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSPTProjetoTitulo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/txtSPTProjetoTitulo"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imgSPTProjetoNFuro"
         android:layout_width="53dp"
         android:layout_height="64dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintEnd_toStartOf="@+id/imgSPTProjetoHome"
         app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imgSPTProjetoHome"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_adicionar" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imgSPTProjetoHome"
         android:layout_width="53dp"
         android:layout_height="64dp"
         android:layout_marginEnd="20dp"
@@ -116,43 +61,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_home" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:buttonTint="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/checkBox2"
-        app:layout_constraintStart_toStartOf="@+id/checkBox2"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
-
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:buttonTint="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/checkBox3"
-        app:layout_constraintStart_toStartOf="@+id/checkBox3"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
-
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        app:buttonTint="#000000"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnSPTProjetoCarimbo"
         android:layout_width="135dp"
         android:layout_height="56dp"
         android:layout_marginBottom="20dp"
         android:text="@string/Carimbo"
         app:backgroundTint="#070707"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
-        app:layout_constraintStart_toEndOf="@+id/imageView6" />
+        app:layout_constraintEnd_toStartOf="@+id/imgSPTProjetoHome"
+        app:layout_constraintStart_toEndOf="@+id/imgSPTProjetoNFuro" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSPTProjeto"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSPTProjetoCarimbo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSPTProjetoTitulo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

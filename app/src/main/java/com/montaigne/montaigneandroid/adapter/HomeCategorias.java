@@ -66,7 +66,7 @@ public class HomeCategorias extends RecyclerView.Adapter<HomeCategorias.ViewHold
             // seta objetos de cada view
             super(itemView);
             parent = itemView.findViewById(R.id.cardHomeCategorias);
-            txtCategoriaNome = itemView.findViewById(R.id.txtSPTGerenciarNome);
+            txtCategoriaNome = itemView.findViewById(R.id.txtSPTFurosNome);
         }
     }
 }

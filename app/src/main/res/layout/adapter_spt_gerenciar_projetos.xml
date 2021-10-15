@@ -24,7 +24,7 @@
             app:srcCompat="@drawable/logo_para_sal_o_de_beleza" />
 
         <TextView
-            android:id="@+id/txtSPTGerenciarNome"
+            android:id="@+id/txtSPTFurosNome"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_alignTop="@+id/imgSPTGerenciarThumb"
@@ -48,8 +48,8 @@
             android:text="Texto de descrição. \nEste texto pode ser substituido por múltiplos textViews."
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/checkSelectSPTGerenciar"
-            app:layout_constraintStart_toStartOf="@+id/txtSPTGerenciarNome"
-            app:layout_constraintTop_toBottomOf="@+id/txtSPTGerenciarNome" />
+            app:layout_constraintStart_toStartOf="@+id/txtSPTFurosNome"
+            app:layout_constraintTop_toBottomOf="@+id/txtSPTFurosNome" />
 
         <CheckBox
             android:id="@+id/checkSelectSPTGerenciar"

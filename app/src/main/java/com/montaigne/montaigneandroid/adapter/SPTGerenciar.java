@@ -13,7 +13,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.montaigne.montaigneandroid.R;
-import com.montaigne.montaigneandroid.activity.SPTEditar;
+import com.montaigne.montaigneandroid.activity.SPTProjeto;
 
 import java.util.ArrayList;
 
@@ -33,7 +33,7 @@ public class SPTGerenciar extends RecyclerView.Adapter<SPTGerenciar.ViewHolder>{
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.adapter_spt_gerenciar_ensaios, parent, false);
+                .inflate(R.layout.adapter_spt_gerenciar_projetos, parent, false);
         return new ViewHolder(view);
     }
 
@@ -43,7 +43,7 @@ public class SPTGerenciar extends RecyclerView.Adapter<SPTGerenciar.ViewHolder>{
         holder.txtDesc.setText(descs.get(position));
 
         holder.parent.setOnClickListener(v -> {
-                Intent intent = new Intent(context, SPTEditar.class);
+                Intent intent = new Intent(context, SPTProjeto.class);
                 intent.putExtra("idProjeto", ids.get(position));
                 // redireciona para a edição do ensaio, passando o id, sem fechar a activity
                 context.startActivity(intent);
@@ -77,7 +77,7 @@ public class SPTGerenciar extends RecyclerView.Adapter<SPTGerenciar.ViewHolder>{
             // listener para selecionar e desselecionar ensaios (para gerenciamento)
 
             checkBox = itemView.findViewById(R.id.checkSelectSPTGerenciar);
-            txtNome = itemView.findViewById(R.id.txtSPTGerenciarNome);
+            txtNome = itemView.findViewById(R.id.txtSPTFurosNome);
             txtDesc = itemView.findViewById(R.id.txtSPTGenrenciarDesc);
         }
 
