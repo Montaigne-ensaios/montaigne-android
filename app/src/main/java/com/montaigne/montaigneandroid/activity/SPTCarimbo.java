@@ -24,8 +24,16 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spt_carimbo);
 
+        // recupera dados da intent
         idProjeto = getIntent().getStringExtra("idProjeto");
 
+        setupButtons();
+
+        setupFields();
+
+    }
+
+    private void setupButtons(){
         imgLogoEmpresa = findViewById(R.id.imgSPTCarimboImg);
         imgLogoEmpresa.setOnClickListener(view -> {
             Toast.makeText(this, "Recurso de imagem precisa ser implementado",
@@ -46,11 +54,14 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
             finish();
             // abre a activity de criação do ensaio e fecha essa
         });
+
         // botão de voltar
         imgVoltar = findViewById(R.id.imgSPTCarimboBack);
         imgVoltar.setOnClickListener(view -> finish());
         // todo: implementar confirmação de não salvar?
-        
+    }
+
+    private void setupFields(){
         // adiciona cada campo de texto a um hashmap
         fields.put("Nome", (EditText) findViewById(R.id.fieldSPTCarimboNome));
         fields.put("Inicio", (EditText) findViewById(R.id.fieldSPTCarimboDataIni));
@@ -61,11 +72,10 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
         fields.put("NFuros", (EditText) findViewById(R.id.fieldSPTCarimboNFuros));
         fields.put("Local", (EditText) findViewById(R.id.fieldSPTCarimboNome));
 
+        // adiciona um listener para cada field
         for(Map.Entry<String, EditText> set : fields.entrySet()){
             set.getValue().setOnFocusChangeListener(this);
         }
-        // adiciona um listener para cada field
-
     }
 
     @Override

@@ -24,9 +24,16 @@ public class  SPTCriar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spt_criar);
 
+        // recupera dados do intent
         idProjeto = getIntent().getStringExtra("idProjeto");
         idFuro = getIntent().getStringExtra("idFuro");
 
+        setupButtons();
+
+        setupFields();
+    }
+
+    private void setupButtons(){
         imgHome = findViewById(R.id.imgSPTCriarHome);
         imgHome.setOnClickListener(view -> {
             startActivity(
@@ -38,6 +45,22 @@ public class  SPTCriar extends AppCompatActivity {
         imgVoltar.setOnClickListener(view -> finish());
         // todo: implementar confirmações de usuário nestes botões de saída
 
+        btnProxima = findViewById(R.id.btnSPTCriarProx);
+        btnProxima.setOnClickListener(view -> {
+            Intent intent = new Intent(SPTCriar.this, SPTCriar.class);
+            intent.putExtra("idProjeto", idProjeto);
+            intent.putExtra("idFuro", idFuro);
+            startActivity(intent);
+            finish();
+        });
+
+        btnFinalizar = findViewById(R.id.btnSPTCriarFim);
+        btnFinalizar.setOnClickListener(view -> finish());
+
+        // todo: adicionar métodos de banco de dados e salvamento antes de finalizar activity
+    }
+
+    private void setupFields(){
         // cria os objetos relativos a golpes e penetrações
         fieldsGolpes = new EditText[]{
                 findViewById(R.id.fieldSPTCriarGlp1),
@@ -59,8 +82,9 @@ public class  SPTCriar extends AppCompatActivity {
                 findViewById(R.id.imgSPTCriarm2),
                 findViewById(R.id.imgSPTCriarm3)
         };
+
+        // configura cada field e image view:
         for (int i=0; i<fieldsGolpes.length; i++){
-            // configura cada field e image view
             EditText fieldGolpe = fieldsGolpes[i];
             btnsMais[i].setOnClickListener(view -> {
                 Integer value = (int) naturalNumberInput(fieldGolpe);
@@ -98,19 +122,7 @@ public class  SPTCriar extends AppCompatActivity {
         fieldCota.setOnFocusChangeListener((view, b) -> naturalNumberInput((EditText) view));
         fieldNAgua = findViewById(R.id.fieldSPTCriarAgua);
         fieldNAgua.setOnFocusChangeListener((view, b) -> naturalNumberInput((EditText) view));
-
-        btnProxima = findViewById(R.id.btnSPTCriarProx);
-        btnProxima.setOnClickListener(view -> {
-            Intent intent = new Intent(SPTCriar.this, SPTCriar.class);
-            intent.putExtra("idProjeto", idProjeto);
-            intent.putExtra("idFuro", idFuro);
-            startActivity(intent);
-            finish();
-        });
-        btnFinalizar = findViewById(R.id.btnSPTCriarFim);
-        btnFinalizar.setOnClickListener(view -> finish());
     }
-    // todo: adicionar métodos de banco de dados e salvamento antes de finalizar activity
 
     private static float naturalNumberInput(EditText input){
         // método para tratar inputs numéricas como naturais positivas
