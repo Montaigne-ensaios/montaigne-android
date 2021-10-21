@@ -32,7 +32,8 @@ import java.util.Map;
 import java.util.TimeZone;
 
 public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeListener {
-    private long idProjeto;  // string recuperada da intent que diz o id do projeto
+    private long idProjeto = -1L;  // long recuperado da intent que diz o id do projeto
+    private long idFuro = -1L;
     private HashMap<String, EditText> fields = new HashMap<>();
     private ImageView imgLogoEmpresa, imgSalvar, imgVoltar;
 
@@ -68,7 +69,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
             Intent intent = new Intent(SPTCarimbo.this, SPTCriar.class);
             intent.putExtra("idProjeto", idProjeto);
-            intent.putExtra("idFuro", "criar");
+            intent.putExtra("idFuro", idFuro);
             startActivity(intent);
             // todo: adicionar id do novo projeto de acordo com as regras de geração de id
 
@@ -176,6 +177,10 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
                 if (sondagemDAO.salvar(minhaSondagem)) {
                     Toast.makeText( getApplicationContext(), "Sucesso ao salvar sondagem", Toast.LENGTH_LONG).show();
+
+                    // Pegando o id do primeiro furo do projeto
+                    idFuro = sondagemDAO.pesquisar( idProjeto ).get(0);
+
                 } else {
                     Toast.makeText(getApplicationContext(), "Erro ao salvar sondagem", Toast.LENGTH_LONG).show();
                 }

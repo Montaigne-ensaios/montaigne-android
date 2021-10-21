@@ -94,6 +94,27 @@ public class SondagemDAO {
     }
 
     @SuppressLint("Range")
+    public ArrayList<Long> pesquisar(long idSpt) {
+        ArrayList<Long> ids = new ArrayList<>();
+
+        // Comando
+        String sql = "SELECT id FROM " + DbHelper.TABELA_PROJETO_SPT + " WHERE id_spt = " + idSpt + ";";
+
+        // Execução
+        Cursor c = reader.rawQuery(sql, null);
+
+
+        while ( c.moveToNext() ) {
+            // Cada dado tem seu método get lá do objeto c
+            ids.add(c.getLong(c.getColumnIndex("id")));
+
+        }
+
+        return ids;
+    }
+
+
+    @SuppressLint("Range")
     @RequiresApi(api = Build.VERSION_CODES.O)
     public List<Sondagem> listar() {
         List<Sondagem> sondagens = new ArrayList<>();
