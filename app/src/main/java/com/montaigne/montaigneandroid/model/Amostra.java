@@ -1,15 +1,16 @@
 package com.montaigne.montaigneandroid.model;
 
 public class Amostra {
-    private long id;
+    private long id, idSondagem;
     private int golpes1, golpes2, golpes3, nspt;
 
     public Amostra() {
 
     }
 
-    public Amostra(long id, int golpes1, int golpes2, int golpes3, int nspt) {
+    public Amostra(long id, long idSondagem, int golpes1, int golpes2, int golpes3, int nspt) {
         this.id = id;
+        this.idSondagem = idSondagem;
         this.golpes1 = golpes1;
         this.golpes2 = golpes2;
         this.golpes3 = golpes3;
@@ -22,6 +23,14 @@ public class Amostra {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public long getIdSondagem() {
+        return idSondagem;
+    }
+
+    public void setIdSondagem(long idSondagem) {
+        this.idSondagem = idSondagem;
     }
 
     public int getGolpes1() {

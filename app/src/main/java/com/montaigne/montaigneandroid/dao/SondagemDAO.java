@@ -33,9 +33,11 @@ public class SondagemDAO {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public boolean salvar(Sondagem sondagem) {
         ContentValues cv = new ContentValues();
+        cv.put("id_spt", sondagem.getIdSpt());
         cv.put("numero", sondagem.getNumero());
         cv.put("nivel_dagua", sondagem.getNivelDAgua());
-        cv.put("cota", sondagem.getCota());
+        cv.put("nivel_furo", sondagem.getNivelFuro());
+        cv.put("nivel_referencia", sondagem.getNivelReferencia());
         cv.put("total_perfurado", sondagem.getTotalPerfurado());
         cv.put("coordenada", sondagem.getCoordenada());
         cv.put("data_inicio", sondagem.getDataInicio().atZone(ZoneId.systemDefault())
@@ -101,15 +103,17 @@ public class SondagemDAO {
 
         while ( c.moveToNext() ) {
             Long id = c.getLong( c.getColumnIndex("id")  );
+            Long idSpt = c.getLong( c.getColumnIndex("id_spt")  );
             int numero = c.getInt( c.getColumnIndex("numero") );
             float nivelDAgua = c.getFloat( c.getColumnIndex("nivel_dagua") );
-            float cota = c.getFloat( c.getColumnIndex("cota") );
+            float nivelFuro = c.getFloat( c.getColumnIndex("nivel_furo") );
+            float nivelReferencia = c.getFloat( c.getColumnIndex("nivel_referencia") );
             float totalPerfurado = c.getFloat( c.getColumnIndex("total_perfurado") );
             String coordenada = c.getString( c.getColumnIndex("coordenada") );
             Long data = c.getLong( c.getColumnIndex("data_inicio") );
             LocalDateTime dataInicio = LocalDateTime.ofInstant(Instant.ofEpochMilli(data), TimeZone.getDefault().toZoneId());
 
-            Sondagem sondagem = new Sondagem(id, numero, nivelDAgua, cota,
+            Sondagem sondagem = new Sondagem(id, idSpt, numero, nivelDAgua, nivelFuro, nivelReferencia,
                                             totalPerfurado, coordenada, dataInicio);
             sondagens.add(sondagem);
         }

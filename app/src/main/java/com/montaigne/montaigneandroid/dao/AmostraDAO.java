@@ -29,6 +29,7 @@ public class AmostraDAO {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public boolean salvar(Amostra amostra) {
         ContentValues cv = new ContentValues();
+        cv.put("id_sondagem", amostra.getIdSondagem());
         cv.put("golpes1", amostra.getGolpes1());
         cv.put("golpes2", amostra.getGolpes2());
         cv.put("golpes3", amostra.getGolpes3());
@@ -94,12 +95,13 @@ public class AmostraDAO {
 
         while ( c.moveToNext() ){
             Long id = c.getLong( c.getColumnIndex("id")  );
+            Long idSondagem = c.getLong( c.getColumnIndex("id_sondagem")  );
             int golpes1 = c.getInt( c.getColumnIndex("golpes1") );
             int golpes2 = c.getInt( c.getColumnIndex("golpes2") );
             int golpes3 = c.getInt( c.getColumnIndex("golpes3") );
             int nspt = c.getInt( c.getColumnIndex("nspt") );
 
-            Amostra amostra = new Amostra(id, golpes1, golpes2, golpes3, nspt);
+            Amostra amostra = new Amostra(id, idSondagem, golpes1, golpes2, golpes3, nspt);
 
             amostras.add(amostra);
         }

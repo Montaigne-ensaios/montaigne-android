@@ -1,8 +1,10 @@
 package com.montaigne.montaigneandroid.activity;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -10,15 +12,29 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.montaigne.montaigneandroid.R;
+import com.montaigne.montaigneandroid.dao.ProjetoDAO;
+import com.montaigne.montaigneandroid.model.Projeto;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TimeZone;
 
 public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeListener {
     private String idProjeto;  // string recuperada da intent que diz o id do projeto
     private HashMap<String, EditText> fields = new HashMap<>();
     private ImageView imgLogoEmpresa, imgSalvar, imgVoltar;
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +49,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private void setupButtons(){
         imgLogoEmpresa = findViewById(R.id.imgSPTCarimboImg);
         imgLogoEmpresa.setOnClickListener(v -> {
@@ -45,6 +62,8 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
         imgSalvar.setOnClickListener(v -> {
             // todo: implementar salvamento ou mudar o caráter deste botão
             if(idProjeto.equals("criar")) {
+                salvar();
+
                 Intent intent = new Intent(SPTCarimbo.this, SPTCriar.class);
                 intent.putExtra("idProjeto", idProjeto);
                 intent.putExtra("idFuro", "criar");
@@ -68,7 +87,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
         fields.put("Empresa", (EditText) findViewById(R.id.fieldSPTCarimboEmpresa));
         fields.put("Tel", (EditText) findViewById(R.id.fieldSPTCarimboTel));
         fields.put("Tecnico", (EditText) findViewById(R.id.fieldSPTCarimboTecnico));
-        fields.put("Clinte", (EditText) findViewById(R.id.fieldSPTCarimboCli));
+        fields.put("Cliente", (EditText) findViewById(R.id.fieldSPTCarimboCli));
         fields.put("NFuros", (EditText) findViewById(R.id.fieldSPTCarimboNFuros));
         fields.put("Local", (EditText) findViewById(R.id.fieldSPTCarimboNome));
 
@@ -86,5 +105,65 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
             Toast.makeText(this, "Desfoque de View detectado",
                     Toast.LENGTH_SHORT).show();
         }
+    }
+
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void salvar() {
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+        //DateTimeFormatter parser = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+
+        // Capturando dados
+        String nome = fields.get("Nome").getText().toString();
+        String cliente = fields.get("Cliente").getText().toString();
+        String empresa = fields.get("Empresa").getText().toString();
+        String telefone = fields.get("Tel").getText().toString();
+        String tecnico = fields.get("Tecnico").getText().toString();
+        String endereco = fields.get("Local").getText().toString();
+
+        int nfuros = Integer.parseInt(fields.get("NFuros").getText().toString());
+        String dataInicio = fields.get("Inicio").getText().toString();
+
+
+        // Identificando dados obrigatórios e salvando
+        if (!nome.equals("")) {
+            // Criando objeto
+            Projeto meuProjeto = new Projeto();
+
+            meuProjeto.setNome(nome);
+            meuProjeto.setCliente(cliente);
+            meuProjeto.setEmpresa(empresa);
+            meuProjeto.setTelefone(telefone);
+            meuProjeto.setTecnicoResponsavel(tecnico);
+            meuProjeto.setEndereco(endereco);
+            meuProjeto.setNumeroFuros(nfuros);
+
+            // Capturando tempo atual ou o dado pelo usuário
+
+            Date tempo = new Date();
+
+            try {
+                tempo = formato.parse(dataInicio);
+
+            } catch (Exception e) {
+                Long milissegundos = System.currentTimeMillis();
+            }
+
+            meuProjeto.setDataInicio(tempo);
+
+            // Executa Salvar
+            ProjetoDAO projetoDAO = new ProjetoDAO(getApplicationContext());
+
+            if (projetoDAO.salvar(meuProjeto)) {
+                Toast.makeText( getApplicationContext(), "Sucesso ao salvar projeto", Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(getApplicationContext(), "Erro ao salvar projeto", Toast.LENGTH_LONG).show();
+            }
+
+        } else {
+            // Mensagem de aviso sobre o nome
+            Toast.makeText(getApplicationContext(), "Insira um nome", Toast.LENGTH_LONG).show();
+        }
+
     }
 }

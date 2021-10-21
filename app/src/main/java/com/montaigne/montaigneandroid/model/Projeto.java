@@ -1,25 +1,28 @@
 package com.montaigne.montaigneandroid.model;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Projeto implements Serializable {
     private Long id;
-    private String nome;
-    private String endereco, telefone, tecnico, responsavel;
-    private LocalDateTime dataInicio;
+    private String nome, cliente, empresa, telefone, tecnicoResponsavel, endereco;
+    private int numeroFuros;
+    private Date dataInicio;
 
-    // Perguntar ao professor se adiciona o objeto ou coloca o id
     public Projeto() {
     }
 
-    public Projeto(Long id, String nome, String endereco, String telefone, String tecnico, String responsavel, LocalDateTime dataInicio) {
+    public Projeto(Long id, String nome, String cliente, String empresa,
+                   String telefone, String tecnicoResponsavel, String endereco, int numeroFuros,
+                   Date dataInicio) {
         this.id = id;
         this.nome = nome;
-        this.endereco = endereco;
+        this.cliente = cliente;
+        this.empresa = empresa;
         this.telefone = telefone;
-        this.tecnico = tecnico;
-        this.responsavel = responsavel;
+        this.tecnicoResponsavel = tecnicoResponsavel;
+        this.endereco = endereco;
+        this.numeroFuros = numeroFuros;
         this.dataInicio = dataInicio;
     }
 
@@ -39,12 +42,20 @@ public class Projeto implements Serializable {
         this.nome = nome;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public String getCliente() {
+        return cliente;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
+    }
+
+    public String getEmpresa() {
+        return empresa;
+    }
+
+    public void setEmpresa(String empresa) {
+        this.empresa = empresa;
     }
 
     public String getTelefone() {
@@ -55,27 +66,35 @@ public class Projeto implements Serializable {
         this.telefone = telefone;
     }
 
-    public String getTecnico() {
-        return tecnico;
+    public String getTecnicoResponsavel() {
+        return tecnicoResponsavel;
     }
 
-    public void setTecnico(String tecnico) {
-        this.tecnico = tecnico;
+    public void setTecnicoResponsavel(String tecnicoResponsavel) {
+        this.tecnicoResponsavel = tecnicoResponsavel;
     }
 
-    public String getResponsavel() {
-        return responsavel;
+    public String getEndereco() {
+        return endereco;
     }
 
-    public void setResponsavel(String responsavel) {
-        this.responsavel = responsavel;
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
-    public LocalDateTime getDataInicio() {
+    public int getNumeroFuros() {
+        return numeroFuros;
+    }
+
+    public void setNumeroFuros(int numeroFuros) {
+        this.numeroFuros = numeroFuros;
+    }
+
+    public Date getDataInicio() {
         return dataInicio;
     }
 
-    public void setDataInicio(LocalDateTime dataInicio) {
+    public void setDataInicio(Date dataInicio) {
         this.dataInicio = dataInicio;
     }
 }

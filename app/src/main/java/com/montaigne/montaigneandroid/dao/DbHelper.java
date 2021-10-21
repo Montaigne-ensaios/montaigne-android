@@ -61,11 +61,13 @@ public class DbHelper extends SQLiteOpenHelper {
                 "CREATE TABLE IF NOT EXISTS " + TABELA_PROJETO_SPT + " (" +
                         "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                         "nome TEXT NOT NULL UNIQUE," +
-                        "endereco TEXT NOT NULL," +
-                        "responsavel TEXT," +
-                        "técnico_sondagem TEXT," +
-                        "contato INTEGER," +
-                        "data_inicio LONG" +
+                        "cliente TEXT," +
+                        "empresa TEXT," +
+                        "telefone TEXT," +
+                        "tecnico_responsavel TEXT," +
+                        "endereco TEXT," +
+                        "numero_furos INTEGER," +
+                        "data_inicio INTEGER" +
                         ");";
 
         criarTabelaSQLite(db, TABELA_PROJETO_SPT, sql);
@@ -78,7 +80,8 @@ public class DbHelper extends SQLiteOpenHelper {
                         "id_spt INTEGER," +
                         "numero INTEGER," +
                         "nivel_dagua DECIMAL(5, 2)," +
-                        "cota DECIMAL(5, 2)," +
+                        "nivel_furo DECIMAL(5, 2)," +
+                        "nivel_referencia DECIMAL(5, 2)," +
                         "total_perfurado DECIMAL(5, 2)," +
                         "coordenada TEXT," +
                         "data_inicio LONG," +

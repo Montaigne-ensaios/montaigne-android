@@ -3,10 +3,11 @@ package com.montaigne.montaigneandroid.model;
 import java.time.LocalDateTime;
 
 public class Sondagem {
-    private Long id;
+    private Long id, idSpt;
     private int numero;
     private float nivelDAgua;
-    private float cota;
+    private float nivelFuro;
+    private float nivelReferencia;
     private float totalPerfurado;
     private String coordenada;
     private LocalDateTime dataInicio;
@@ -15,13 +16,14 @@ public class Sondagem {
 
     }
 
-    public Sondagem(Long id, int numero, float nivelDAgua,
-                    float cota, float totalPerfurado,
-                    String coordenada, LocalDateTime dataInicio) {
+    public Sondagem(Long id, Long id_Spt, int numero, float nivelDAgua, float nivelFuro, float nivelReferencia,
+                    float totalPerfurado, String coordenada, LocalDateTime dataInicio) {
         this.id = id;
+        this.idSpt = id;
         this.numero = numero;
         this.nivelDAgua = nivelDAgua;
-        this.cota = cota;
+        this.nivelFuro = nivelFuro;
+        this.nivelReferencia = nivelReferencia;
         this.totalPerfurado = totalPerfurado;
         this.coordenada = coordenada;
         this.dataInicio = dataInicio;
@@ -33,6 +35,14 @@ public class Sondagem {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getIdSpt() {
+        return idSpt;
+    }
+
+    public void setIdSpt(Long idSpt) {
+        this.idSpt = idSpt;
     }
 
     public int getNumero() {
@@ -51,12 +61,20 @@ public class Sondagem {
         this.nivelDAgua = nivelDAgua;
     }
 
-    public float getCota() {
-        return cota;
+    public float getNivelFuro() {
+        return nivelFuro;
     }
 
-    public void setCota(float cota) {
-        this.cota = cota;
+    public void setNivelFuro(float nivelFuro) {
+        this.nivelFuro = nivelFuro;
+    }
+
+    public float getNivelReferencia() {
+        return nivelReferencia;
+    }
+
+    public void setNivelReferencia(float nivelReferencia) {
+        this.nivelReferencia = nivelReferencia;
     }
 
     public float getTotalPerfurado() {

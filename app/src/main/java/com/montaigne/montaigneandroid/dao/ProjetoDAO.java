@@ -16,6 +16,7 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
 
@@ -33,12 +34,13 @@ public class ProjetoDAO {
     public boolean salvar(Projeto projeto) {
         ContentValues cv = new ContentValues();
         cv.put("nome", projeto.getNome());
-        cv.put("endereco", projeto.getEndereco());
+        cv.put("cliente", projeto.getCliente());
+        cv.put("empresa", projeto.getEmpresa());
         cv.put("telefone", projeto.getTelefone());
-        cv.put("tecnico", projeto.getTecnico());
-        cv.put("responsavel", projeto.getResponsavel());
-        cv.put("data_inicio", projeto.getDataInicio().atZone(ZoneId.systemDefault())
-                                                        .toInstant().toEpochMilli());
+        cv.put("tecnico_responsavel", projeto.getTecnicoResponsavel());
+        cv.put("endereco", projeto.getEndereco());
+        cv.put("numero_furos", projeto.getNumeroFuros());
+        cv.put("data_inicio", projeto.getDataInicio().getTime());
 
         try {
             long num = writer.insert(DbHelper.TABELA_PROJETO_SPT, null, cv);
@@ -107,15 +109,17 @@ public class ProjetoDAO {
             // Cada dado tem seu método get lá do objeto c
             Long id = c.getLong( c.getColumnIndex("id")  );
             String nome = c.getString( c.getColumnIndex("nome") );
-            String endereco = c.getString( c.getColumnIndex("endereco") );
+            String cliente = c.getString( c.getColumnIndex("cliente") );
+            String empresa = c.getString( c.getColumnIndex("empresa") );
             String telefone = c.getString( c.getColumnIndex("telefone") );
-            String tecnico = c.getString( c.getColumnIndex("tecnico") );
-            String responsavel = c.getString( c.getColumnIndex("responsavel") );
+            String tecnicoResponsavel = c.getString( c.getColumnIndex("tecnicoResponsavel") );
+            String endereco = c.getString( c.getColumnIndex("endereco") );
+            int numeroFuros = c.getInt( c.getColumnIndex("numero_furos") );
             Long data = c.getLong( c.getColumnIndex("data_inicio") );
-            LocalDateTime dataInicio = LocalDateTime.ofInstant(Instant.ofEpochMilli(data), TimeZone.getDefault().toZoneId());
+            Date dataInicio = Date.from(Instant.ofEpochMilli(data));
 
-            Projeto projeto = new Projeto(id, nome, endereco, telefone, tecnico, responsavel, dataInicio);
-
+            Projeto projeto = new Projeto(id, nome, cliente, empresa, telefone, tecnicoResponsavel,
+                                            endereco, numeroFuros, dataInicio);
             projetos.add(projeto);
         }
 
