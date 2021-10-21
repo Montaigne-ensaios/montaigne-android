@@ -1,6 +1,7 @@
 package com.montaigne.montaigneandroid.model;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Sondagem {
     private Long id, idSpt;
@@ -10,14 +11,14 @@ public class Sondagem {
     private float nivelReferencia;
     private float totalPerfurado;
     private String coordenada;
-    private LocalDateTime dataInicio;
+    private Date dataInicio;
 
     public Sondagem(){
 
     }
 
     public Sondagem(Long id, Long id_Spt, int numero, float nivelDAgua, float nivelFuro, float nivelReferencia,
-                    float totalPerfurado, String coordenada, LocalDateTime dataInicio) {
+                    float totalPerfurado, String coordenada, Date dataInicio) {
         this.id = id;
         this.idSpt = id;
         this.numero = numero;
@@ -93,11 +94,11 @@ public class Sondagem {
         this.coordenada = coordenada;
     }
 
-    public LocalDateTime getDataInicio() {
+    public Date getDataInicio() {
         return dataInicio;
     }
 
-    public void setDataInicio(LocalDateTime dataInicio) {
+    public void setDataInicio(Date dataInicio) {
         this.dataInicio = dataInicio;
     }
 }

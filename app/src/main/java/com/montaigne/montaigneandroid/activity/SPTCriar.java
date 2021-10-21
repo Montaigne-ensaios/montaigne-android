@@ -1,14 +1,22 @@
 package com.montaigne.montaigneandroid.activity;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.montaigne.montaigneandroid.R;
+import com.montaigne.montaigneandroid.dao.ProjetoDAO;
+import com.montaigne.montaigneandroid.model.Projeto;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class  SPTCriar extends AppCompatActivity {
     private String idProjeto, idFuro, nCamada;
@@ -47,6 +55,8 @@ public class  SPTCriar extends AppCompatActivity {
 
         btnProxima = findViewById(R.id.btnSPTCriarProx);
         btnProxima.setOnClickListener(v -> {
+            salvar();
+
             Intent intent = new Intent(SPTCriar.this, SPTCriar.class);
             intent.putExtra("idProjeto", idProjeto);
             intent.putExtra("idFuro", idFuro);
@@ -144,5 +154,12 @@ public class  SPTCriar extends AppCompatActivity {
             // finalmente, retorna o valor
             return value;
         }
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void salvar() {
+        // Capturando dados
+
+
     }
 }

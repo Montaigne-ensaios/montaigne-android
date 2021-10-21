@@ -13,7 +13,9 @@ import android.widget.Toast;
 
 import com.montaigne.montaigneandroid.R;
 import com.montaigne.montaigneandroid.dao.ProjetoDAO;
+import com.montaigne.montaigneandroid.dao.SondagemDAO;
 import com.montaigne.montaigneandroid.model.Projeto;
+import com.montaigne.montaigneandroid.model.Sondagem;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -30,7 +32,7 @@ import java.util.Map;
 import java.util.TimeZone;
 
 public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeListener {
-    private String idProjeto;  // string recuperada da intent que diz o id do projeto
+    private long idProjeto;  // string recuperada da intent que diz o id do projeto
     private HashMap<String, EditText> fields = new HashMap<>();
     private ImageView imgLogoEmpresa, imgSalvar, imgVoltar;
 
@@ -41,7 +43,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
         setContentView(R.layout.activity_spt_carimbo);
 
         // recupera dados da intent
-        idProjeto = getIntent().getStringExtra("idProjeto");
+        idProjeto = getIntent().getLongExtra("idProjeto", -1);
 
         setupButtons();
 
@@ -61,15 +63,15 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
         imgSalvar = findViewById(R.id.imgSPTCarimboSalvar);
         imgSalvar.setOnClickListener(v -> {
             // todo: implementar salvamento ou mudar o caráter deste botão
-            if(idProjeto.equals("criar")) {
-                salvar();
 
-                Intent intent = new Intent(SPTCarimbo.this, SPTCriar.class);
-                intent.putExtra("idProjeto", idProjeto);
-                intent.putExtra("idFuro", "criar");
-                startActivity(intent);
-                // todo: adicionar id do novo projeto de acordo com as regras de geração de id
-            }
+            salvar();
+
+            Intent intent = new Intent(SPTCarimbo.this, SPTCriar.class);
+            intent.putExtra("idProjeto", idProjeto);
+            intent.putExtra("idFuro", "criar");
+            startActivity(intent);
+            // todo: adicionar id do novo projeto de acordo com as regras de geração de id
+
             finish();
             // abre a activity de criação do ensaio e fecha essa
         });
@@ -99,19 +101,20 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
     @Override
     public void onFocusChange(View view, boolean b) {
+        /*
         if(!b && !idProjeto.equals("criar")) {
             // salva as alterações quando um field desfoca, se este não for um projeto novo
             // todo: implementar funções da base de dados para salvamentos
             Toast.makeText(this, "Desfoque de View detectado",
                     Toast.LENGTH_SHORT).show();
         }
+         */
     }
 
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void salvar() {
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
-        //DateTimeFormatter parser = DateTimeFormatter.ofPattern("dd.MM.yyyy");
 
         // Capturando dados
         String nome = fields.get("Nome").getText().toString();
@@ -138,8 +141,8 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
             meuProjeto.setEndereco(endereco);
             meuProjeto.setNumeroFuros(nfuros);
 
-            // Capturando tempo atual ou o dado pelo usuário
 
+            // Capturando tempo atual ou o dado pelo usuário
             Date tempo = new Date();
 
             try {
@@ -156,14 +159,34 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
             if (projetoDAO.salvar(meuProjeto)) {
                 Toast.makeText( getApplicationContext(), "Sucesso ao salvar projeto", Toast.LENGTH_LONG).show();
+
+                idProjeto = projetoDAO.pesquisar(meuProjeto.getNome());
+
+                Sondagem minhaSondagem = new Sondagem();
+                minhaSondagem.setIdSpt( idProjeto );
+                minhaSondagem.setNumero(1);
+                minhaSondagem.setNivelDAgua(0);
+                minhaSondagem.setNivelFuro(0);
+                minhaSondagem.setNivelReferencia(0);
+                minhaSondagem.setTotalPerfurado(0);
+                minhaSondagem.setCoordenada("x");
+                minhaSondagem.setDataInicio( meuProjeto.getDataInicio() );
+
+                SondagemDAO sondagemDAO = new SondagemDAO(getApplicationContext());
+
+                if (sondagemDAO.salvar(minhaSondagem)) {
+                    Toast.makeText( getApplicationContext(), "Sucesso ao salvar sondagem", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Erro ao salvar sondagem", Toast.LENGTH_LONG).show();
+                }
             } else {
                 Toast.makeText(getApplicationContext(), "Erro ao salvar projeto", Toast.LENGTH_LONG).show();
             }
+
 
         } else {
             // Mensagem de aviso sobre o nome
             Toast.makeText(getApplicationContext(), "Insira um nome", Toast.LENGTH_LONG).show();
         }
-
     }
 }

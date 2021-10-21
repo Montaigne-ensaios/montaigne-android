@@ -17,6 +17,7 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
 
@@ -40,8 +41,7 @@ public class SondagemDAO {
         cv.put("nivel_referencia", sondagem.getNivelReferencia());
         cv.put("total_perfurado", sondagem.getTotalPerfurado());
         cv.put("coordenada", sondagem.getCoordenada());
-        cv.put("data_inicio", sondagem.getDataInicio().atZone(ZoneId.systemDefault())
-                                                        .toInstant().toEpochMilli());
+        cv.put("data_inicio", sondagem.getDataInicio().getTime());
 
         try {
             // Não registra na tabela se não der certo
@@ -111,7 +111,7 @@ public class SondagemDAO {
             float totalPerfurado = c.getFloat( c.getColumnIndex("total_perfurado") );
             String coordenada = c.getString( c.getColumnIndex("coordenada") );
             Long data = c.getLong( c.getColumnIndex("data_inicio") );
-            LocalDateTime dataInicio = LocalDateTime.ofInstant(Instant.ofEpochMilli(data), TimeZone.getDefault().toZoneId());
+            Date dataInicio = Date.from(Instant.ofEpochMilli(data));
 
             Sondagem sondagem = new Sondagem(id, idSpt, numero, nivelDAgua, nivelFuro, nivelReferencia,
                                             totalPerfurado, coordenada, dataInicio);

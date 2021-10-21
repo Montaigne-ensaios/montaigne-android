@@ -92,6 +92,24 @@ public class ProjetoDAO {
     }
 
     @SuppressLint("Range")
+    public long pesquisar(String nome){
+        Long id = -1L;
+
+        // Comando
+        String sql = "SELECT id FROM " + DbHelper.TABELA_PROJETO_SPT + " WHERE nome = " + nome + ";";
+
+        // Execução
+        Cursor c = reader.rawQuery(sql, null);
+
+        while ( c.moveToNext() ) {
+            // Cada dado tem seu método get lá do objeto c
+            id = c.getLong(c.getColumnIndex("id"));
+        }
+
+        return id;
+    }
+
+    @SuppressLint("Range")
     @RequiresApi(api = Build.VERSION_CODES.O)
     public List<Projeto> listar() {
         // Método que obtem os dados
