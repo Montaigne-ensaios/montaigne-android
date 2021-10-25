@@ -12,14 +12,16 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.montaigne.montaigneandroid.R;
+import com.montaigne.montaigneandroid.dao.AmostraDAO;
 import com.montaigne.montaigneandroid.dao.ProjetoDAO;
+import com.montaigne.montaigneandroid.model.Amostra;
 import com.montaigne.montaigneandroid.model.Projeto;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class  SPTCriar extends AppCompatActivity {
-    private String idProjeto, idFuro, nCamada;
+    private long idProjeto, idFuro, nCamada;
     // idProjeto, idFuro = recuperada do intent; nCamada = ultima camada do furo + 1 (criar nova)
     private EditText fieldNAgua, fieldCota;
     private Button btnProxima, btnFinalizar;
@@ -27,20 +29,22 @@ public class  SPTCriar extends AppCompatActivity {
     private EditText[] fieldsGolpes, fieldsPenetras;
     private ImageView[] btnsMenos, btnsMais;
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spt_criar);
 
         // recupera dados do intent
-        idProjeto = getIntent().getStringExtra("idProjeto");
-        idFuro = getIntent().getStringExtra("idFuro");
+        idProjeto = getIntent().getLongExtra("idProjeto", 1);
+        idFuro = getIntent().getLongExtra("idFuro", 1);
 
         setupButtons();
 
         setupFields();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private void setupButtons(){
         imgHome = findViewById(R.id.imgSPTCriarHome);
         imgHome.setOnClickListener(v -> {
@@ -159,7 +163,33 @@ public class  SPTCriar extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void salvar() {
         // Capturando dados
+        long idSondagem = idFuro;
+        int golpes1 = Integer.parseInt(String.valueOf(fieldsGolpes[0].getText()));
+        int golpes2 = Integer.parseInt(String.valueOf(fieldsGolpes[1].getText()));
+        int golpes3 = Integer.parseInt(String.valueOf(fieldsGolpes[2].getText()));
+
+        int nspt;
+        if (golpes3 != 0) {
+            nspt = golpes2 + golpes3;
+        } else {
+            nspt = golpes1 + golpes2;
+        }
+
+        Amostra amostra = new Amostra();
+        amostra.setIdSondagem(idSondagem);
+        amostra.setGolpes1(golpes1);
+        amostra.setGolpes2(golpes2);
+        amostra.setGolpes3(golpes3);
+        amostra.setNspt(nspt);
 
 
+        // Salvando
+        AmostraDAO amostraDAO = new AmostraDAO(getApplicationContext());
+
+        if(amostraDAO.salvar(amostra)) {
+            Toast.makeText( getApplicationContext(), "Sucesso ao salvar amostra", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(getApplicationContext(), "Erro ao salvar amostra", Toast.LENGTH_LONG).show();
+        }
     }
 }

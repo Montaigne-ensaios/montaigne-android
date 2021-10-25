@@ -155,7 +155,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
             meuProjeto.setDataInicio(tempo);
 
-            // Executa Salvar
+            // Salvando
             ProjetoDAO projetoDAO = new ProjetoDAO(getApplicationContext());
 
             if (projetoDAO.salvar(meuProjeto)) {

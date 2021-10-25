@@ -14,13 +14,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.montaigne.montaigneandroid.R;
 import com.montaigne.montaigneandroid.activity.SPTProjeto;
+import com.montaigne.montaigneandroid.model.Projeto;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SPTGerenciar extends RecyclerView.Adapter<SPTGerenciar.ViewHolder>{
     // em caso de dúvidas, ver comentários do adapeter Home Categorias
     private Context context;
     private ArrayList<String> nomes, descs, ids;  // ids são os ids de cada projeto
+    private List<Projeto> projetos;
 
     public SPTGerenciar(Context context){
         this.context= context;
@@ -28,6 +31,16 @@ public class SPTGerenciar extends RecyclerView.Adapter<SPTGerenciar.ViewHolder>{
         descs = new ArrayList<>();
         ids = new ArrayList<>();
     }
+
+    public SPTGerenciar(Context context, List<Projeto> projetos){
+        this.context= context;
+        nomes = new ArrayList<>();
+        descs = new ArrayList<>();
+        ids = new ArrayList<>();
+
+        this.projetos = projetos;
+    }
+
 
     @NonNull
     @Override
@@ -39,6 +52,7 @@ public class SPTGerenciar extends RecyclerView.Adapter<SPTGerenciar.ViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        /*
         holder.txtNome.setText(nomes.get(position));
         holder.txtDesc.setText(descs.get(position));
 
@@ -50,12 +64,30 @@ public class SPTGerenciar extends RecyclerView.Adapter<SPTGerenciar.ViewHolder>{
                 // todo: alterar este listener com o gerenciamento de seleções
             }
         );
+         */
+
+        holder.txtNome.setText(projetos.get(position).getNome());
+        holder.txtDesc.setText(projetos.get(position).getEndereco());
+
+        holder.parent.setOnClickListener(v -> {
+                    Intent intent = new Intent(context, SPTProjeto.class);
+                    intent.putExtra("idProjeto", projetos.get(position).getId());
+                    // redireciona para a edição do ensaio, passando o id, sem fechar a activity
+                    context.startActivity(intent);
+                    // todo: alterar este listener com o gerenciamento de seleções
+                }
+        );
 
         // todo: gerenciamento de seleções (criar issue)
+
+
     }
 
     @Override
-    public int getItemCount() { return nomes.size();}
+    public int getItemCount() {
+        //return nomes.size();
+        return projetos.size();
+        }
 
     public void addEnsaio(String nome, String desc, String idProjeto){
         nomes.add(nome);

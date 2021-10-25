@@ -11,9 +11,7 @@ public class DbHelper extends SQLiteOpenHelper {
     public static int VERSION = 1;
     public static String NOME_DB = "db_montaigne";
     public static String TABELA_PROJETO_SPT = "spt";
-    public static String TABELA_PROJETO_SONDAGEM_SPT = "relatorio"; // Um projeto é "relatado" por uma ou várias sondagens
     public static String TABELA_SONDAGEM_SPT = "sondagem";
-    public static String TABELA_SONDAGEM_AMOSTRA_SPT = "metragem"; // Uma sondagem possui uma ou váias "metragens" de amostras
     public static String TABELA_AMOSTRA_SPT = "amostra";
 
     public DbHelper(@Nullable Context context) {
@@ -38,15 +36,11 @@ public class DbHelper extends SQLiteOpenHelper {
         String dropProjetoSPT = "DROP TABLE IF EXISTS " + TABELA_PROJETO_SPT + " ; ";
         String dropSondagemSPT = "DROP TABLE IF EXISTS " + TABELA_SONDAGEM_SPT + " ; ";
         String dropAmostraSPT = "DROP TABLE IF EXISTS " + TABELA_AMOSTRA_SPT + " ; ";
-        String dropProjetoSondagemSPT = "DROP TABLE IF EXISTS " + TABELA_PROJETO_SONDAGEM_SPT + " ; ";
-        String dropSondagemAmostraSPT = "DROP TABLE IF EXISTS " + TABELA_SONDAGEM_AMOSTRA_SPT + " ; ";
 
         try {
             db.execSQL( dropProjetoSPT );
             db.execSQL( dropSondagemSPT );
             db.execSQL( dropAmostraSPT );
-            db.execSQL( dropProjetoSondagemSPT );
-            db.execSQL( dropSondagemAmostraSPT );
 
             onCreate( db );
             Log.i("INFO DB", "Sucesso ao atualizar app");

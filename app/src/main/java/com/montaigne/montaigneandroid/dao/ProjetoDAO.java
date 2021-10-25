@@ -46,6 +46,7 @@ public class ProjetoDAO {
             long num = writer.insert(DbHelper.TABELA_PROJETO_SPT, null, cv);
 
             if(num != -1) {
+                Log.i("meuNome", projeto.getNome());
                 Log.i("INFO", "Sucesso ao salvar dado na tabela, cod: " + num);
             } else {
                 throw new Exception("entrada invalida ou tabela repetida.");
@@ -96,10 +97,10 @@ public class ProjetoDAO {
         Long id = -1L;
 
         // Comando
-        String sql = "SELECT id FROM " + DbHelper.TABELA_PROJETO_SPT + " WHERE nome = " + nome + ";";
+        String sql = "SELECT id FROM " + DbHelper.TABELA_PROJETO_SPT + " WHERE nome ==?";
 
         // Execução
-        Cursor c = reader.rawQuery(sql, null);
+        Cursor c = reader.rawQuery(sql, new String[]{nome});
 
         while ( c.moveToNext() ) {
             // Cada dado tem seu método get lá do objeto c
@@ -130,7 +131,7 @@ public class ProjetoDAO {
             String cliente = c.getString( c.getColumnIndex("cliente") );
             String empresa = c.getString( c.getColumnIndex("empresa") );
             String telefone = c.getString( c.getColumnIndex("telefone") );
-            String tecnicoResponsavel = c.getString( c.getColumnIndex("tecnicoResponsavel") );
+            String tecnicoResponsavel = c.getString( c.getColumnIndex("tecnico_responsavel") );
             String endereco = c.getString( c.getColumnIndex("endereco") );
             int numeroFuros = c.getInt( c.getColumnIndex("numero_furos") );
             Long data = c.getLong( c.getColumnIndex("data_inicio") );

@@ -98,7 +98,7 @@ public class SondagemDAO {
         ArrayList<Long> ids = new ArrayList<>();
 
         // Comando
-        String sql = "SELECT id FROM " + DbHelper.TABELA_PROJETO_SPT + " WHERE id_spt = " + idSpt + ";";
+        String sql = "SELECT id FROM " + DbHelper.TABELA_SONDAGEM_SPT + " WHERE id_spt == " + idSpt + ";";
 
         // Execução
         Cursor c = reader.rawQuery(sql, null);

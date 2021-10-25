@@ -1,21 +1,29 @@
 package com.montaigne.montaigneandroid.activity;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.ImageView;
 
 import com.montaigne.montaigneandroid.R;
 import com.montaigne.montaigneandroid.adapter.SPTGerenciar;
+import com.montaigne.montaigneandroid.dao.ProjetoDAO;
+import com.montaigne.montaigneandroid.model.Projeto;
+
+import java.util.List;
 
 public class SPTGerenciarProjs extends AppCompatActivity {
     private RecyclerView recyclerView;
     private SPTGerenciar adapter;
     private ImageView imgCriar, imgVoltar;
+    private List<Projeto> projetos;
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +31,11 @@ public class SPTGerenciarProjs extends AppCompatActivity {
 
         setupButtons();
 
+        ProjetoDAO projetoDAO = new ProjetoDAO(getApplicationContext());
+        projetos = projetoDAO.listar();
+
         // cria o adaptador e seta o recycler
-        adapter = new SPTGerenciar(this);
+        adapter = new SPTGerenciar(this, projetos);
         recyclerView = findViewById(R.id.recyclerSPTGerenciar);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
