@@ -94,23 +94,33 @@ public class SondagemDAO {
     }
 
     @SuppressLint("Range")
-    public ArrayList<Long> pesquisar(long idSpt) {
-        ArrayList<Long> ids = new ArrayList<>();
+    public List<Sondagem> pesquisar(long idSpt) {
+        List<Sondagem> sondagens = new ArrayList<>();
 
         // Comando
-        String sql = "SELECT id FROM " + DbHelper.TABELA_SONDAGEM_SPT + " WHERE id_spt == " + idSpt + ";";
+        String sql = "SELECT * FROM " + DbHelper.TABELA_SONDAGEM_SPT + " WHERE id_spt ==?;";
 
         // Execução
-        Cursor c = reader.rawQuery(sql, null);
-
+        Cursor c = reader.rawQuery(sql, new String[]{ String.valueOf(idSpt) });
 
         while ( c.moveToNext() ) {
-            // Cada dado tem seu método get lá do objeto c
-            ids.add(c.getLong(c.getColumnIndex("id")));
+            long id = c.getLong( c.getColumnIndex("id")  );
+            int numero = c.getInt( c.getColumnIndex("numero") );
+            float nivelDAgua = c.getFloat( c.getColumnIndex("nivel_dagua") );
+            float nivelFuro = c.getFloat( c.getColumnIndex("nivel_furo") );
+            float nivelReferencia = c.getFloat( c.getColumnIndex("nivel_referencia") );
+            float totalPerfurado = c.getFloat( c.getColumnIndex("total_perfurado") );
+            String coordenada = c.getString( c.getColumnIndex("coordenada") );
 
+            long data = c.getLong( c.getColumnIndex("data_inicio") );
+            Date dataInicio = Date.from(Instant.ofEpochMilli(data));
+
+            Sondagem sondagem = new Sondagem(id, idSpt, numero, nivelDAgua, nivelFuro, nivelReferencia,
+                    totalPerfurado, coordenada, dataInicio);
+            sondagens.add(sondagem);
         }
 
-        return ids;
+        return sondagens;
     }
 
 
@@ -123,15 +133,16 @@ public class SondagemDAO {
         Cursor c = reader.rawQuery(sql, null);
 
         while ( c.moveToNext() ) {
-            Long id = c.getLong( c.getColumnIndex("id")  );
-            Long idSpt = c.getLong( c.getColumnIndex("id_spt")  );
+            long id = c.getLong( c.getColumnIndex("id")  );
+            long idSpt = c.getLong( c.getColumnIndex("id_spt")  );
             int numero = c.getInt( c.getColumnIndex("numero") );
             float nivelDAgua = c.getFloat( c.getColumnIndex("nivel_dagua") );
             float nivelFuro = c.getFloat( c.getColumnIndex("nivel_furo") );
             float nivelReferencia = c.getFloat( c.getColumnIndex("nivel_referencia") );
             float totalPerfurado = c.getFloat( c.getColumnIndex("total_perfurado") );
             String coordenada = c.getString( c.getColumnIndex("coordenada") );
-            Long data = c.getLong( c.getColumnIndex("data_inicio") );
+
+            long data = c.getLong( c.getColumnIndex("data_inicio") );
             Date dataInicio = Date.from(Instant.ofEpochMilli(data));
 
             Sondagem sondagem = new Sondagem(id, idSpt, numero, nivelDAgua, nivelFuro, nivelReferencia,

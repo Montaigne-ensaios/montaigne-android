@@ -11,11 +11,19 @@ import android.widget.ImageView;
 
 import com.montaigne.montaigneandroid.R;
 import com.montaigne.montaigneandroid.adapter.SPTFuros;
+import com.montaigne.montaigneandroid.dao.ProjetoDAO;
+import com.montaigne.montaigneandroid.dao.SondagemDAO;
+import com.montaigne.montaigneandroid.model.Projeto;
+import com.montaigne.montaigneandroid.model.Sondagem;
+
+import java.util.List;
 
 public class SPTProjeto extends AppCompatActivity {
+    private long idProjeto;
+    private List<Sondagem> sondagens;
+
     private RecyclerView recyclerView;
     private SPTFuros adapter;
-    private String idProjeto;
     private ImageView imgHome, imgBack, imgNFuro;
     private Button btnCarimbo;
 
@@ -24,18 +32,23 @@ public class SPTProjeto extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spt_projeto);
 
-        idProjeto = getIntent().getStringExtra("idProjeto");
+        idProjeto = getIntent().getLongExtra("idProjeto", 0);
+
+        SondagemDAO sondagemDAO = new SondagemDAO(getApplicationContext());
+        sondagens = sondagemDAO.pesquisar(idProjeto);
 
         setupButtons();
 
-        adapter = new SPTFuros(this, idProjeto);
+        adapter = new SPTFuros(this, idProjeto, sondagens);
         recyclerView = findViewById(R.id.recyclerSPTProjeto);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        /*
         adapter.addEnsaio("Um ensaio muito louco", "id");
         adapter.addEnsaio("Um ensaio da pesada", "id2");
         adapter.addEnsaio("Ok está na hora de eu ir dormir mesmo", "id2");
+         */
 
     }
 

@@ -13,21 +13,28 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.montaigne.montaigneandroid.R;
 import com.montaigne.montaigneandroid.activity.SPTEditar;
+import com.montaigne.montaigneandroid.model.Sondagem;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SPTFuros extends RecyclerView.Adapter<SPTFuros.ViewHolder> {
     // em caso de dúvidas consultar comentários de HomeCategorias
     private Context context;
-    private String idProjeto;  // id do projeto ao qual os furos pertecem
-    private ArrayList<String> nomes, ids;  // nomes e ids dos furos
+    private long idProjeto;  // id do projeto ao qual os furos pertecem
+    //private ArrayList<String> nomes, ids;  // nomes e ids dos furos
+    private List<Sondagem> sondagens;
     // todo: substituir o nome por um único id
 
-    public SPTFuros(Context context, String idProjeto){
+    public SPTFuros(Context context, long idProjeto, List<Sondagem> sondagens){
         this.context = context;
         this.idProjeto = idProjeto;
+        this.sondagens = sondagens;
+
+        /*
         nomes = new ArrayList<>();
         ids = new ArrayList<>();
+         */
     }
 
     @NonNull
@@ -40,6 +47,7 @@ public class SPTFuros extends RecyclerView.Adapter<SPTFuros.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        /*
         holder.nome.setText(nomes.get(position));
 
         holder.nome.setOnClickListener(v -> {
@@ -50,15 +58,29 @@ public class SPTFuros extends RecyclerView.Adapter<SPTFuros.ViewHolder> {
                 context.startActivity(intent);
             }
         );
+         */
+
+        holder.nome.setText( sondagens.get(position).getNumero() + "ª sondagem");
+
+        holder.nome.setOnClickListener( v -> {
+            Intent intent = new Intent(context, SPTEditar.class);
+            intent.putExtra("idProjeto", idProjeto);
+            intent.putExtra("idFuro", sondagens.get(position).getId());
+
+            // passa o id do projeto e o furo selecionado para a activity de edição de ensaio
+            context.startActivity(intent);
+        });
     }
 
     @Override
-    public int getItemCount() { return nomes.size();}
+    public int getItemCount() { return sondagens.size();}
 
+    /*
     public void addEnsaio(String nome, String id){
         nomes.add(nome);
         ids.add(id);
     }
+     */
 
 
     public class ViewHolder extends RecyclerView.ViewHolder{
