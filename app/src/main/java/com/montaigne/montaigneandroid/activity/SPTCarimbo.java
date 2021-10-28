@@ -66,16 +66,17 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
         imgSalvar.setOnClickListener(v -> {
             // todo: implementar salvamento ou mudar o caráter deste botão
 
-            salvar();
+            if(salvar()) {
+                Intent intent = new Intent(SPTCarimbo.this, SPTCriar.class);
+                intent.putExtra("idProjeto", idProjeto);
+                intent.putExtra("idFuro", idFuro);
+                startActivity(intent);
+                // todo: adicionar id do novo projeto de acordo com as regras de geração de id
 
-            Intent intent = new Intent(SPTCarimbo.this, SPTCriar.class);
-            intent.putExtra("idProjeto", idProjeto);
-            intent.putExtra("idFuro", idFuro);
-            startActivity(intent);
-            // todo: adicionar id do novo projeto de acordo com as regras de geração de id
+                finish();
+                // abre a activity de criação do ensaio e fecha essa
+            }
 
-            finish();
-            // abre a activity de criação do ensaio e fecha essa
         });
 
         // botão de voltar
@@ -116,7 +117,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
     // todo: simplificar o método
     @RequiresApi(api = Build.VERSION_CODES.O)
-    public void salvar() {
+    public boolean salvar() {
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 
         // Capturando dados
@@ -132,7 +133,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
 
         // Identificando dados obrigatórios e salvando
-        if (!nome.equals("") && nfuros != 0) {
+        if (!nome.equals("") && nfuros > 0) {
             // Criando objeto
             Projeto meuProjeto = new Projeto();
 
@@ -175,6 +176,8 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
                     Log.i("furos", sondagemDAO.pesquisar( idProjeto ).size() + "");
 
                     Toast.makeText( getApplicationContext(), "Sucesso ao salvar projeto", Toast.LENGTH_LONG).show();
+                    return true;
+
                 } else {
                     throw new Exception("Erro ao salvar projeto.");
                 }
@@ -184,8 +187,10 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
         } else {
             // Mensagem de aviso sobre o nome
-            Toast.makeText(getApplicationContext(), "Insira um nome", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Falta de dados.", Toast.LENGTH_LONG).show();
         }
+
+        return false;
     }
 
 

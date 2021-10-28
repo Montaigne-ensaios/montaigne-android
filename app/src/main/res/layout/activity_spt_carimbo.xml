@@ -10,6 +10,7 @@
   <androidx.constraintlayout.widget.ConstraintLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
+      android:textAlignment="textEnd"
       tools:context=".activity.SPTCarimbo">
 
 
@@ -17,10 +18,10 @@
         android:id="@+id/imgSPTCarimboBack"
         android:layout_width="40dp"
         android:layout_height="39dp"
-        app:srcCompat="@drawable/ic_voltar"
         app:layout_constraintBottom_toBottomOf="@+id/txtSPTCarimboTitulo"
         app:layout_constraintEnd_toStartOf="@+id/txtSPTCarimboTitulo"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCarimboTitulo" />
+        app:layout_constraintTop_toTopOf="@+id/txtSPTCarimboTitulo"
+        app:srcCompat="@drawable/ic_voltar" />
 
     <TextView
         android:id="@+id/txtSPTCarimboTitulo"
@@ -236,6 +237,8 @@
         android:layout_height="45dp"
         android:ems="10"
         android:inputType="number"
+        android:text="0"
+        android:textAlignment="textEnd"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/txtSPTCarimboNFuros"
