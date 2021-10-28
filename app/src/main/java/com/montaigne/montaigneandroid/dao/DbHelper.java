@@ -71,7 +71,7 @@ public class DbHelper extends SQLiteOpenHelper {
         String sql =
                 "CREATE TABLE IF NOT EXISTS " + TABELA_SONDAGEM_SPT + " (" +
                         "id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                        "id_spt INTEGER," +
+                        "id_spt INTEGER NOT NULL," +
                         "numero INTEGER," +
                         "nivel_dagua DECIMAL(5, 2)," +
                         "nivel_furo DECIMAL(5, 2)," +
@@ -90,11 +90,11 @@ public class DbHelper extends SQLiteOpenHelper {
         String sql =
                 "CREATE TABLE IF NOT EXISTS " + TABELA_AMOSTRA_SPT + " (" +
                         "id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                        "id_sondagem INTEGER," +
+                        "id_sondagem INTEGER NOT NULL," +
                         "golpes1 INTEGER NOT NULL," +
                         "golpes2 INTEGER," +
                         "golpes3 INTEGER," +
-                        "nspt INTEGER NOT NULL" +
+                        "nspt INTEGER NOT NULL," +
 
                         "FOREIGN KEY(id_sondagem) references sondagem(id)" +
                         ");";

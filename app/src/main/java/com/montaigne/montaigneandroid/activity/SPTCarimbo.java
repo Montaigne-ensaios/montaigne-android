@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -113,6 +114,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
     }
 
 
+    // todo: simplificar o método
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void salvar() {
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
@@ -130,7 +132,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
 
         // Identificando dados obrigatórios e salvando
-        if (!nome.equals("")) {
+        if (!nome.equals("") && nfuros != 0) {
             // Criando objeto
             Projeto meuProjeto = new Projeto();
 
@@ -157,41 +159,55 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
             // Salvando
             ProjetoDAO projetoDAO = new ProjetoDAO(getApplicationContext());
+            SondagemDAO sondagemDAO = new SondagemDAO(getApplicationContext());
 
-            if (projetoDAO.salvar(meuProjeto)) {
-                Toast.makeText( getApplicationContext(), "Sucesso ao salvar projeto", Toast.LENGTH_LONG).show();
+            try {
+                if (projetoDAO.salvar(meuProjeto)) {
 
-                idProjeto = projetoDAO.pesquisar(meuProjeto.getNome());
+                    // Pegando o id do projeto e do primeiro furo do projeto
+                    idProjeto = projetoDAO.pesquisar(meuProjeto.getNome());
 
-                Sondagem minhaSondagem = new Sondagem();
-                minhaSondagem.setIdSpt( idProjeto );
-                minhaSondagem.setNumero(1);
-                minhaSondagem.setNivelDAgua(0);
-                minhaSondagem.setNivelFuro(0);
-                minhaSondagem.setNivelReferencia(0);
-                minhaSondagem.setTotalPerfurado(0);
-                minhaSondagem.setCoordenada("x");
-                minhaSondagem.setDataInicio( meuProjeto.getDataInicio() );
+                    meuProjeto.setId(idProjeto);
+                    criarSondagens(meuProjeto.getNumeroFuros(), meuProjeto);
 
-                SondagemDAO sondagemDAO = new SondagemDAO(getApplicationContext());
+                    idFuro = sondagemDAO.pesquisar( idProjeto ).get(0).getId();
 
-                if (sondagemDAO.salvar(minhaSondagem)) {
-                    Toast.makeText( getApplicationContext(), "Sucesso ao salvar sondagem", Toast.LENGTH_LONG).show();
+                    Log.i("furos", sondagemDAO.pesquisar( idProjeto ).size() + "");
 
-                    // Pegando o id do primeiro furo do projeto
-                    idFuro = sondagemDAO.pesquisar( idProjeto ).get(0);
-
+                    Toast.makeText( getApplicationContext(), "Sucesso ao salvar projeto", Toast.LENGTH_LONG).show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "Erro ao salvar sondagem", Toast.LENGTH_LONG).show();
+                    throw new Exception("Erro ao salvar projeto.");
                 }
-            } else {
-                Toast.makeText(getApplicationContext(), "Erro ao salvar projeto", Toast.LENGTH_LONG).show();
+            } catch (Exception e) {
+                Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
             }
-
 
         } else {
             // Mensagem de aviso sobre o nome
             Toast.makeText(getApplicationContext(), "Insira um nome", Toast.LENGTH_LONG).show();
+        }
+    }
+
+
+    public void criarSondagens(int quantidade, Projeto projeto) throws Exception {
+
+        for ( int i = 0; i < quantidade; i++) {
+            Sondagem sondagem = new Sondagem();
+            sondagem.setIdSpt( projeto.getId() );
+            sondagem.setNumero(i + 1);
+            sondagem.setNivelDAgua(0);
+            sondagem.setNivelFuro(0);
+            sondagem.setNivelReferencia(0);
+            sondagem.setTotalPerfurado(0);
+            sondagem.setCoordenada("x");
+            sondagem.setDataInicio( projeto.getDataInicio() );
+
+            SondagemDAO sondagemDAO = new SondagemDAO(getApplicationContext());
+
+            if (!sondagemDAO.salvar(sondagem)) {
+                // Caso haja erro ao salvar sondagem, será lançado um erro
+                throw new Exception("Erro ao salvar sondagem.");
+            }
         }
     }
 }
