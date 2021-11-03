@@ -87,15 +87,14 @@ public class AmostraDAO {
 
     @SuppressLint("Range")
     @RequiresApi(api = Build.VERSION_CODES.O)
-    public List<Amostra> listar() {
+    public List<Amostra> listar(long idSondagem) {
         List<Amostra> amostras = new ArrayList<>();
 
-        String sql = "SELECT * FROM " + DbHelper.TABELA_AMOSTRA_SPT + " ;";
-        Cursor c = reader.rawQuery(sql, null);
+        String sql = "SELECT * FROM " + DbHelper.TABELA_AMOSTRA_SPT + " WHERE id_sondagem = ?;";
+        Cursor c = reader.rawQuery(sql, new String[]{ String.valueOf(idSondagem) });
 
         while ( c.moveToNext() ){
             Long id = c.getLong( c.getColumnIndex("id")  );
-            Long idSondagem = c.getLong( c.getColumnIndex("id_sondagem")  );
             int golpes1 = c.getInt( c.getColumnIndex("golpes1") );
             int golpes2 = c.getInt( c.getColumnIndex("golpes2") );
             int golpes3 = c.getInt( c.getColumnIndex("golpes3") );
