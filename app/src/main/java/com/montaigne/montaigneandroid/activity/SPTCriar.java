@@ -1,28 +1,26 @@
 package com.montaigne.montaigneandroid.activity;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.montaigne.montaigneandroid.R;
 import com.montaigne.montaigneandroid.dao.AmostraDAO;
-import com.montaigne.montaigneandroid.dao.ProjetoDAO;
 import com.montaigne.montaigneandroid.model.Amostra;
-import com.montaigne.montaigneandroid.model.Projeto;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class  SPTCriar extends AppCompatActivity {
     private long idProjeto, idFuro, nCamada;
     // idProjeto, idFuro = recuperada do intent; nCamada = ultima camada do furo + 1 (criar nova)
+
+    private TextView txtSPTCriarTitulo;
     private EditText fieldNAgua, fieldCota;
     private Button btnProxima, btnFinalizar;
     private ImageView imgVoltar, imgHome;
@@ -38,6 +36,12 @@ public class  SPTCriar extends AppCompatActivity {
         // recupera dados do intent
         idProjeto = getIntent().getLongExtra("idProjeto", 1);
         idFuro = getIntent().getLongExtra("idFuro", 1);
+
+        // Seria bom ser o id do furo
+        nCamada = getIntent().getLongExtra("nCamada", 1);
+
+        txtSPTCriarTitulo = findViewById(R.id.txtSPTCriarTitulo);
+        txtSPTCriarTitulo.setText("Ensaio " + nCamada + " -  SPT");
 
         setupButtons();
 
@@ -64,6 +68,7 @@ public class  SPTCriar extends AppCompatActivity {
             Intent intent = new Intent(SPTCriar.this, SPTCriar.class);
             intent.putExtra("idProjeto", idProjeto);
             intent.putExtra("idFuro", idFuro);
+            intent.putExtra("nCamada", nCamada + 1);
             startActivity(intent);
             finish();
         });

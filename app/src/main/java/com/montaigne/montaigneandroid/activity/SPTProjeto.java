@@ -1,19 +1,17 @@
 package com.montaigne.montaigneandroid.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.montaigne.montaigneandroid.R;
 import com.montaigne.montaigneandroid.adapter.SPTFuros;
-import com.montaigne.montaigneandroid.dao.ProjetoDAO;
 import com.montaigne.montaigneandroid.dao.SondagemDAO;
-import com.montaigne.montaigneandroid.model.Projeto;
 import com.montaigne.montaigneandroid.model.Sondagem;
 
 import java.util.List;

@@ -1,8 +1,8 @@
 package com.montaigne.montaigneandroid.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.montaigne.montaigneandroid.R;
 

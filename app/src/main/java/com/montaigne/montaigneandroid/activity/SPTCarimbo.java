@@ -1,8 +1,5 @@
 package com.montaigne.montaigneandroid.activity;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -12,25 +9,19 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.montaigne.montaigneandroid.R;
 import com.montaigne.montaigneandroid.dao.ProjetoDAO;
 import com.montaigne.montaigneandroid.dao.SondagemDAO;
 import com.montaigne.montaigneandroid.model.Projeto;
 import com.montaigne.montaigneandroid.model.Sondagem;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TimeZone;
 
 public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeListener {
     private long idProjeto = -1L;  // long recuperado da intent que diz o id do projeto
@@ -70,6 +61,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
                 Intent intent = new Intent(SPTCarimbo.this, SPTCriar.class);
                 intent.putExtra("idProjeto", idProjeto);
                 intent.putExtra("idFuro", idFuro);
+                intent.putExtra("nCamada", 1);
                 startActivity(intent);
                 // todo: adicionar id do novo projeto de acordo com as regras de geração de id
 
