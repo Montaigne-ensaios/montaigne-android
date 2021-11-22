@@ -51,4 +51,6 @@
     <string name="GERAR_RELATORIO"> Gerar Relatorio</string>
     <string name="Carimbo">Carimbo</string>
     <string name="furos">Furos</string>
+    <string name="tipos_ensaio">tiposensaiostring</string>
+    <string name="nome_spt">nao sei nao li</string>
 </resources>
