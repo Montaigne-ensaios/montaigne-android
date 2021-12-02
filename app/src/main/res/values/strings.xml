@@ -33,18 +33,18 @@
     <string name="Projeto_1SPT">Projeto 1 - SPT</string>
     <string name="Projeto_2SPT">Projeto 2 - Proctor</string>
     <string name="ensaio_1_carimbo">Ensaio 1 - Carimbo </string>
-   <string name="empresa">Empresa:</string>
-<string name="telefone">Telefone:</string>
+    <string name="empresa">Empresa:</string>
+    <string name="telefone">Telefone:</string>
     <string name="nomedotecnico">Nome do tecnico:</string>
-<string name="data_inicio">Data de inicio:</string>
-<string name="cliente">Nome do cliente:</string>
-<string name="Numero_dfuros">Número de furos:</string>
+    <string name="data_inicio">Data de inicio:</string>
+    <string name="cliente">Nome do cliente:</string>
+    <string name="Numero_dfuros">Número de furos:</string>
     <string name="Local_sondagem">Local da sondagem:</string>
     <string name="add_logo">Adicionar logo</string>
     <string name="spt">spt</string>
     <string name="proxima_amostra">Próxima amostra</string>
     <string name="data_final">Data final:</string>
-   <string name="Referencia_de_nivel">Referência de nível :</string>
+    <string name="Referencia_de_nivel">Referência de nível :</string>
     <string name="nivel_do_meio_fio">nivel do meio fio :</string>
     <string name="Nivel_do_furo">Nivel do furo(m):</string>
     <string name="coordernadas">Coodernadas do furo:</string>
@@ -53,4 +53,6 @@
     <string name="furos">Furos</string>
     <string name="tipos_ensaio">tiposensaiostring</string>
     <string name="nome_spt">nao sei nao li</string>
+    <string name="test_res">Essa string precisa ser substituida</string>
+    <string name="btnSPTProjetoCarimboStr">Alterar carimbo</string>
 </resources>

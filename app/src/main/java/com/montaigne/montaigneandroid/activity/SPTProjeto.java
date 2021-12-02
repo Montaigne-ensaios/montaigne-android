@@ -23,7 +23,7 @@ public class SPTProjeto extends AppCompatActivity {
     private RecyclerView recyclerView;
     private SPTFuros adapter;
     private ImageView imgHome, imgBack, imgNFuro;
-    private Button btnCarimbo;
+    private Button btnBack, btnNFuro, btnCarimbo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,15 +52,12 @@ public class SPTProjeto extends AppCompatActivity {
 
     private void setupButtons(){
         // configuração dos botões
-        imgHome = findViewById(R.id.imgSPTProjetoHome);
-        imgHome.setOnClickListener(v -> finish());  // todo: configurar Home adequadamente
-
-        imgBack = findViewById(R.id.imgSPTProjetoBack);
-        imgBack.setOnClickListener(v -> finish());
+        btnBack = findViewById(R.id.btnSPTProjetoBack);
+        btnBack.setOnClickListener(v -> finish());
 
         imgNFuro = findViewById(R.id.imgSPTProjetoNFuro);
         imgNFuro.setOnClickListener(v -> {
-                // intent para a activityde realização de ensaio
+                // intent para a activity de realização de ensaio
                 Intent intent = new Intent(SPTProjeto.this, SPTCriar.class);
                 intent.putExtra("idProjeto", idProjeto);
                 intent.putExtra("idFuro", "criar");

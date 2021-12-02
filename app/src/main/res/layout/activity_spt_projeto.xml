@@ -4,84 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     tools:context=".activity.SPTProjeto">
 
+    <ImageButton
+        android:id="@+id/bntExcluirFuro"
+        android:layout_width="44dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/transparente"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSPTProjetoCarimbo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSPTProjetoCarimbo"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageButton
+        android:id="@+id/bntAdicionarFuro"
+        android:layout_width="44dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/transparente"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSPTProjetoCarimbo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSPTProjetoCarimbo"
+        app:srcCompat="@drawable/ic_adicionar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="425dp"
+        android:layout_height="78dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/txtSPTProjetoTitulo"
+        android:id="@+id/textProjeto1SPT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="40dp"
-        android:fontFamily="sans-serif-condensed"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/Projeto_1SPT"
-        android:textAlignment="viewStart"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/black"
-        android:textSize="34sp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imgSPTProjetoBack"
-        android:layout_width="47dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTProjetoTitulo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTProjetoTitulo"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="?attr/actionModeCloseDrawable" />
-
-    <ImageView
-        android:id="@+id/imgSPTProjetoNFuro"
-        android:layout_width="53dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imgSPTProjetoHome"
-        app:layout_constraintHorizontal_bias="0.033"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imgSPTProjetoHome"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_adicionar" />
-
-    <ImageView
-        android:id="@+id/imgSPTProjetoHome"
-        android:layout_width="53dp"
-        android:layout_height="64dp"
+    <ImageButton
+        android:id="@+id/btnSPTProjetoBack"
+        android:layout_width="43dp"
+        android:layout_height="38dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_home" />
+        android:background="@color/transparente"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/textProjeto1SPT"
+        app:layout_constraintEnd_toStartOf="@+id/textProjeto1SPT"
+        app:layout_constraintTop_toTopOf="@+id/textProjeto1SPT"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/btn_dialog"
+        app:tint="@color/white" />
 
     <Button
         android:id="@+id/btnSPTProjetoCarimbo"
-        android:layout_width="135dp"
-        android:layout_height="56dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginBottom="20dp"
-        android:text="@string/Carimbo"
-        app:backgroundTint="#070707"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/btnSPTProjetoCarimboStr"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imgSPTProjetoHome"
-        app:layout_constraintStart_toEndOf="@+id/imgSPTProjetoNFuro" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerSPTProjeto"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/btnSPTProjetoCarimbo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTProjetoTitulo" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
