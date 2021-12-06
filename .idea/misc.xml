@@ -5,7 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2375" />
-        <entry key="app/src/main/res/layout/activity_spt_carimbo.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_spt_carimbo.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_spt_criar.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_spt_editar.xml" value="0.1953125" />
         <entry key="app/src/main/res/layout/activity_spt_gerenciar_projs.xml" value="0.25" />
