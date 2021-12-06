@@ -3,6 +3,7 @@ package com.montaigne.montaigneandroid.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,7 +23,7 @@ public class SPTProjeto extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private SPTFuros adapter;
-    private ImageView imgHome, imgBack, imgNFuro;
+    private ImageButton btnBack, btnAddFuro, btnRmFuro;
     private Button btnCarimbo;
 
     @Override
@@ -41,32 +42,25 @@ public class SPTProjeto extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerSPTProjeto);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        /*
-        adapter.addEnsaio("Um ensaio muito louco", "id");
-        adapter.addEnsaio("Um ensaio da pesada", "id2");
-        adapter.addEnsaio("Ok está na hora de eu ir dormir mesmo", "id2");
-         */
-
     }
 
     private void setupButtons(){
         // configuração dos botões
-        imgHome = findViewById(R.id.imgSPTProjetoHome);
-        imgHome.setOnClickListener(v -> finish());  // todo: configurar Home adequadamente
+        btnBack = findViewById(R.id.btnSPTProjetoBack);
+        btnBack.setOnClickListener(v -> finish());
 
-        imgBack = findViewById(R.id.imgSPTProjetoBack);
-        imgBack.setOnClickListener(v -> finish());
-
-        imgNFuro = findViewById(R.id.imgSPTProjetoNFuro);
-        imgNFuro.setOnClickListener(v -> {
-                // intent para a activityde realização de ensaio
+        btnAddFuro = findViewById(R.id.btnSPTProjetoAddFuro);
+        btnAddFuro.setOnClickListener(v -> {
+                // intent para a activity de realização de ensaio
                 Intent intent = new Intent(SPTProjeto.this, SPTCriar.class);
                 intent.putExtra("idProjeto", idProjeto);
                 intent.putExtra("idFuro", "criar");
                 startActivity(intent);
             }
         );
+
+        btnRmFuro = findViewById(R.id.btnSPTProjetoRmFuro);
+        btnRmFuro.setOnClickListener(v -> {});  // todo: implementar remoção de furos
 
         btnCarimbo = findViewById(R.id.btnSPTProjetoCarimbo);
         btnCarimbo.setOnClickListener(v -> {
