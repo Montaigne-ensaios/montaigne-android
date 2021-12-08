@@ -5,7 +5,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,11 +21,11 @@ public class  SPTCriar extends AppCompatActivity {
     // idProjeto, idFuro = recuperada do intent; nCamada = ultima camada do furo + 1 (criar nova)
 
     private TextView txtSPTCriarTitulo;
-    private EditText fieldNAgua, fieldCota;
-    private Button btnProxima, btnFinalizar;
-    private ImageView imgVoltar, imgHome;
+    private EditText fieldNAgua, fieldProf;
+    private Button btnFinalizar, btnProxima;
+    private ImageButton btnVoltar, btnHome, btnSave;
     private EditText[] fieldsGolpes, fieldsPenetras;
-    private ImageView[] btnsMenos, btnsMais;
+    private ImageButton[] btnsMenos, btnsMais;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -50,15 +50,15 @@ public class  SPTCriar extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void setupButtons(){
-        imgHome = findViewById(R.id.imgSPTCriarHome);
-        imgHome.setOnClickListener(v -> {
+        btnHome = findViewById(R.id.btnSPTCriarHome);
+        btnHome.setOnClickListener(v -> {
             startActivity(
                     new Intent(SPTCriar.this, HomeActivity.class));
             finish();
         });
 
-        imgVoltar = findViewById(R.id.imgSPTCriarBack);
-        imgVoltar.setOnClickListener(v -> finish());
+        btnVoltar = findViewById(R.id.btnSPTCriarBack);
+        btnVoltar.setOnClickListener(v -> finish());
         // todo: implementar confirmações de usuário nestes botões de saída
 
         btnProxima = findViewById(R.id.btnSPTCriarProx);
@@ -73,9 +73,12 @@ public class  SPTCriar extends AppCompatActivity {
             finish();
         });
 
+        btnSave = findViewById(R.id.btnSPTCriarSave);
+        btnSave.setOnClickListener(v -> {});
+        // todo: salvar ensaio
+
         btnFinalizar = findViewById(R.id.btnSPTCriarFim);
         btnFinalizar.setOnClickListener(v -> finish());
-
         // todo: adicionar métodos de banco de dados e salvamento antes de finalizar activity
     }
 
@@ -91,15 +94,15 @@ public class  SPTCriar extends AppCompatActivity {
                 findViewById(R.id.fieldSPTCriarPen2),
                 findViewById(R.id.fieldSPTCriarPen3)
         };
-        btnsMais = new ImageView[]{
-                findViewById(R.id.imgSPTCriarp1),
-                findViewById(R.id.imgSPTCriarp2),
-                findViewById(R.id.imgSPTCriarp3)
+        btnsMais = new ImageButton[]{
+                findViewById(R.id.btnSPTCriarp1),
+                findViewById(R.id.btnSPTCriarp2),
+                findViewById(R.id.btnSPTCriarp3)
         };
-        btnsMenos = new ImageView[]{
-                findViewById(R.id.imgSPTCriarm1),
-                findViewById(R.id.imgSPTCriarm2),
-                findViewById(R.id.imgSPTCriarm3)
+        btnsMenos = new ImageButton[]{
+                findViewById(R.id.btnSPTCriarm1),
+                findViewById(R.id.btnSPTCriarm2),
+                findViewById(R.id.btnSPTCriarm3)
         };
 
         // configura cada field e image view:
@@ -137,8 +140,8 @@ public class  SPTCriar extends AppCompatActivity {
         }
 
         // cria listeners para tratar alterações das inputs
-        fieldCota = findViewById(R.id.fieldSPTCriarCota);
-        fieldCota.setOnFocusChangeListener((v, b) -> naturalNumberInput((EditText) v));
+        fieldProf = findViewById(R.id.fieldSPTCriarProf);
+        fieldProf.setOnFocusChangeListener((v, b) -> naturalNumberInput((EditText) v));
         fieldNAgua = findViewById(R.id.fieldSPTCriarAgua);
         fieldNAgua.setOnFocusChangeListener((v, b) -> naturalNumberInput((EditText) v));
     }
