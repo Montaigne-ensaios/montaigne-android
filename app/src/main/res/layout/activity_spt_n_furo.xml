@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-light"
-        android:text="@string/text_obrigatorio"
+        android:text="string text_obrigatorio"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,7 @@
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
-        android:text="@string/iniciar_ensaio"
+        android:text="string iniciar_ensaio"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,7 +56,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/fieldDatadeinicioFuro2"
         app:layout_constraintTop_toTopOf="@+id/fieldDatadeinicioFuro2"
-        app:srcCompat="@drawable/bnt_help" />
+        app:srcCompat="@android:drawable/btn_dialog" />
 
     <ImageButton
         android:id="@+id/imgbntHelpNivDoFuro2"
@@ -70,7 +70,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/fieldNivelFuro2"
         app:layout_constraintTop_toTopOf="@+id/fieldNivelFuro2"
-        app:srcCompat="@drawable/bnt_help" />
+        app:srcCompat="@android:drawable/btn_dialog" />
 
     <ImageButton
         android:id="@+id/imgbntHelpCodDoFuro2"
@@ -82,17 +82,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/bntCapturarLocalização2"
         app:layout_constraintStart_toEndOf="@+id/bntCapturarLocalização2"
         app:layout_constraintTop_toTopOf="@+id/bntCapturarLocalização2"
-        app:srcCompat="@drawable/bnt_help" />
+        app:srcCompat="@android:drawable/btn_dialog" />
 
     <EditText
         android:id="@+id/fieldNivelFuro2"
-        style="@style/Edit_Text"
         android:layout_width="290dp"
         android:layout_height="52dp"
         android:layout_marginTop="10dp"
-        android:drawableRight="@drawable/ic_baseline_edit_24"
+        android:drawableRight="@android:drawable/btn_dialog"
         android:ems="10"
-        android:hint="@string/nivel_dofuro2"
+        android:hint="hint"
         android:inputType="number"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="@+id/textNivelFuro2"
@@ -102,13 +101,12 @@
 
     <EditText
         android:id="@+id/fieldDatadeinicioFuro2"
-        style="@style/Edit_Text"
         android:layout_width="290dp"
         android:layout_height="52dp"
         android:layout_marginTop="10dp"
-        android:drawableRight="@drawable/ic_baseline_edit_24"
+        android:drawableRight="@android:drawable/btn_dialog"
         android:ems="10"
-        android:hint="@string/datainicio"
+        android:hint="hint"
         android:inputType="date"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="@+id/textDataInicioFuro2"
@@ -122,7 +120,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/nivel_do_furo_2"
+        android:text="string nivel_do_furo_2"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textDataInicioFuro2"
@@ -175,7 +173,7 @@
         android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/Carimbo_unico2"
+        android:text="string Carimbo_unico2"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -191,21 +189,21 @@
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        android:tint="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/textCarimboUnicoFur2"
         app:layout_constraintEnd_toStartOf="@+id/textCarimboUnicoFur2"
         app:layout_constraintTop_toTopOf="@+id/textCarimboUnicoFur2"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/bntvoltar1" />
+        app:srcCompat="@android:drawable/btn_dialog"
+        app:tint="@color/white" />
 
     <Button
         android:id="@+id/bntCapturarLocalização2"
         android:layout_width="290dp"
         android:layout_height="45dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/edit_text"
-        android:drawableLeft="@drawable/ic_location"
-        android:text="@string/capturar_localização"
+        android:background="@android:drawable/btn_dialog"
+        android:drawableLeft="@android:drawable/btn_dialog"
+        android:text="string capturar_localização"
         app:backgroundTint="@color/transparente"
         app:layout_constraintEnd_toEndOf="@+id/textView25"
         app:layout_constraintHorizontal_bias="0.0"
