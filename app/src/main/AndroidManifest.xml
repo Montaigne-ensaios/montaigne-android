@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MontaigneAndroid">
         <activity
+            android:name=".activity.Sobre"
+            android:exported="true" />
+        <activity
             android:name=".activity.SPTNFuro"
             android:exported="true" />
         <activity
