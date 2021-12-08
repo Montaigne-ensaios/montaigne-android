@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SPTNFuro">
+
+    <TextView
+        android:id="@+id/textAvisoObrigatorio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/text_obrigatorio"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bntCapturarLocalização2"
+        app:layout_constraintTop_toBottomOf="@+id/bntCapturarLocalização2" />
+
+    <ImageButton
+        android:id="@+id/imgBntHome"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/transparente"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/bntIniciarEnsaio2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bntIniciarEnsaio2"
+        app:srcCompat="@drawable/ic_home" />
+
+    <Button
+        android:id="@+id/bntIniciarEnsaio2"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/iniciar_ensaio"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgbntHelpDataInicioF2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/transparente"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/fieldDatadeinicioFuro2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fieldDatadeinicioFuro2"
+        app:layout_constraintTop_toTopOf="@+id/fieldDatadeinicioFuro2"
+        app:srcCompat="@drawable/bnt_help" />
+
+    <ImageButton
+        android:id="@+id/imgbntHelpNivDoFuro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="@color/transparente"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/fieldNivelFuro2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fieldNivelFuro2"
+        app:layout_constraintTop_toTopOf="@+id/fieldNivelFuro2"
+        app:srcCompat="@drawable/bnt_help" />
+
+    <ImageButton
+        android:id="@+id/imgbntHelpCodDoFuro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="@color/transparente"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/bntCapturarLocalização2"
+        app:layout_constraintStart_toEndOf="@+id/bntCapturarLocalização2"
+        app:layout_constraintTop_toTopOf="@+id/bntCapturarLocalização2"
+        app:srcCompat="@drawable/bnt_help" />
+
+    <EditText
+        android:id="@+id/fieldNivelFuro2"
+        style="@style/Edit_Text"
+        android:layout_width="290dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/ic_baseline_edit_24"
+        android:ems="10"
+        android:hint="@string/nivel_dofuro2"
+        android:inputType="number"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/textNivelFuro2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textNivelFuro2"
+        app:layout_constraintTop_toBottomOf="@+id/textNivelFuro2" />
+
+    <EditText
+        android:id="@+id/fieldDatadeinicioFuro2"
+        style="@style/Edit_Text"
+        android:layout_width="290dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/ic_baseline_edit_24"
+        android:ems="10"
+        android:hint="@string/datainicio"
+        android:inputType="date"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/textDataInicioFuro2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textDataInicioFuro2"
+        app:layout_constraintTop_toBottomOf="@+id/textDataInicioFuro2" />
+
+    <TextView
+        android:id="@+id/textNivelFuro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/nivel_do_furo_2"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textDataInicioFuro2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textDataInicioFuro2"
+        app:layout_constraintTop_toBottomOf="@+id/fieldDatadeinicioFuro2" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/coordernadas"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textNivelFuro2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textNivelFuro2"
+        app:layout_constraintTop_toBottomOf="@+id/fieldNivelFuro2" />
+
+    <TextView
+        android:id="@+id/textDataInicioFuro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/data_inicio"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/imgBntVoltarFuro1"
+        app:layout_constraintTop_toBottomOf="@+id/textCarimboUnicoFur2" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="407dp"
+        android:layout_height="68dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCarimboUnicoFur2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/Carimbo_unico2"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgBntVoltarFuro1"
+        android:layout_width="43dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/transparente"
+        android:scaleType="centerCrop"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textCarimboUnicoFur2"
+        app:layout_constraintEnd_toStartOf="@+id/textCarimboUnicoFur2"
+        app:layout_constraintTop_toTopOf="@+id/textCarimboUnicoFur2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bntvoltar1" />
+
+    <Button
+        android:id="@+id/bntCapturarLocalização2"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text"
+        android:drawableLeft="@drawable/ic_location"
+        android:text="@string/capturar_localização"
+        app:backgroundTint="@color/transparente"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
