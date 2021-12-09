@@ -30,6 +30,7 @@
         android:layout_marginBottom="110dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/text1"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
