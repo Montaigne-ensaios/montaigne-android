@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/drawable-anydpi/bntFuros.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/drawable-anydpi/ic_adicionar.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/drawable-anydpi/ic_home.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/drawable-anydpi/ic_inf.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/drawable-anydpi/ic_mais.xml" value="0.19583333333333333" />
@@ -36,6 +37,11 @@
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/adapter_spt_gerenciar_projetos.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/content_menuinical_spt.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/content_scrolling.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/mipmap-anydpi-v26/ic_logo.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/mipmap-anydpi-v26/ic_logo_round.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/mipmap-anydpi-v26/ic_logoapp.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/mipmap-anydpi-v26/ic_logoapp_round.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2375" />
         <entry key="app/src/main/res/layout/activity_spt_carimbo.xml" value="0.33" />
