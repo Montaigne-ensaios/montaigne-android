@@ -20,9 +20,6 @@
             android:name=".activity.SPTCarimbo"
             android:exported="true" />
         <activity
-            android:name=".activity.SPTGerenciarProjs"
-            android:exported="true" />
-        <activity
             android:name=".activity.SPTEditar"
             android:exported="true" />
         <activity
