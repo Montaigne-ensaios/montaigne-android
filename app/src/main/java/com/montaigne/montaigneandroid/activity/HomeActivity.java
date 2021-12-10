@@ -33,24 +33,4 @@ public class HomeActivity extends AppCompatActivity {
         adapter.addCategoria("Proctor Normal - Ensaio de compactação", SPTCarimbo.class);
         // todo: passar string pros resources
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-       getMenuInflater().inflate(R.menu.menu_principal,menu);
-
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        if(id == R.id.itemProjetos){
-            startActivity(new Intent(HomeActivity.this, SPTGerenciarProjs.class));
-        } else if (id == R.id.itemSobre){
-            Toast.makeText(HomeActivity.this,
-                    "montaigne.ensaios@protonmail.com", Toast.LENGTH_SHORT).show();
-        }
-       return super.onOptionsItemSelected(item);
-    }
 }

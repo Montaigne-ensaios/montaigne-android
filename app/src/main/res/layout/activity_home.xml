@@ -96,4 +96,13 @@
         app:layout_constraintStart_toStartOf="@+id/textMeusProj"
         app:layout_constraintTop_toBottomOf="@+id/textTipoDeEnsaio" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerEnsaios"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bntMenuExcluirAdicionarProj"
+        app:layout_constraintStart_toStartOf="@+id/textMeusProj"
+        app:layout_constraintTop_toBottomOf="@+id/textMeusProj" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
