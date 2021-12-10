@@ -2,7 +2,7 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cardSPTGerenciar"
+    android:id="@+id/cardProjs"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
@@ -14,7 +14,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imgSPTGerenciarThumb"
+            android:id="@+id/imgProjsThumb"
             android:layout_width="115dp"
             android:layout_height="115dp"
             android:layout_margin="5dp"
@@ -24,22 +24,22 @@
             app:srcCompat="@drawable/logo_para_sal_o_de_beleza" />
 
         <TextView
-            android:id="@+id/txtSPTFurosNome"
+            android:id="@+id/txtProjsNome"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_alignTop="@+id/imgSPTGerenciarThumb"
-            android:layout_alignBottom="@+id/imgSPTGerenciarThumb"
+            android:layout_alignTop="@+id/imgProjsThumb"
+            android:layout_alignBottom="@+id/imgProjsThumb"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="8dp"
-            android:layout_toEndOf="@+id/imgSPTGerenciarThumb"
+            android:layout_toEndOf="@+id/imgProjsThumb"
             android:text="Nome do Ensaio"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imgSPTGerenciarThumb"
-            app:layout_constraintTop_toTopOf="@+id/imgSPTGerenciarThumb" />
+            app:layout_constraintStart_toEndOf="@+id/imgProjsThumb"
+            app:layout_constraintTop_toTopOf="@+id/imgProjsThumb" />
 
         <TextView
-            android:id="@+id/txtSPTGenrenciarDesc"
+            android:id="@+id/txtProjsDesc"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="8dp"
@@ -47,18 +47,18 @@
             android:layout_marginBottom="8dp"
             android:text="Texto de descrição. \nEste texto pode ser substituido por múltiplos textViews."
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/checkSelectSPTGerenciar"
-            app:layout_constraintStart_toStartOf="@+id/txtSPTFurosNome"
-            app:layout_constraintTop_toBottomOf="@+id/txtSPTFurosNome" />
+            app:layout_constraintEnd_toStartOf="@+id/checkSelectProjs"
+            app:layout_constraintStart_toStartOf="@+id/txtProjsNome"
+            app:layout_constraintTop_toBottomOf="@+id/txtProjsNome" />
 
         <CheckBox
-            android:id="@+id/checkSelectSPTGerenciar"
+            android:id="@+id/checkSelectProjs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
             android:clickable="false"
             android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="@+id/txtSPTGenrenciarDesc"
+            app:layout_constraintBottom_toBottomOf="@+id/txtProjsDesc"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

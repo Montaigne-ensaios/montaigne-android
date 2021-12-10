@@ -26,7 +26,7 @@
             app:srcCompat="@drawable/logo_para_sal_o_de_beleza" />
 
         <TextView
-            android:id="@+id/txtSPTFurosNome"
+            android:id="@+id/txtProjsNome"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/imgCategorias"

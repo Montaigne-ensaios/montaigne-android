@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.montaigne.montaigneandroid.R;
-import com.montaigne.montaigneandroid.adapter.SPTGerenciar;
+import com.montaigne.montaigneandroid.adapter.HomeProjs;
 import com.montaigne.montaigneandroid.dao.ProjetoDAO;
 import com.montaigne.montaigneandroid.model.Projeto;
 
@@ -19,7 +19,7 @@ import java.util.List;
 
 public class SPTGerenciarProjs extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private SPTGerenciar adapter;
+    private HomeProjs adapter;
     private ImageView imgCriar, imgVoltar;
     private List<Projeto> projetos;
 
@@ -35,7 +35,7 @@ public class SPTGerenciarProjs extends AppCompatActivity {
         projetos = projetoDAO.listar();
 
         // cria o adaptador e seta o recycler
-        adapter = new SPTGerenciar(this, projetos);
+        adapter = new HomeProjs(this, projetos);
         recyclerView = findViewById(R.id.recyclerSPTGerenciar);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

@@ -15,7 +15,6 @@ import com.montaigne.montaigneandroid.R;
 import com.montaigne.montaigneandroid.activity.SPTEditar;
 import com.montaigne.montaigneandroid.model.Sondagem;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class SPTFuros extends RecyclerView.Adapter<SPTFuros.ViewHolder> {
@@ -91,7 +90,7 @@ public class SPTFuros extends RecyclerView.Adapter<SPTFuros.ViewHolder> {
             super(itemView);
 
             checkBox = itemView.findViewById(R.id.checkBoxSPTFuros);  // todo: gerenciamento de furos
-            nome = itemView.findViewById(R.id.txtSPTFurosNome);
+            nome = itemView.findViewById(R.id.txtProjsNome);
         }
     }
 }

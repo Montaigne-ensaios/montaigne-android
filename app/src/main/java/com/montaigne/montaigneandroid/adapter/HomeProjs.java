@@ -19,20 +19,20 @@ import com.montaigne.montaigneandroid.model.Projeto;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SPTGerenciar extends RecyclerView.Adapter<SPTGerenciar.ViewHolder>{
+public class HomeProjs extends RecyclerView.Adapter<HomeProjs.ViewHolder>{
     // em caso de dúvidas, ver comentários do adapeter Home Categorias
     private Context context;
     private ArrayList<String> nomes, descs, ids;  // ids são os ids de cada projeto
     private List<Projeto> projetos;
 
-    public SPTGerenciar(Context context){
+    public HomeProjs(Context context){
         this.context= context;
         nomes = new ArrayList<>();
         descs = new ArrayList<>();
         ids = new ArrayList<>();
     }
 
-    public SPTGerenciar(Context context, List<Projeto> projetos){
+    public HomeProjs(Context context, List<Projeto> projetos){
         this.context= context;
         nomes = new ArrayList<>();
         descs = new ArrayList<>();
@@ -46,7 +46,7 @@ public class SPTGerenciar extends RecyclerView.Adapter<SPTGerenciar.ViewHolder>{
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.adapter_spt_gerenciar_projetos, parent, false);
+                .inflate(R.layout.adapter_home_projs, parent, false);
         return new ViewHolder(view);
     }
 
@@ -104,13 +104,13 @@ public class SPTGerenciar extends RecyclerView.Adapter<SPTGerenciar.ViewHolder>{
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            parent = itemView.findViewById(R.id.cardSPTGerenciar);
+            parent = itemView.findViewById(R.id.cardProjs);
             parent.setOnLongClickListener(v -> listenerSelection());
             // listener para selecionar e desselecionar ensaios (para gerenciamento)
 
-            checkBox = itemView.findViewById(R.id.checkSelectSPTGerenciar);
-            txtNome = itemView.findViewById(R.id.txtSPTFurosNome);
-            txtDesc = itemView.findViewById(R.id.txtSPTGenrenciarDesc);
+            checkBox = itemView.findViewById(R.id.checkSelectProjs);
+            txtNome = itemView.findViewById(R.id.txtProjsNome);
+            txtDesc = itemView.findViewById(R.id.txtProjsDesc);
         }
 
         private boolean listenerSelection(){
