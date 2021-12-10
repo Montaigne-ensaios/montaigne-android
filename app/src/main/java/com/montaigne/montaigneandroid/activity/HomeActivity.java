@@ -26,7 +26,7 @@ public class HomeActivity extends AppCompatActivity {
         adapter = new HomeCategorias(this);
         recyclerView = findViewById(R.id.recyclerCategorias);
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
 
         // adiciona elementos ao recycler (isso talvez seja movido para outro lugar):
         adapter.addCategoria("SPT - Ensaio de reconhecimento simples", SPTCarimbo.class);

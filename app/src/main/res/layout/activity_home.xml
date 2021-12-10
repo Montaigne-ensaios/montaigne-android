@@ -52,7 +52,6 @@
         android:id="@+id/textMeusProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:fontFamily="serif"
         android:text="@string/Meus_projetos"
         android:textColor="@color/black"
@@ -60,30 +59,7 @@
         app:layout_constraintEnd_toEndOf="@+id/textTipoDeEnsaio"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textTipoDeEnsaio"
-        app:layout_constraintTop_toBottomOf="@+id/textNomeSpt" />
-
-    <TextView
-        android:id="@+id/textNomeSpt"
-        android:layout_width="200dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/nome_spt"
-        android:textColor="@color/principal"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/imgBntFotoSpt"
-        app:layout_constraintStart_toStartOf="@+id/imgBntFotoSpt"
-        app:layout_constraintTop_toBottomOf="@+id/imgBntFotoSpt" />
-
-    <ImageView
-        android:id="@+id/imgBntFotoSpt"
-        android:layout_width="123dp"
-        android:layout_height="99dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTipoDeEnsaio"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/recyclerCategorias" />
 
     <ImageButton
         android:id="@+id/bntMenuExcluirAdicionarProj"
@@ -113,11 +89,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerCategorias"
-        android:layout_width="344dp"
-        android:layout_height="363dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="@+id/bntMenuExcluirAdicionarProj"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textMeusProj"
-        app:layout_constraintTop_toBottomOf="@+id/textMeusProj" />
+        app:layout_constraintTop_toBottomOf="@+id/textTipoDeEnsaio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
