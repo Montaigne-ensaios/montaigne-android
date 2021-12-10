@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/recyclerCategorias" />
 
     <ImageButton
-        android:id="@+id/bntMenuExcluirAdicionarProj"
+        android:id="@+id/btnHomeRmv"
         android:layout_width="26dp"
         android:layout_height="26dp"
         android:layout_marginStart="180dp"
@@ -91,17 +91,17 @@
         android:id="@+id/recyclerCategorias"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="@+id/bntMenuExcluirAdicionarProj"
+        app:layout_constraintEnd_toEndOf="@+id/btnHomeRmv"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textMeusProj"
         app:layout_constraintTop_toBottomOf="@+id/textTipoDeEnsaio" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerSalvos"
+        android:id="@+id/recyclerProjs"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/bntMenuExcluirAdicionarProj"
+        app:layout_constraintEnd_toEndOf="@+id/btnHomeRmv"
         app:layout_constraintStart_toStartOf="@+id/textMeusProj"
         app:layout_constraintTop_toBottomOf="@+id/textMeusProj" />
 

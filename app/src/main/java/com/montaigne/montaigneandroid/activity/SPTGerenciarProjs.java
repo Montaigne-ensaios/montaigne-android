@@ -39,16 +39,6 @@ public class SPTGerenciarProjs extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerSPTGerenciar);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        // adiciona elementos ao recycler
-        // todo: ler ensaios e ids da base de dados e adicionar automaticamente (definir descrição)
-        adapter.addEnsaio("Exemplo de ensaio que não sei qual por",
-                "Aqui devo inserir uma longa descrição, embora não tenho criatividade " +
-                        "e isso tudo vai ser descartado", "todo: definir ids");
-
-        adapter.addEnsaio("Outro exemplo aqui",
-                "Bom dia! Tudo bem com você? Espero que esteja gostando das alterações que " +
-                        "no projeto :)", "id id id cadê você?");
     }
 
     private void setupButtons(){
