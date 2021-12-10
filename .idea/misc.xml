@@ -16,9 +16,9 @@
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_app_sobre_nois.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_carimbo2.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_gerenciar_proj_spt.xml" value="0.1814814814814815" />
-        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_home.xml" value="0.18" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_home1.xml" value="0.1814814814814815" />
-        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_sobre.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_carimbo.xml" value="0.25" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_carimbo_definitivo.xml" value="0.18" />
@@ -39,6 +39,7 @@
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/content_menuinical_spt.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/content_scrolling.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/mipmap-anydpi-v26/ic_logo.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/mipmap-anydpi-v26/ic_logo_round.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/mipmap-anydpi-v26/ic_logoapp.xml" value="0.19583333333333333" />
