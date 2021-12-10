@@ -39,7 +39,7 @@ public class HomeActivity extends AppCompatActivity {
         // Recycler HomeProjs: acessar e editar projetos salvos
         setupProjs();
 
-        btnRemover = findViewById(R.id.btnHomeRmv);
+        btnRemover = findViewById(R.id.BntHomeExcluirProjeto);
         btnRemover.setOnClickListener(v -> {});
         // todo: configurar listener de remover projetos (issue #41)
     }
