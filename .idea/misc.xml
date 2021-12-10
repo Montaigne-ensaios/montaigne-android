@@ -7,6 +7,7 @@
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/drawable-anydpi/ic_home.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/drawable-anydpi/ic_inf.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/drawable-anydpi/ic_mais.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/drawable-anydpi/ic_salvar.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.109375" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.14583333333333334" />
@@ -15,7 +16,7 @@
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_gerenciar_proj_spt.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_home1.xml" value="0.1814814814814815" />
-        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_sobre.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_carimbo.xml" value="0.25" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_carimbo_definitivo.xml" value="0.18" />
