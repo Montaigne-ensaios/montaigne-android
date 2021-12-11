@@ -40,7 +40,7 @@ public class  SPTCriar extends AppCompatActivity {
         // Seria bom ser o id do furo
         nCamada = getIntent().getLongExtra("nCamada", 1);
 
-        txtSPTCriarTitulo = findViewById(R.id.txtSPTCriarTitulo);
+        txtSPTCriarTitulo = findViewById(R.id.TxtSptCriarTituloTest);
         txtSPTCriarTitulo.setText("Ensaio " + nCamada + " -  SPT");
 
         setupButtons();
@@ -57,7 +57,7 @@ public class  SPTCriar extends AppCompatActivity {
             finish();
         });
 
-        btnVoltar = findViewById(R.id.btnSPTCriarBack);
+        btnVoltar = findViewById(R.id.BntSPTCriarBackCarUnico);
         btnVoltar.setOnClickListener(v -> finish());
         // todo: implementar confirmações de usuário nestes botões de saída
 

@@ -35,49 +35,49 @@
         app:srcCompat="@drawable/ic_home" />
 
     <TextView
-        android:id="@+id/txtSPTCriarAgua"
+        android:id="@+id/TxtSptCriarNdagua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/nivel_dágua"
+        android:text="@string/StrTstSptcriarNvaguaTxt"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarTitulo"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarTituloTest"
         app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toEndOf="@+id/btnSPTCriarBack"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarTitulo" />
+        app:layout_constraintStart_toEndOf="@+id/BntSPTCriarBackCarUnico"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTituloTest" />
 
     <TextView
-        android:id="@+id/txtSPTCriarProf"
+        android:id="@+id/TxtSptCriarProfdadAmostr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="string profundidade1"
+        android:text="@string/TxtSptcriarProfundidadeStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarAmostra"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarNAmostra"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarAmostra"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarAmostra" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarNAmostra"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarNAmostra" />
 
     <TextView
-        android:id="@+id/txtSPTCriarSegmento"
+        android:id="@+id/TxtSptCriarSegmentAmtra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/segmentos"
+        android:text="@string/TxtSptSegmentosAmstraStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarAmostra"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarNAmostra"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarAmostra"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarAmostra" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarNAmostra"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarNAmostra" />
 
     <TextView
         android:id="@+id/txtSPTCriarGolpes"
@@ -93,8 +93,8 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/txtSPTCriarPen"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/txtSPTCriarSegmento"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarAmostra" />
+        app:layout_constraintStart_toEndOf="@+id/TxtSptCriarSegmentAmtra"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarNAmostra" />
 
     <TextView
         android:id="@+id/txtSPTCriarPen"
@@ -111,16 +111,16 @@
         app:layout_constraintTop_toTopOf="@+id/txtSPTCriarGolpes" />
 
     <TextView
-        android:id="@+id/txtSPTCriarAmostra"
+        android:id="@+id/TxtSptCriarNAmostra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/Amostra_1"
+        android:text="@string/StrTstSptcriarNAmostraTxt"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarAgua"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarNdagua"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btnSPTCriarHelpAgua"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarAgua" />
@@ -136,13 +136,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtSPTCriarTitulo"
+        android:id="@+id/TxtSptCriarTituloTest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="string ensaio do furo"
+        android:text="@string/StrTstSptcriarFuroNTxt"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -152,16 +152,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/btnSPTCriarBack"
-        android:layout_width="43dp"
-        android:layout_height="38dp"
+        android:id="@+id/BntSPTCriarBackCarUnico"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarTitulo"
-        app:layout_constraintEnd_toStartOf="@+id/txtSPTCriarTitulo"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarTitulo"
-        app:srcCompat="@android:drawable/btn_dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarTituloTest"
+        app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarTituloTest"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarTituloTest"
+        app:srcCompat="@drawable/ic_back"
         app:tint="@color/white" />
 
     <EditText
@@ -174,10 +174,10 @@
         android:hint="hint"
         android:inputType="number"
         android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarAgua"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarNdagua"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btnSPTCriarHelpAgua"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarAgua" />
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarNdagua" />
 
     <EditText
         android:id="@+id/fieldSPTCriarProf"
@@ -189,9 +189,9 @@
         android:hint="@string/Profundidade"
         android:inputType="number"
         android:padding="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarProf"
-        app:layout_constraintStart_toEndOf="@+id/txtSPTCriarProf"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarProf" />
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarProfdadAmostr"
+        app:layout_constraintStart_toEndOf="@+id/TxtSptCriarProfdadAmostr"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarProfdadAmostr" />
 
     <EditText
         android:id="@+id/fieldSPTCriarGlp1"
@@ -294,11 +294,11 @@
         android:layout_marginEnd="10dp"
         android:background="@color/transparente"
         android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarAgua"
-        app:layout_constraintEnd_toStartOf="@+id/txtSPTCriarAgua"
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarNdagua"
+        app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarNdagua"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btnSPTCriarBack"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarAgua"
+        app:layout_constraintStart_toStartOf="@+id/BntSPTCriarBackCarUnico"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarNdagua"
         app:srcCompat="@android:drawable/btn_dialog" />
 
     <View
@@ -317,10 +317,10 @@
         android:layout_width="50dp"
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarSegmento"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarSegmentAmtra"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarSegmento"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarSegmento"
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarSegmentAmtra"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarSegmentAmtra"
         app:srcCompat="@android:drawable/btn_dialog"
         app:tint="@color/black" />
 
@@ -424,11 +424,12 @@
         android:layout_marginStart="110dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:tint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarTitulo"
-        app:layout_constraintStart_toEndOf="@+id/txtSPTCriarTitulo"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarTitulo"
-        app:srcCompat="@drawable/ic_salvar" />
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarTituloTest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TxtSptCriarTituloTest"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarTituloTest"
+        app:srcCompat="@drawable/ic_salvar"
+        app:tint="@color/white" />
 
     <Button
         android:id="@+id/btnSPTCriarProx"
@@ -440,7 +441,7 @@
         app:backgroundTint="@color/transparente"
         app:layout_constraintEnd_toStartOf="@+id/txtSPTCriarGolpes"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarSegmento"
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarSegmentAmtra"
         app:layout_constraintTop_toBottomOf="@+id/imgSPTCriarSeg3" />
 
     <ImageView

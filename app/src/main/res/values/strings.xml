@@ -8,7 +8,7 @@
     <string name="TxtSobreDesenvolvedoreStr">O aplicativo foi desenvolvido por Anny Thaymara De Sousa Miranda, Ícaro Bruno Silbe Cortês, Júlia Mariana Dos Santos Freire, Nicole Dantas Lopes e Rodrigo Oliveira Lourenço.</string>
     <string name="TxtSobreEntrcotatoStr">Para entrar em contato conosco,  envie um e-mail para:montaige.ensaios@prontomail.com</string>
     <string name="TxtHomeMeusprojetosStr">Meus Projetos:</string>
-    <string name="TxtSptSegmentosStr">Segmentos</string>
+    <string name="TxtSptSegmentosAmstraStr">Segmentos</string>
     <string name="TxtSptPenetraçãoStr">Penetração</string>
     <string name="TxtSptcriarGolpesStr">Golpes</string>
     <string name="TxtSptcriarProfundidadeStr">Profundidade:</string>
@@ -26,9 +26,9 @@
     <string name="TxtSptEditarNSPTStr">NSPT</string>
     <string name="StrTstSptcarimboTituloTxt">Carimbo</string>
     <string name="StrTstSpteditarTituloRevisãofuroTxt">Revisão do furo SP01</string>
-    <string name="StrTstSptcriarEnsaioTxt">Ensaio - SPT</string>
+    <string name="StrTstSptcriarFuroNTxt">Furo - SPT</string>
     <string name="StrTstSptcriarNvaguaTxt">Nivel de água(m):</string>
-    <string name="StrTstSptcriarAmostraTxt">Amostra </string>
+    <string name="StrTstSptcriarNAmostraTxt">Amostra 1 </string>
     <string name="StrTstSptprojetoTituloTxt">Projeto - SPT</string>
     <string name="BtnSPTFinlzaEnsStr">Finalizar ensaio</string>
     <string name="BtnSPTprojetAlteracarimboStr">Carimbo</string>
