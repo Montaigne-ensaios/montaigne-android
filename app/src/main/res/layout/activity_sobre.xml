@@ -19,7 +19,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/TxtSobreTitulo"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/bntSobreVoltahome"
+        app:layout_constraintStart_toStartOf="@+id/bntSobreBackhome"
         app:layout_constraintTop_toBottomOf="@+id/TxtSobreTitulo" />
 
     <TextView
@@ -38,9 +38,9 @@
         app:layout_constraintTop_toBottomOf="@+id/TxtSobreDesenvolvedores" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar8"
-        android:layout_width="403dp"
-        android:layout_height="79dp"
+        android:id="@+id/TollbarSobre"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -58,22 +58,24 @@
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar8"
+        app:layout_constraintEnd_toEndOf="@+id/TollbarSobre"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/bntSobreVoltahome"
+        android:id="@+id/bntSobreBackhome"
         android:layout_width="43dp"
         android:layout_height="38dp"
+        android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="@+id/TxtSobreTitulo"
         app:layout_constraintEnd_toStartOf="@+id/TxtSobreTitulo"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/TxtSobreTitulo"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_voltar"
+        app:srcCompat="@drawable/ic_back"
         app:tint="@color/white" />
 </androidx.constraintlayout.widget.ConstraintLayout>
