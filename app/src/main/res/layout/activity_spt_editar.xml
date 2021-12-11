@@ -177,12 +177,12 @@
         app:layout_constraintEnd_toEndOf="@+id/textRevisFuro1"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imgBntVoltarUltimaAmost"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar6" />
+        app:layout_constraintTop_toBottomOf="@+id/TollbarSptEditar" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar6"
-        android:layout_width="440dp"
-        android:layout_height="74dp"
+        android:id="@+id/TollbarSptEditar"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"

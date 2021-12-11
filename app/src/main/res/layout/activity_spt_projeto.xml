@@ -31,9 +31,9 @@
         app:srcCompat="@drawable/ic_adicionar" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar3"
-        android:layout_width="425dp"
-        android:layout_height="78dp"
+        android:id="@+id/TollbarSptProjeto"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -90,6 +90,6 @@
         app:layout_constraintBottom_toTopOf="@+id/btnSPTProjetoCarimbo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+        app:layout_constraintTop_toBottomOf="@+id/TollbarSptProjeto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

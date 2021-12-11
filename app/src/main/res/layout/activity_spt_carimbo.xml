@@ -18,22 +18,27 @@
         android:id="@+id/imgSPTCarimboBack"
         android:layout_width="40dp"
         android:layout_height="39dp"
+        android:layout_marginStart="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/txtSPTCarimboTitulo"
         app:layout_constraintEnd_toStartOf="@+id/txtSPTCarimboTitulo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtSPTCarimboTitulo"
-        app:srcCompat="@drawable/ic_voltar" />
+        app:srcCompat="@drawable/ic_back" />
 
     <TextView
         android:id="@+id/txtSPTCarimboTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="36dp"
         android:fontFamily="sans-serif-black"
-        android:text="@string/ensaio_1_carimbo"
+        android:text="@string/StrTstSptcarimboTituloTxt"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,22 +55,6 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSPTCarimboTitulo" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/add_logo"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imgSPTCarimboImg"
-        app:layout_constraintEnd_toEndOf="@+id/imgSPTCarimboImg"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imgSPTCarimboImg" />
 
     <EditText
         android:id="@+id/fieldSPTCarimboNome"
@@ -264,10 +253,10 @@
         android:id="@+id/imgSPTCarimboSalvar"
         android:layout_width="37dp"
         android:layout_height="39dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/txtSPTCarimboTitulo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/txtSPTCarimboTitulo"
         app:layout_constraintTop_toTopOf="@+id/txtSPTCarimboTitulo"
         app:srcCompat="@drawable/ic_salvar" />
@@ -279,7 +268,7 @@
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toTopOf="@+id/txtSPTCarimboNome"
         app:layout_constraintStart_toStartOf="@+id/txtSPTCarimboNome"
-        app:srcCompat="@drawable/ic_inf" />
+        app:srcCompat="@drawable/image_icon" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

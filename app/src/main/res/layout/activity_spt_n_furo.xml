@@ -157,9 +157,9 @@
         app:layout_constraintTop_toBottomOf="@+id/textCarimboUnicoFur2" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar7"
-        android:layout_width="407dp"
-        android:layout_height="68dp"
+        android:id="@+id/TollbarSptNfuros"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
