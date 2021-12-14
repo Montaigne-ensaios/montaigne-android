@@ -45,7 +45,7 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarTituloTest"
-        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/BntSPTCriarBackCarUnico"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTituloTest" />
 
@@ -114,7 +114,7 @@
         android:id="@+id/TxtSptCriarNAmostra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/StrTstSptcriarNAmostraTxt"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
@@ -301,17 +301,6 @@
         app:layout_constraintTop_toTopOf="@+id/TxtSptCriarNdagua"
         app:srcCompat="@android:drawable/btn_dialog" />
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="391dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/marrom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarAgua" />
-
     <ImageView
         android:id="@+id/imgSPTCriarSeg1"
         android:layout_width="50dp"
@@ -421,7 +410,7 @@
         android:id="@+id/btnSPTCriarSave"
         android:layout_width="32dp"
         android:layout_height="38dp"
-        android:layout_marginStart="110dp"
+        android:layout_marginStart="130dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarTituloTest"
