@@ -71,7 +71,7 @@
         app:layout_constraintStart_toEndOf="@+id/textMeusProj"
         app:layout_constraintTop_toTopOf="@+id/textMeusProj"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/logo_para_sal_o_de_beleza" />
+        app:srcCompat="@android:drawable/btn_dialog" />
 
     <ImageButton
         android:id="@+id/bntInformSobreNois"
@@ -84,7 +84,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textnomedoapp"
         app:layout_constraintTop_toTopOf="@+id/textnomedoapp"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/logo_para_sal_o_de_beleza"
+        app:srcCompat="@android:drawable/btn_dialog"
         app:tint="@color/white" />
 
     <androidx.recyclerview.widget.RecyclerView

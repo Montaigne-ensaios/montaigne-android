@@ -21,7 +21,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/txtSPTCarimboTitulo"
         app:layout_constraintEnd_toStartOf="@+id/txtSPTCarimboTitulo"
         app:layout_constraintTop_toTopOf="@+id/txtSPTCarimboTitulo"
-        app:srcCompat="@drawable/ic_voltar" />
+        app:srcCompat="@android:drawable/btn_dialog" />
 
     <TextView
         android:id="@+id/txtSPTCarimboTitulo"
@@ -279,7 +279,7 @@
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toTopOf="@+id/txtSPTCarimboNome"
         app:layout_constraintStart_toStartOf="@+id/txtSPTCarimboNome"
-        app:srcCompat="@drawable/ic_inf" />
+        app:srcCompat="@android:drawable/btn_dialog" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
