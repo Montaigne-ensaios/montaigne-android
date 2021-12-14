@@ -18,12 +18,12 @@
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_gerenciar_proj_spt.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_home1.xml" value="0.1814814814814815" />
-        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_sobre.xml" value="0.25" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_carimbo.xml" value="0.18" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_carimbo_definitivo.xml" value="0.18" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_carimbo_unico1.xml" value="0.22" />
-        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_criar.xml" value="0.33" />
+        <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_criar.xml" value="0.25" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_criar1.xml" value="0.22" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_criar_furo2.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/julia/AndroidStudioProjects/montaigne-android/app/src/main/res/layout/activity_spt_editar.xml" value="0.18" />
@@ -58,9 +58,6 @@
         <entry key="app/src/main/res/menu/menu_principal.xml" value="0.1953125" />
       </map>
     </option>
-  </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_logoapp_round.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

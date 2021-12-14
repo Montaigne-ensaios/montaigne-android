@@ -15,7 +15,7 @@
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif-medium"
         android:padding="5dp"
-        android:text="String Finalizar ensaio"
+        android:text="@string/BtnSPTCriarFinlzaEnsStr"
         android:textAllCaps="true"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/TxtSptSegmentosAmstraStr"
+        android:text="@string/TxtSptCriarSegmentosAmstraStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -80,35 +80,35 @@
         app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarNAmostra" />
 
     <TextView
-        android:id="@+id/txtSPTCriarGolpes"
+        android:id="@+id/TxtSptCriarGolpes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/golpes"
+        android:text="@string/TxtSptCriarGolpesStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/txtSPTCriarPen"
+        app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarPenetraç"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/TxtSptCriarSegmentAmtra"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarNAmostra" />
 
     <TextView
-        android:id="@+id/txtSPTCriarPen"
+        android:id="@+id/TxtSptCriarPenetraç"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/penetração"
+        android:text="@string/TxtSptCriarPenetraçãoStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarGolpes"
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarGolpes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarGolpes" />
+        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarGolpes" />
 
     <TextView
         android:id="@+id/TxtSptCriarNAmostra"
@@ -205,9 +205,9 @@
         android:inputType="number"
         android:maxLength="4"
         android:padding="6dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarGolpes"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarGolpes"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarGolpes" />
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarGolpes"
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarGolpes"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarGolpes" />
 
     <EditText
         android:id="@+id/fieldSPTCriarPen1"
@@ -221,9 +221,9 @@
         android:inputType="number"
         android:maxLength="4"
         android:padding="6dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarPen"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarPen"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarPen" />
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarPenetraç"
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarPenetraç"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarPenetraç" />
 
     <EditText
         android:id="@+id/fieldSPTCriarPen2"
@@ -439,7 +439,7 @@
         android:text="@string/proxima_amostra"
         android:textStyle="bold"
         app:backgroundTint="@color/transparente"
-        app:layout_constraintEnd_toStartOf="@+id/txtSPTCriarGolpes"
+        app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarGolpes"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TxtSptCriarSegmentAmtra"
         app:layout_constraintTop_toBottomOf="@+id/imgSPTCriarSeg3" />

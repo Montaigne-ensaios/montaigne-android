@@ -8,9 +8,9 @@
     <string name="TxtSobreDesenvolvedoreStr">O aplicativo foi desenvolvido por Anny Thaymara De Sousa Miranda, Ícaro Bruno Silbe Cortês, Júlia Mariana Dos Santos Freire, Nicole Dantas Lopes e Rodrigo Oliveira Lourenço.</string>
     <string name="TxtSobreEntrcotatoStr">Para entrar em contato conosco,  envie um e-mail para:montaige.ensaios@prontomail.com</string>
     <string name="TxtHomeMeusprojetosStr">Meus Projetos:</string>
-    <string name="TxtSptSegmentosAmstraStr">Segmentos</string>
-    <string name="TxtSptPenetraçãoStr">Penetração</string>
-    <string name="TxtSptcriarGolpesStr">Golpes</string>
+    <string name="TxtSptCriarSegmentosAmstraStr">Segmentos</string>
+    <string name="TxtSptCriarPenetraçãoStr">Penetração</string>
+    <string name="TxtSptCriarGolpesStr">Golpes</string>
     <string name="TxtSptcriarProfundidadeStr">Profundidade:</string>
     <string name="TxtSptcarimboNameprojetoStr">Nome do projeto: *</string>
     <string name="TxtSptcarimboDatainicioStr">Data de inicio: *</string>
@@ -30,8 +30,8 @@
     <string name="StrTstSptcriarNvaguaTxt">Nivel de água(m):</string>
     <string name="StrTstSptcriarNAmostraTxt">Amostra 1 </string>
     <string name="StrTstSptprojetoTituloTxt">Projeto - SPT</string>
-    <string name="BtnSPTFinlzaEnsStr">Finalizar ensaio</string>
-    <string name="BtnSPTprojetAlteracarimboStr">Carimbo</string>
+    <string name="BtnSPTCriarFinlzaEnsStr">Finalizar ensaio</string>
+    <string name="BtnSptProjetoAlteracarimboStr">Carimbo</string>
     <string name="BtnSPTGerarelatorioStr">Gerar Relatorio</string>
     <string name="BntSptcriarPrxamtraStr">Próxima amostra</string>
 </resources>
