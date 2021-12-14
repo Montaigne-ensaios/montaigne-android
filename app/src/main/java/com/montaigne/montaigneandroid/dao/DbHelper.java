@@ -61,7 +61,7 @@ public class DbHelper extends SQLiteOpenHelper {
                         "tecnico_responsavel TEXT," +
                         "endereco TEXT," +
                         "numero_furos INTEGER," +
-                        "data_inicio INTEGER" +
+                        "data_inicio TEXT" +
                         ");";
 
         criarTabelaSQLite(db, TABELA_PROJETO_SPT, sql);
@@ -78,7 +78,7 @@ public class DbHelper extends SQLiteOpenHelper {
                         "nivel_referencia DECIMAL(5, 2)," +
                         "total_perfurado DECIMAL(5, 2)," +
                         "coordenada TEXT," +
-                        "data_inicio LONG," +
+                        "data_inicio TEXT," +
 
                         "FOREIGN KEY(id_spt) references spt(id)" +
                         ");";

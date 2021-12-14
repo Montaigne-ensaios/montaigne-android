@@ -143,9 +143,8 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
             try {
                 tempo = formato.parse(dataInicio);
-
             } catch (Exception e) {
-                Long milissegundos = System.currentTimeMillis();
+                e.printStackTrace();
             }
 
             meuProjeto.setDataInicio(tempo);

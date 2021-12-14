@@ -12,6 +12,8 @@ import androidx.annotation.RequiresApi;
 
 import com.montaigne.montaigneandroid.model.Projeto;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -40,7 +42,7 @@ public class ProjetoDAO {
         cv.put("tecnico_responsavel", projeto.getTecnicoResponsavel());
         cv.put("endereco", projeto.getEndereco());
         cv.put("numero_furos", projeto.getNumeroFuros());
-        cv.put("data_inicio", projeto.getDataInicio().getTime());
+        cv.put("data_inicio", projeto.getDataInicio().toString());
 
         try {
             long num = writer.insert(DbHelper.TABELA_PROJETO_SPT, null, cv);
@@ -116,6 +118,7 @@ public class ProjetoDAO {
         // Método que obtem os dados
 
         List<Projeto> projetos = new ArrayList<>();
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 
         // Comando
         String sql = "SELECT * FROM " + DbHelper.TABELA_PROJETO_SPT + " ;";
@@ -134,8 +137,14 @@ public class ProjetoDAO {
             String tecnicoResponsavel = c.getString( c.getColumnIndex("tecnico_responsavel") );
             String endereco = c.getString( c.getColumnIndex("endereco") );
             int numeroFuros = c.getInt( c.getColumnIndex("numero_furos") );
-            Long data = c.getLong( c.getColumnIndex("data_inicio") );
-            Date dataInicio = Date.from(Instant.ofEpochMilli(data));
+            String data = c.getString( c.getColumnIndex("data_inicio") );
+
+            Date dataInicio = null;
+            try {
+                dataInicio = formato.parse(data);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
 
             Projeto projeto = new Projeto(id, nome, cliente, empresa, telefone, tecnicoResponsavel,
                                             endereco, numeroFuros, dataInicio);
