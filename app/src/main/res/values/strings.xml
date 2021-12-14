@@ -28,12 +28,15 @@
     <string name="StrTstSpteditarTituloRevisãofuroTxt">Revisão do furo SP01</string>
     <string name="StrTstSptcriarFuroNTxt">Furo - SPT</string>
     <string name="StrTstSptcriarNvaguaTxt">Nivel de água(m):</string>
-    <string name="HintSptcriarNvaguaTxt">Nivel de água</string>
-
+    <string name="EditTextHintSptcriarNvagua">Nível de água</string>
     <string name="StrTstSptcriarNAmostraTxt">Amostra 1 </string>
     <string name="StrTstSptprojetoTituloTxt">Projeto - SPT</string>
     <string name="BtnSPTCriarFinlzaEnsStr">Finalizar ensaio</string>
     <string name="BtnSptProjetoAlteracarimboStr">Carimbo</string>
     <string name="BtnSPTGerarelatorioStr">Gerar Relatorio</string>
     <string name="BntSptcriarPrxamtraStr">Próxima amostra</string>
+    <string name="TxtSptNFuroTituloCrbUnico">Carimbo Unico do Furo N</string>
+    <string name="TxtSptNFuroTextObrigatorioStr">Os campos indicados com * são obrigatórios</string>
+
+
 </resources>

@@ -57,7 +57,7 @@ public class  SPTCriar extends AppCompatActivity {
             finish();
         });
 
-        btnVoltar = findViewById(R.id.BntSPTCriarBackCarUnico);
+        btnVoltar = findViewById(R.id.BntSPTCriarBackCrbUnico);
         btnVoltar.setOnClickListener(v -> finish());
         // todo: implementar confirmações de usuário nestes botões de saída
 
@@ -73,7 +73,7 @@ public class  SPTCriar extends AppCompatActivity {
             finish();
         });
 
-        btnSave = findViewById(R.id.btnSPTCriarSave);
+        btnSave = findViewById(R.id.bntSptCriarSalvarFuro);
         btnSave.setOnClickListener(v -> {});
         // todo: salvar ensaio
 

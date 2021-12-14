@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-light"
-        android:text="string text_obrigatorio"
+        android:text="@string/TxtSptNFuroTextObrigatorioStr"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -146,15 +146,16 @@
         android:id="@+id/textDataInicioFuro2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="50dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/data_inicio"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/imgBntVoltarFuro1"
-        app:layout_constraintTop_toBottomOf="@+id/textCarimboUnicoFur2" />
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptNFuroTituloCrbUnic"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="@+id/BntSptNfuroBackCrbDefinitivo"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptNFuroTituloCrbUnic" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/TollbarSptNfuros"
@@ -167,13 +168,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textCarimboUnicoFur2"
+        android:id="@+id/TxtSptNFuroTituloCrbUnic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="string Carimbo_unico2"
+        android:text="@string/TxtSptNFuroTituloCrbUnico"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -183,17 +184,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imgBntVoltarFuro1"
+        android:id="@+id/BntSptNfuroBackCrbDefinitivo"
         android:layout_width="43dp"
         android:layout_height="38dp"
-        android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/textCarimboUnicoFur2"
-        app:layout_constraintEnd_toStartOf="@+id/textCarimboUnicoFur2"
-        app:layout_constraintTop_toTopOf="@+id/textCarimboUnicoFur2"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@android:drawable/btn_dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptNFuroTituloCrbUnic"
+        app:layout_constraintEnd_toStartOf="@+id/TxtSptNFuroTituloCrbUnic"
+        app:layout_constraintStart_toStartOf="@+id/TollbarSptNfuros"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptNFuroTituloCrbUnic"
+        app:srcCompat="@drawable/ic_back"
         app:tint="@color/white" />
 
     <Button

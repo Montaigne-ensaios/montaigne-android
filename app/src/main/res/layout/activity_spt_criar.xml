@@ -46,7 +46,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarTituloTest"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/BntSPTCriarBackCarUnico"
+        app:layout_constraintStart_toEndOf="@+id/BntSPTCriarBackCrbUnico"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTituloTest" />
 
     <TextView
@@ -122,7 +122,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarNdagua"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnSPTCriarHelpAgua"
+        app:layout_constraintStart_toStartOf="@+id/bntSptCriarHelpNvagua"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarAgua" />
 
     <androidx.appcompat.widget.Toolbar
@@ -152,7 +152,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/BntSPTCriarBackCarUnico"
+        android:id="@+id/BntSPTCriarBackCrbUnico"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginEnd="20dp"
@@ -176,7 +176,7 @@
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarNdagua"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnSPTCriarHelpAgua"
+        app:layout_constraintStart_toStartOf="@+id/bntSptCriarHelpNvagua"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarNdagua" />
 
     <EditText
@@ -288,7 +288,7 @@
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarGlp2" />
 
     <ImageButton
-        android:id="@+id/btnSPTCriarHelpAgua"
+        android:id="@+id/bntSptCriarHelpNvagua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
@@ -297,7 +297,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarNdagua"
         app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarNdagua"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/BntSPTCriarBackCarUnico"
+        app:layout_constraintStart_toStartOf="@+id/BntSPTCriarBackCrbUnico"
         app:layout_constraintTop_toTopOf="@+id/TxtSptCriarNdagua"
         app:srcCompat="@android:drawable/btn_dialog" />
 
@@ -407,7 +407,7 @@
         app:srcCompat="@android:drawable/btn_dialog" />
 
     <ImageButton
-        android:id="@+id/btnSPTCriarSave"
+        android:id="@+id/bntSptCriarSalvarFuro"
         android:layout_width="32dp"
         android:layout_height="38dp"
         android:layout_marginStart="130dp"
