@@ -13,6 +13,8 @@ import androidx.annotation.RequiresApi;
 import com.montaigne.montaigneandroid.model.Projeto;
 import com.montaigne.montaigneandroid.model.Sondagem;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -41,7 +43,7 @@ public class SondagemDAO {
         cv.put("nivel_referencia", sondagem.getNivelReferencia());
         cv.put("total_perfurado", sondagem.getTotalPerfurado());
         cv.put("coordenada", sondagem.getCoordenada());
-        cv.put("data_inicio", sondagem.getDataInicio().getTime());
+        cv.put("data_inicio", sondagem.getDataInicio().toString());
 
         try {
             // Não registra na tabela se não der certo
@@ -96,6 +98,7 @@ public class SondagemDAO {
     @SuppressLint("Range")
     public List<Sondagem> pesquisar(long idSpt) {
         List<Sondagem> sondagens = new ArrayList<>();
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 
         // Comando
         String sql = "SELECT * FROM " + DbHelper.TABELA_SONDAGEM_SPT + " WHERE id_spt ==?;";
@@ -112,8 +115,14 @@ public class SondagemDAO {
             float totalPerfurado = c.getFloat( c.getColumnIndex("total_perfurado") );
             String coordenada = c.getString( c.getColumnIndex("coordenada") );
 
-            long data = c.getLong( c.getColumnIndex("data_inicio") );
-            Date dataInicio = Date.from(Instant.ofEpochMilli(data));
+            String data = c.getString( c.getColumnIndex("data_inicio") );
+
+            Date dataInicio = null;
+            try {
+                dataInicio = formato.parse(data);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
 
             Sondagem sondagem = new Sondagem(id, idSpt, numero, nivelDAgua, nivelFuro, nivelReferencia,
                     totalPerfurado, coordenada, dataInicio);
@@ -128,6 +137,7 @@ public class SondagemDAO {
     @RequiresApi(api = Build.VERSION_CODES.O)
     public List<Sondagem> listar() {
         List<Sondagem> sondagens = new ArrayList<>();
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 
         String sql = "SELECT * FROM " + DbHelper.TABELA_SONDAGEM_SPT + " ;";
         Cursor c = reader.rawQuery(sql, null);
@@ -142,8 +152,15 @@ public class SondagemDAO {
             float totalPerfurado = c.getFloat( c.getColumnIndex("total_perfurado") );
             String coordenada = c.getString( c.getColumnIndex("coordenada") );
 
-            long data = c.getLong( c.getColumnIndex("data_inicio") );
-            Date dataInicio = Date.from(Instant.ofEpochMilli(data));
+            String data = c.getString( c.getColumnIndex("data_inicio") );
+
+            Date dataInicio = null;
+            try {
+                dataInicio = formato.parse(data);
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+
 
             Sondagem sondagem = new Sondagem(id, idSpt, numero, nivelDAgua, nivelFuro, nivelReferencia,
                                             totalPerfurado, coordenada, dataInicio);
