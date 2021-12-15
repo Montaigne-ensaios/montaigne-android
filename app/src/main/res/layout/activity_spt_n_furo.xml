@@ -7,85 +7,85 @@
     tools:context=".activity.SPTNFuro">
 
     <TextView
-        android:id="@+id/textAvisoObrigatorio3"
+        android:id="@+id/TxtSptNFuroTextObrgtorio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="260dp"
         android:fontFamily="sans-serif-condensed-light"
         android:text="@string/TxtSptNFuroTextObrigatorioStr"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/bntCapturarLocalização2"
-        app:layout_constraintTop_toBottomOf="@+id/bntCapturarLocalização2" />
+        app:layout_constraintStart_toStartOf="@+id/FieldSptNFuroCodnadasFuroN"
+        app:layout_constraintTop_toBottomOf="@+id/FieldSptNFuroCodnadasFuroN" />
 
     <ImageButton
-        android:id="@+id/imgBntHome"
+        android:id="@+id/BntSptNfuroHome"
         android:layout_width="50dp"
         android:layout_height="38dp"
         android:layout_marginStart="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/bntIniciarEnsaio2"
+        app:layout_constraintBottom_toBottomOf="@+id/BntSptNFuroIniciarEnsaio"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/bntIniciarEnsaio2"
+        app:layout_constraintTop_toTopOf="@+id/BntSptNFuroIniciarEnsaio"
         app:srcCompat="@drawable/ic_home" />
 
     <Button
-        android:id="@+id/bntIniciarEnsaio2"
+        android:id="@+id/BntSptNFuroIniciarEnsaio"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
-        android:text="string iniciar_ensaio"
+        android:text="@string/BntSptNFuroIniciaEnsaioTxt"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/imgbntHelpDataInicioF2"
+        android:id="@+id/BntSptNFuroHelpDatInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="16dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/fieldDatadeinicioFuro2"
+        app:layout_constraintBottom_toBottomOf="@+id/FieldSptNFuroDataInicio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/fieldDatadeinicioFuro2"
-        app:layout_constraintTop_toTopOf="@+id/fieldDatadeinicioFuro2"
+        app:layout_constraintStart_toEndOf="@+id/FieldSptNFuroDataInicio"
+        app:layout_constraintTop_toTopOf="@+id/FieldSptNFuroDataInicio"
         app:srcCompat="@android:drawable/btn_dialog" />
 
     <ImageButton
-        android:id="@+id/imgbntHelpNivDoFuro2"
+        android:id="@+id/BntSptNFuroHelpNvdFuroN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/fieldNivelFuro2"
+        app:layout_constraintBottom_toBottomOf="@+id/FieldSptNFuroNvdFuroN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/fieldNivelFuro2"
-        app:layout_constraintTop_toTopOf="@+id/fieldNivelFuro2"
+        app:layout_constraintStart_toEndOf="@+id/FieldSptNFuroNvdFuroN"
+        app:layout_constraintTop_toTopOf="@+id/FieldSptNFuroNvdFuroN"
         app:srcCompat="@android:drawable/btn_dialog" />
 
     <ImageButton
-        android:id="@+id/imgbntHelpCodDoFuro2"
+        android:id="@+id/BntSptNFuroHelpCdFuroN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/bntCapturarLocalização2"
-        app:layout_constraintStart_toEndOf="@+id/bntCapturarLocalização2"
-        app:layout_constraintTop_toTopOf="@+id/bntCapturarLocalização2"
+        app:layout_constraintBottom_toBottomOf="@+id/FieldSptNFuroCodnadasFuroN"
+        app:layout_constraintStart_toEndOf="@+id/FieldSptNFuroCodnadasFuroN"
+        app:layout_constraintTop_toTopOf="@+id/FieldSptNFuroCodnadasFuroN"
         app:srcCompat="@android:drawable/btn_dialog" />
 
     <EditText
-        android:id="@+id/fieldNivelFuro2"
+        android:id="@+id/FieldSptNFuroNvdFuroN"
         android:layout_width="290dp"
         android:layout_height="52dp"
         android:layout_marginTop="10dp"
@@ -94,13 +94,13 @@
         android:hint="hint"
         android:inputType="number"
         android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/textNivelFuro2"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptNFuroNvdFuroN"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textNivelFuro2"
-        app:layout_constraintTop_toBottomOf="@+id/textNivelFuro2" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptNFuroNvdFuroN"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptNFuroNvdFuroN" />
 
     <EditText
-        android:id="@+id/fieldDatadeinicioFuro2"
+        android:id="@+id/FieldSptNFuroDataInicio"
         android:layout_width="290dp"
         android:layout_height="52dp"
         android:layout_marginTop="10dp"
@@ -109,51 +109,51 @@
         android:hint="hint"
         android:inputType="date"
         android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/textDataInicioFuro2"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptNfuroDataInicio"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textDataInicioFuro2"
-        app:layout_constraintTop_toBottomOf="@+id/textDataInicioFuro2" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptNfuroDataInicio"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptNfuroDataInicio" />
 
     <TextView
-        android:id="@+id/textNivelFuro2"
+        android:id="@+id/TxtSptNFuroNvdFuroN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="string nivel_do_furo_2"
+        android:text="@string/TxtSptNFuroNvdfuroStr"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textDataInicioFuro2"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptNfuroDataInicio"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textDataInicioFuro2"
-        app:layout_constraintTop_toBottomOf="@+id/fieldDatadeinicioFuro2" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptNfuroDataInicio"
+        app:layout_constraintTop_toBottomOf="@+id/FieldSptNFuroDataInicio" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/TxtSptNFuroCodnadasFuroN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/coordernadas"
+        android:text="@string/TxtSptNFuroCodernadasFuroN"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textNivelFuro2"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptNFuroNvdFuroN"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textNivelFuro2"
-        app:layout_constraintTop_toBottomOf="@+id/fieldNivelFuro2" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptNFuroNvdFuroN"
+        app:layout_constraintTop_toBottomOf="@+id/FieldSptNFuroNvdFuroN" />
 
     <TextView
-        android:id="@+id/textDataInicioFuro2"
+        android:id="@+id/TxtSptNfuroDataInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/data_inicio"
+        android:text="@string/TxtSptNFuroDatainicioStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/TxtSptNFuroTituloCrbUnic"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="@+id/BntSptNfuroBackCrbDefinitivo"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptNFuroTituloCrbUnic" />
 
@@ -197,7 +197,7 @@
         app:tint="@color/white" />
 
     <Button
-        android:id="@+id/bntCapturarLocalização2"
+        android:id="@+id/FieldSptNFuroCodnadasFuroN"
         android:layout_width="290dp"
         android:layout_height="45dp"
         android:layout_marginTop="10dp"
@@ -205,9 +205,9 @@
         android:drawableLeft="@android:drawable/btn_dialog"
         android:text="string capturar_localização"
         app:backgroundTint="@color/transparente"
-        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptNFuroCodnadasFuroN"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView25"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptNFuroCodnadasFuroN"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptNFuroCodnadasFuroN" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

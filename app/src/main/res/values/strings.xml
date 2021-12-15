@@ -9,11 +9,13 @@
     <string name="TxtSobreEntrcotatoStr">Para entrar em contato conosco,  envie um e-mail para:montaige.ensaios@prontomail.com</string>
     <string name="TxtHomeMeusprojetosStr">Meus Projetos:</string>
     <string name="TxtSptCriarSegmentosAmstraStr">Segmentos</string>
+    <string name="BntSptNFuroIniciaEnsaioTxt">Iniciar Ensaio</string>
     <string name="TxtSptCriarPenetraçãoStr">Penetração</string>
     <string name="TxtSptCriarGolpesStr">Golpes</string>
     <string name="TxtSptcriarProfundidadeStr">Profundidade:</string>
     <string name="TxtSptcarimboNameprojetoStr">Nome do projeto: *</string>
     <string name="TxtSptcarimboDatainicioStr">Data de inicio: *</string>
+    <string name="TxtSptNFuroDatainicioStr">Data de inicio: *</string>
     <string name="TxtSptcarimboEmpresaStr">Empresa: *</string>
     <string name="TxtSptcarimboTelefoneStr">Telefone:</string>
     <string name="TxtSptcarimboNmtecncStr">Nome do Técnico: *</string>
@@ -22,7 +24,9 @@
     <string name="TxtSptcarimboLocalsondagemStr">Local da sondagem: *</string>
     <string name="TxtSpteditarDatfinalStr">Data Final: *</string>
     <string name="TxtSptEditarRefdnivelStr">Referência de Nível: *</string>
-    <string name="TxtSptEditarNvdfuroStr">Nível do Furo: *</string>
+    <string name="TxtSptEditarNvdfuroStr">Nível do Furo N: *</string>
+    <string name="TxtSptNFuroNvdfuroStr">Nível do Furo N: *</string>
+    <string name="TxtSptNFuroCodernadasFuroN">Coordernadas do Furo N: *</string>
     <string name="TxtSptEditarNSPTStr">NSPT</string>
     <string name="StrTstSptcarimboTituloTxt">Carimbo</string>
     <string name="StrTstSpteditarTituloRevisãofuroTxt">Revisão do furo SP01</string>
