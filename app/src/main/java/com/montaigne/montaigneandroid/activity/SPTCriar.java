@@ -50,7 +50,7 @@ public class  SPTCriar extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void setupButtons(){
-        btnHome = findViewById(R.id.btnSPTCriarHome);
+        btnHome = findViewById(R.id.bntSptCriarHome);
         btnHome.setOnClickListener(v -> {
             startActivity(
                     new Intent(SPTCriar.this, HomeActivity.class));
@@ -61,7 +61,7 @@ public class  SPTCriar extends AppCompatActivity {
         btnVoltar.setOnClickListener(v -> finish());
         // todo: implementar confirmações de usuário nestes botões de saída
 
-        btnProxima = findViewById(R.id.btnSPTCriarProx);
+        btnProxima = findViewById(R.id.bntSptCriarProxAmostra);
         btnProxima.setOnClickListener(v -> {
             salvar();
 
@@ -73,11 +73,11 @@ public class  SPTCriar extends AppCompatActivity {
             finish();
         });
 
-        btnSave = findViewById(R.id.bntSptCriarSalvarFuro);
+        btnSave = findViewById(R.id.BntSptCriarSalvarFuro);
         btnSave.setOnClickListener(v -> {});
         // todo: salvar ensaio
 
-        btnFinalizar = findViewById(R.id.btnSPTCriarFim);
+        btnFinalizar = findViewById(R.id.BntSptCriarFinalizarEnsaio);
         btnFinalizar.setOnClickListener(v -> finish());
         // todo: adicionar métodos de banco de dados e salvamento antes de finalizar activity
     }
@@ -140,9 +140,9 @@ public class  SPTCriar extends AppCompatActivity {
         }
 
         // cria listeners para tratar alterações das inputs
-        fieldProf = findViewById(R.id.fieldSPTCriarProf);
+        fieldProf = findViewById(R.id.fieldSPTCriarProfdadeAmstr);
         fieldProf.setOnFocusChangeListener((v, b) -> naturalNumberInput((EditText) v));
-        fieldNAgua = findViewById(R.id.fieldSPTCriarAgua);
+        fieldNAgua = findViewById(R.id.fieldSPTCriarNvdAgua);
         fieldNAgua.setOnFocusChangeListener((v, b) -> naturalNumberInput((EditText) v));
     }
 
