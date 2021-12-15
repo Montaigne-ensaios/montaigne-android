@@ -10,8 +10,10 @@
         <entry key="app/src/main/res/layout/activity_spt_criar.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_spt_editar.xml" value="0.1953125" />
         <entry key="app/src/main/res/layout/activity_spt_gerenciar_projs.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_spt_n_furo.xml" value="0.19427083333333334" />
         <entry key="app/src/main/res/layout/activity_spt_projeto.xml" value="0.22" />
         <entry key="app/src/main/res/layout/adapter_home_categorias.xml" value="0.1953125" />
+        <entry key="app/src/main/res/layout/adapter_home_projs.xml" value="0.19427083333333334" />
         <entry key="app/src/main/res/layout/adapter_spt_furos.xml" value="0.22" />
         <entry key="app/src/main/res/layout/adapter_spt_gerenciar_ensaios.xml" value="0.33" />
         <entry key="app/src/main/res/layout/adapter_spt_gerenciar_projetos.xml" value="0.1953125" />
