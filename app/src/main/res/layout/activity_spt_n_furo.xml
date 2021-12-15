@@ -56,7 +56,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/FieldSptNFuroDataInicio"
         app:layout_constraintTop_toTopOf="@+id/FieldSptNFuroDataInicio"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:srcCompat="@drawable/ic_help" />
 
     <ImageButton
         android:id="@+id/BntSptNFuroHelpNvdFuroN"
@@ -70,7 +70,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/FieldSptNFuroNvdFuroN"
         app:layout_constraintTop_toTopOf="@+id/FieldSptNFuroNvdFuroN"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:srcCompat="@drawable/ic_help" />
 
     <ImageButton
         android:id="@+id/BntSptNFuroHelpCdFuroN"
@@ -82,7 +82,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/FieldSptNFuroCodnadasFuroN"
         app:layout_constraintStart_toEndOf="@+id/FieldSptNFuroCodnadasFuroN"
         app:layout_constraintTop_toTopOf="@+id/FieldSptNFuroCodnadasFuroN"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:srcCompat="@drawable/ic_help" />
 
     <EditText
         android:id="@+id/FieldSptNFuroNvdFuroN"
