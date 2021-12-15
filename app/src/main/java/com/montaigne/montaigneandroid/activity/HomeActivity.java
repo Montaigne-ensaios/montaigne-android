@@ -47,7 +47,7 @@ public class HomeActivity extends AppCompatActivity {
     private void setupCategorias(){
         // cria o adapter e seta o recycler:
         adapterCategorias = new HomeCategorias(this);
-        recyclerCategorias = findViewById(R.id.recyclerCategorias);
+        recyclerCategorias = findViewById(R.id.recyclerHomeCategorias);
         recyclerCategorias.setAdapter(adapterCategorias);
         recyclerCategorias.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
 
@@ -60,7 +60,7 @@ public class HomeActivity extends AppCompatActivity {
     private void setupProjs(){
         // cria o adapter e seta o recycler
         adapterProjs = new HomeProjs(this, projetos);
-        recyclerProjs = findViewById(R.id.recyclerProjs);
+        recyclerProjs = findViewById(R.id.recyclerHomeProjs);
         recyclerProjs.setAdapter(adapterProjs);
         recyclerProjs.setLayoutManager(new LinearLayoutManager(this));
     }
