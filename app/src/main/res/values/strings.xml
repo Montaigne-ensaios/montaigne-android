@@ -13,8 +13,13 @@
     <string name="TxtSptCriarPenetraçãoStr">Penetração</string>
     <string name="TxtSptCriarGolpesStr">Golpes</string>
     <string name="TxtSptcriarProfundidadeStr">Profundidade:</string>
+    <string name="TxtSptEditarPenetraçãoStr">Penetração</string>
+    <string name="TxtSptEditarGolpesStr">Golpes</string>
+    <string name="TxtSptEditarProfundidadeStr">Profundidade:</string>
     <string name="TxtSptcarimboNameprojetoStr">Nome do projeto: *</string>
+    <string name="TxtSptEditarNameprojetoStr">Nome do projeto: *</string>
     <string name="TxtSptcarimboDatainicioStr">Data de inicio: *</string>
+    <string name="TxtSptEditarDatainicioStr">Data de inicio: *</string>
     <string name="TxtSptNFuroDatainicioStr">Data de inicio: *</string>
     <string name="TxtSptcarimboEmpresaStr">Empresa: *</string>
     <string name="TxtSptcarimboTelefoneStr">Telefone:</string>
@@ -22,19 +27,22 @@
     <string name="TxtSptcarimboNmclienteStr">Nome do Cliente: *</string>
     <string name="TxtSptcarimboNmdfuroStr">Número de Furos: *</string>
     <string name="TxtSptcarimboLocalsondagemStr">Local da sondagem: *</string>
-    <string name="TxtSpteditarDatfinalStr">Data Final: *</string>
+    <string name="TxtSptEditarDatfinalStr">Data Final: *</string>
     <string name="TxtSptEditarRefdnivelStr">Referência de Nível: *</string>
     <string name="TxtSptEditarNvdfuroStr">Nível do Furo N: *</string>
     <string name="TxtSptNFuroNvdfuroStr">Nível do Furo N: *</string>
     <string name="TxtSptNFuroCodernadasFuroN">Coordernadas do Furo N: *</string>
     <string name="TxtSptEditarNSPTStr">NSPT</string>
-    <string name="StrTstSptcriarNvaguaTxt">Nivel de água(m):</string>
+    <string name="TxtSptCriarNvaguaStr">Nivel de água(m):</string>
+    <string name="TxtSptEditarNvaguaStr">Nivel de água(m):</string>
     <string name="EditTextHintSptcriarNvagua">Nível de água</string>
-    <string name="StrTstSptcriarNAmostraTxt">Amostra 1 </string>
     <string name="BtnSPTCriarFinlzaEnsStr">Finalizar ensaio</string>
     <string name="BtnSptProjetoAlteracarimboStr">Carimbo</string>
-    <string name="BtnSPTGerarelatorioStr">Gerar Relatorio</string>
+    <string name="BntSPTEditarGerarelatorioStr">Gerar Relatorio</string>
     <string name="BntSptcriarPrxamtraStr">Próxima amostra</string>
+
+
+
     <string name="TxtSptNFuroTextObrigatorioStr">Os campos indicados com * são obrigatórios</string>
 
 

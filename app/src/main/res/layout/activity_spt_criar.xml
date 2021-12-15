@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/StrTstSptcriarNvaguaTxt"
+        android:text="@string/TxtSptCriarNvaguaStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -59,10 +59,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarNAmostra"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarTitulodAmostraN"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarNAmostra"
-        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarNAmostra" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarTitulodAmostraN"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTitulodAmostraN" />
 
     <TextView
         android:id="@+id/TxtSptCriarSegmentAmtra"
@@ -74,10 +74,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarNAmostra"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarTitulodAmostraN"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarNAmostra"
-        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarNAmostra" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarTitulodAmostraN"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTitulodAmostraN" />
 
     <TextView
         android:id="@+id/TxtSptCriarGolpes"
@@ -94,7 +94,7 @@
         app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarPenetraç"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/TxtSptCriarSegmentAmtra"
-        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarNAmostra" />
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTitulodAmostraN" />
 
     <TextView
         android:id="@+id/TxtSptCriarPenetraç"
@@ -111,12 +111,12 @@
         app:layout_constraintTop_toTopOf="@+id/TxtSptCriarGolpes" />
 
     <TextView
-        android:id="@+id/TxtSptCriarNAmostra"
+        android:id="@+id/TxtSptCriarTitulodAmostraN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/StrTstSptcriarNAmostraTxt"
+        android:text="Amostra N"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -425,7 +425,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="@string/proxima_amostra"
+        android:text="@string/BntSptcriarPrxamtraStr"
         android:textStyle="bold"
         app:backgroundTint="@color/transparente"
         app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarGolpes"
