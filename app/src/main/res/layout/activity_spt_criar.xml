@@ -44,10 +44,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarTituloTest"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarTitulodFuro"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toEndOf="@+id/BntSPTCriarBackCrbUnico"
-        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTituloTest" />
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTitulodFuro" />
 
     <TextView
         android:id="@+id/TxtSptCriarProfdadAmostr"
@@ -136,13 +136,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/TxtSptCriarTituloTest"
+        android:id="@+id/TxtSptCriarTitulodFuro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/StrTstSptcriarFuroNTxt"
+        android:text="Furo N- SP0N"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -158,9 +158,9 @@
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarTituloTest"
-        app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarTituloTest"
-        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarTituloTest"
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarTitulodFuro"
+        app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarTitulodFuro"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarTitulodFuro"
         app:srcCompat="@drawable/ic_back"
         app:tint="@color/white" />
 
@@ -296,7 +296,7 @@
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarNdagua"
         app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarNdagua"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.33"
         app:layout_constraintStart_toStartOf="@+id/BntSPTCriarBackCrbUnico"
         app:layout_constraintTop_toTopOf="@+id/TxtSptCriarNdagua"
         app:srcCompat="@android:drawable/btn_dialog" />
@@ -410,13 +410,13 @@
         android:id="@+id/bntSptCriarSalvarFuro"
         android:layout_width="32dp"
         android:layout_height="38dp"
-        android:layout_marginStart="130dp"
+        android:layout_marginStart="110dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarTituloTest"
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarTitulodFuro"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/TxtSptCriarTituloTest"
-        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarTituloTest"
+        app:layout_constraintStart_toEndOf="@+id/TxtSptCriarTitulodFuro"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarTitulodFuro"
         app:srcCompat="@drawable/ic_salvar"
         app:tint="@color/white" />
 

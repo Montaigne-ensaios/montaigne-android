@@ -174,7 +174,7 @@
         android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/TxtSptNFuroTituloCrbUnico"
+        android:text="Carimbo Único do Furo N"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"

@@ -40,7 +40,7 @@ public class  SPTCriar extends AppCompatActivity {
         // Seria bom ser o id do furo
         nCamada = getIntent().getLongExtra("nCamada", 1);
 
-        txtSPTCriarTitulo = findViewById(R.id.TxtSptCriarTituloTest);
+        txtSPTCriarTitulo = findViewById(R.id.TxtSptCriarTitulodFuro);
         txtSPTCriarTitulo.setText("Ensaio " + nCamada + " -  SPT");
 
         setupButtons();

@@ -33,7 +33,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="36dp"
         android:fontFamily="sans-serif-black"
-        android:text="@string/StrTstSptcarimboTituloTxt"
+        android:text="CARIMBO"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="34sp"
