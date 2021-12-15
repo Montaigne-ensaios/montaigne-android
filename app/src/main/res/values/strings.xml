@@ -40,6 +40,7 @@
     <string name="BtnSptProjetoAlteracarimboStr">Carimbo</string>
     <string name="BntSPTEditarGerarelatorioStr">Gerar Relatorio</string>
     <string name="BntSptcriarPrxamtraStr">Próxima amostra</string>
+    <string name="TxtSptCarimboAvisoSvAutom">Alterações salvas automaticamente!</string>
 
 
 

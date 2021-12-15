@@ -14,11 +14,37 @@
       tools:context=".activity.SPTCarimbo">
 
 
+    <ImageButton
+        android:id="@+id/bntSptCriarHome2"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/transparente"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSPTCarimboBack"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_home" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tollbarSptCriar"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imgSPTCarimboBack"
         android:layout_width="40dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="20dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/txtSPTCarimboTitulo"
         app:layout_constraintEnd_toStartOf="@+id/txtSPTCarimboTitulo"
         app:layout_constraintHorizontal_bias="0.0"
@@ -31,12 +57,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="36dp"
-        android:fontFamily="sans-serif-black"
-        android:text="CARIMBO"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Carimbo"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/black"
-        android:textSize="34sp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,12 +74,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="168dp"
         android:fontFamily="sans-serif"
-        android:text="@string/nome_do_projeto"
+        android:text="@string/TxtSptcarimboNameprojetoStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/black"
         android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSPTCarimboTitulo" />
+
+    <TextView
+        android:id="@+id/TxtSptCarimboAvisSvAutm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/TxtSptCarimboAvisoSvAutom"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgSPTCarimboImg"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSPTCarimboTitulo" />
 
@@ -73,7 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="@string/data_inicio"
+        android:text="@string/TxtSptcarimboDatainicioStr"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/txtSPTCarimboNome"
@@ -86,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="@string/empresa"
+        android:text="@string/TxtSptcarimboEmpresaStr"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/txtSPTCarimboDataIni"
@@ -99,10 +141,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="@string/telefone"
+        android:text="@string/TxtSptcarimboTelefoneStr"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/txtSPTCarimboEmpresa"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/txtSPTCarimboEmpresa"
         app:layout_constraintTop_toBottomOf="@+id/txtSPTCarimboEmpresa" />
 
@@ -111,7 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="@string/nomedotecnico"
+        android:text="@string/TxtSptcarimboNmtecncStr"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/txtSPTCarimboTel"
@@ -124,7 +167,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="@string/cliente"
+        android:text="@string/TxtSptcarimboNmclienteStr"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/txttxtSPTCarimboTecnico"
@@ -137,7 +180,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="@string/Numero_dfuros"
+        android:text="@string/TxtSptcarimboNmdfuroStr"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/txtSPTCarimboCli"
@@ -149,7 +192,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="@string/Local_sondagem"
+        android:text="@string/TxtSptcarimboLocalsondagemStr"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/txtSPTCarimboNFuros"
@@ -251,24 +294,25 @@
 
     <ImageView
         android:id="@+id/imgSPTCarimboSalvar"
-        android:layout_width="37dp"
-        android:layout_height="39dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/txtSPTCarimboTitulo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.872"
         app:layout_constraintStart_toEndOf="@+id/txtSPTCarimboTitulo"
         app:layout_constraintTop_toTopOf="@+id/txtSPTCarimboTitulo"
         app:srcCompat="@drawable/ic_salvar" />
 
     <ImageView
         android:id="@+id/imgSPTCarimboImg"
-        android:layout_width="71dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtSPTCarimboNome"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCarimboNome"
-        app:srcCompat="@drawable/image_icon" />
+        android:layout_width="102dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSPTCarimboTitulo"
+        app:srcCompat="@drawable/ic_perfil" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
