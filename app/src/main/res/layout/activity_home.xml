@@ -8,7 +8,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/TollbarHome"
-        android:layout_width="400dp"
+        android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
@@ -67,14 +67,14 @@
         android:layout_height="40dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
-        app:tint="#DD2C00"
         app:layout_constraintBottom_toBottomOf="@+id/TxtHomeMeusProjts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/TxtHomeMeusProjts"
         app:layout_constraintTop_toTopOf="@+id/TxtHomeMeusProjts"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_excluir" />
+        app:srcCompat="@drawable/ic_excluir"
+        app:tint="#DD2C00" />
 
     <ImageButton
         android:id="@+id/BntHomeInfoSobre"

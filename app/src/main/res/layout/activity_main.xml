@@ -12,7 +12,7 @@
         android:id="@+id/TxtMainBemvindos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="172dp"
         android:fontFamily="sans-serif-light"
         android:text="@string/TxtMainBoasvindas"
         android:textAlignment="viewStart"
@@ -38,7 +38,7 @@
         android:id="@+id/ViewMainDivisor"
         android:layout_width="263dp"
         android:layout_height="2dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="30dp"
         android:background="?android:attr/listDivider"
         android:backgroundTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,5 +60,20 @@
         app:layout_constraintStart_toStartOf="@+id/ViewMainDivisor"
         app:layout_constraintTop_toBottomOf="@+id/ViewMainDivisor"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtMainEmailApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/TxtMainToqueNtela"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ViewMainDivisor"
+        app:layout_constraintEnd_toEndOf="@+id/ViewMainDivisor"
+        app:layout_constraintStart_toStartOf="@+id/ViewMainDivisor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

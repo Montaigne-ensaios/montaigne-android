@@ -39,7 +39,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/TollbarSobre"
-        android:layout_width="400dp"
+        android:layout_width="fill_parent"
         android:layout_height="80dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
