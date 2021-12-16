@@ -91,13 +91,13 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarPenetraç"
+        app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarPenetraçPGolpe"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/TxtSptCriarSegmentAmtra"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTitulodAmostraN" />
 
     <TextView
-        android:id="@+id/TxtSptCriarPenetraç"
+        android:id="@+id/TxtSptCriarPenetraçPGolpe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
@@ -221,9 +221,9 @@
         android:inputType="number"
         android:maxLength="4"
         android:padding="6dp"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarPenetraç"
-        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarPenetraç"
-        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarPenetraç" />
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarPenetraçPGolpe"
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarPenetraçPGolpe"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarPenetraçPGolpe" />
 
     <EditText
         android:id="@+id/fieldSPTCriarPen2"
@@ -429,7 +429,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imgSPTCriarSeg3" />
 
     <ImageView
-        android:id="@+id/imgIndicativa"
+        android:id="@+id/ImgViewSptCriarIlustrativo"
         android:layout_width="50dp"
         android:layout_height="43dp"
         android:layout_marginStart="5dp"

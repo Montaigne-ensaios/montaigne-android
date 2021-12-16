@@ -13,9 +13,9 @@
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/btnSPTProjetoAlterarCarimbo"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSPTrojetoAlterarCarimbo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnSPTProjetoAlterarCarimbo"
+        app:layout_constraintTop_toTopOf="@+id/btnSPTrojetoAlterarCarimbo"
         app:srcCompat="@drawable/ic_excluir" />
 
     <ImageButton
@@ -25,9 +25,9 @@
         android:layout_marginStart="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/btnSPTProjetoAlterarCarimbo"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSPTrojetoAlterarCarimbo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnSPTProjetoAlterarCarimbo"
+        app:layout_constraintTop_toTopOf="@+id/btnSPTrojetoAlterarCarimbo"
         app:srcCompat="@drawable/ic_adicionar" />
 
     <androidx.appcompat.widget.Toolbar
@@ -71,7 +71,7 @@
         app:tint="@color/white" />
 
     <Button
-        android:id="@+id/btnSPTProjetoAlterarCarimbo"
+        android:id="@+id/btnSPTrojetoAlterarCarimbo"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
@@ -84,10 +84,10 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerSPTProjeto"
+        android:id="@+id/recyclerSPTProjetoFuros"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnSPTProjetoAlterarCarimbo"
+        app:layout_constraintBottom_toTopOf="@+id/btnSPTrojetoAlterarCarimbo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TollbarSptProjeto" />

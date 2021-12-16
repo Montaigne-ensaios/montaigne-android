@@ -23,7 +23,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ImgViewMainAppLogo"
         android:layout_width="349dp"
         android:layout_height="466dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,8 +55,10 @@
         android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/ViewMainDivisor"
         app:layout_constraintStart_toStartOf="@+id/ViewMainDivisor"
-        app:layout_constraintTop_toBottomOf="@+id/ViewMainDivisor" />
+        app:layout_constraintTop_toBottomOf="@+id/ViewMainDivisor"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

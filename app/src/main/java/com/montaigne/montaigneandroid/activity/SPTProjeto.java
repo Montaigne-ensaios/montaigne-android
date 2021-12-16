@@ -38,7 +38,7 @@ public class SPTProjeto extends AppCompatActivity {
         setupButtons();
 
         adapter = new SPTFuros(this, idProjeto, sondagens);
-        recyclerView = findViewById(R.id.recyclerSPTProjeto);
+        recyclerView = findViewById(R.id.recyclerSPTProjetoFuros);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
@@ -61,7 +61,7 @@ public class SPTProjeto extends AppCompatActivity {
         btnRmFuro = findViewById(R.id.bntSptProjetoExcluirFuro);
         btnRmFuro.setOnClickListener(v -> {});  // todo: implementar remoção de furos
 
-        btnCarimbo = findViewById(R.id.btnSPTProjetoAlterarCarimbo);
+        btnCarimbo = findViewById(R.id.btnSPTrojetoAlterarCarimbo);
         btnCarimbo.setOnClickListener(v -> {
             // intentn para a activity de carimbo
             Intent intent = new Intent(SPTProjeto.this, SPTCarimbo.class);
