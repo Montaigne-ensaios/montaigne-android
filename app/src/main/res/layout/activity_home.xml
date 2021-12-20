@@ -7,9 +7,9 @@
     tools:context=".activity.HomeActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="422dp"
-        android:layout_height="70dp"
+        android:id="@+id/TollbarHome"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,13 +18,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textnomedoapp"
+        android:id="@+id/TextHomeAppname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/app_name"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/txtAppname"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -35,74 +35,79 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textTipoDeEnsaio"
+        android:id="@+id/TxtHomeTipodensaio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="serif"
-        android:text="@string/tipos_ensaio"
+        android:text="@string/TxtHomeTipdensaioStr"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textnomedoapp"
-        app:layout_constraintHorizontal_bias="0.11"
-        app:layout_constraintStart_toStartOf="@+id/bntInformSobreNois"
-        app:layout_constraintTop_toBottomOf="@+id/textnomedoapp" />
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/TextHomeAppname"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/BntHomeInfoSobre"
+        app:layout_constraintTop_toBottomOf="@+id/TextHomeAppname" />
 
     <TextView
-        android:id="@+id/textMeusProj"
+        android:id="@+id/TxtHomeMeusProjts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="serif"
-        android:text="@string/Meus_projetos"
+        android:text="@string/TxtHomeMeusprojetosStr"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textTipoDeEnsaio"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/TxtHomeTipodensaio"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textTipoDeEnsaio"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerCategorias" />
+        app:layout_constraintStart_toStartOf="@+id/TxtHomeTipodensaio"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerHomeCategorias" />
 
     <ImageButton
-        android:id="@+id/btnHomeRmv"
-        android:layout_width="26dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="180dp"
+        android:id="@+id/BntHomeExcluirProjeto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
         android:background="@color/transparente"
-        app:layout_constraintBottom_toBottomOf="@+id/textMeusProj"
-        app:layout_constraintStart_toEndOf="@+id/textMeusProj"
-        app:layout_constraintTop_toTopOf="@+id/textMeusProj"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:layout_constraintBottom_toBottomOf="@+id/TxtHomeMeusProjts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/TxtHomeMeusProjts"
+        app:layout_constraintTop_toTopOf="@+id/TxtHomeMeusProjts"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_excluir"
+        app:tint="#DD2C00" />
 
     <ImageButton
-        android:id="@+id/bntInformSobreNois"
-        android:layout_width="31dp"
-        android:layout_height="29dp"
-        android:layout_marginEnd="10dp"
+        android:id="@+id/BntHomeInfoSobre"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="@+id/textnomedoapp"
-        app:layout_constraintEnd_toStartOf="@+id/textnomedoapp"
-        app:layout_constraintTop_toTopOf="@+id/textnomedoapp"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@android:drawable/btn_dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/TextHomeAppname"
+        app:layout_constraintEnd_toStartOf="@+id/TextHomeAppname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TextHomeAppname"
+        app:srcCompat="@drawable/ic_inf"
         app:tint="@color/white" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerCategorias"
+        android:id="@+id/recyclerHomeCategorias"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="@+id/btnHomeRmv"
+        app:layout_constraintEnd_toEndOf="@+id/BntHomeExcluirProjeto"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/textMeusProj"
-        app:layout_constraintTop_toBottomOf="@+id/textTipoDeEnsaio" />
+        app:layout_constraintStart_toStartOf="@+id/TxtHomeMeusProjts"
+        app:layout_constraintTop_toBottomOf="@+id/TxtHomeTipodensaio" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerProjs"
+        android:id="@+id/recyclerHomeProjs"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnHomeRmv"
-        app:layout_constraintStart_toStartOf="@+id/textMeusProj"
-        app:layout_constraintTop_toBottomOf="@+id/textMeusProj" />
+        app:layout_constraintEnd_toEndOf="@+id/BntHomeExcluirProjeto"
+        app:layout_constraintStart_toStartOf="@+id/TxtHomeMeusProjts"
+        app:layout_constraintTop_toBottomOf="@+id/TxtHomeMeusProjts" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

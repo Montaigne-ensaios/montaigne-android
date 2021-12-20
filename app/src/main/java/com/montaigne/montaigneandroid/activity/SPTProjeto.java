@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -39,17 +38,17 @@ public class SPTProjeto extends AppCompatActivity {
         setupButtons();
 
         adapter = new SPTFuros(this, idProjeto, sondagens);
-        recyclerView = findViewById(R.id.recyclerSPTProjeto);
+        recyclerView = findViewById(R.id.recyclerSPTProjetoFuros);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
     private void setupButtons(){
         // configuração dos botões
-        btnBack = findViewById(R.id.btnSPTProjetoBack);
+        btnBack = findViewById(R.id.btnSPTProjetoBackActivySpt);
         btnBack.setOnClickListener(v -> finish());
 
-        btnAddFuro = findViewById(R.id.btnSPTProjetoAddFuro);
+        btnAddFuro = findViewById(R.id.bntSptProjetoAddFuro);
         btnAddFuro.setOnClickListener(v -> {
                 // intent para a activity de realização de ensaio
                 Intent intent = new Intent(SPTProjeto.this, SPTCriar.class);
@@ -59,10 +58,10 @@ public class SPTProjeto extends AppCompatActivity {
             }
         );
 
-        btnRmFuro = findViewById(R.id.btnSPTProjetoRmFuro);
+        btnRmFuro = findViewById(R.id.bntSptProjetoExcluirFuro);
         btnRmFuro.setOnClickListener(v -> {});  // todo: implementar remoção de furos
 
-        btnCarimbo = findViewById(R.id.btnSPTProjetoCarimbo);
+        btnCarimbo = findViewById(R.id.btnSPTrojetoAlterarCarimbo);
         btnCarimbo.setOnClickListener(v -> {
             // intentn para a activity de carimbo
             Intent intent = new Intent(SPTProjeto.this, SPTCarimbo.class);

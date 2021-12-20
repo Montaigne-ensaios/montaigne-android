@@ -7,33 +7,33 @@
     tools:context=".activity.SPTProjeto">
 
     <ImageButton
-        android:id="@+id/btnSPTProjetoRmFuro"
-        android:layout_width="44dp"
-        android:layout_height="50dp"
+        android:id="@+id/bntSptProjetoExcluirFuro"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/btnSPTProjetoCarimbo"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSPTrojetoAlterarCarimbo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnSPTProjetoCarimbo"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:layout_constraintTop_toTopOf="@+id/btnSPTrojetoAlterarCarimbo"
+        app:srcCompat="@drawable/ic_excluir" />
 
     <ImageButton
-        android:id="@+id/btnSPTProjetoAddFuro"
+        android:id="@+id/bntSptProjetoAddFuro"
         android:layout_width="44dp"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/btnSPTProjetoCarimbo"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSPTrojetoAlterarCarimbo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnSPTProjetoCarimbo"
+        app:layout_constraintTop_toTopOf="@+id/btnSPTrojetoAlterarCarimbo"
         app:srcCompat="@drawable/ic_adicionar" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar3"
-        android:layout_width="425dp"
-        android:layout_height="78dp"
+        android:id="@+id/TollbarSptProjeto"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -41,13 +41,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtSPTProjeto"
+        android:id="@+id/TxtSptProjetoTituloNomedProjeto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/Projeto_1SPT"
+        android:text="Projeto 1-SPT"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -57,26 +57,26 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/btnSPTProjetoBack"
-        android:layout_width="43dp"
-        android:layout_height="38dp"
+        android:id="@+id/btnSPTProjetoBackActivySpt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTProjeto"
-        app:layout_constraintEnd_toStartOf="@+id/txtSPTProjeto"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTProjeto"
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptProjetoTituloNomedProjeto"
+        app:layout_constraintEnd_toStartOf="@+id/TxtSptProjetoTituloNomedProjeto"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptProjetoTituloNomedProjeto"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@android:drawable/btn_dialog"
+        app:srcCompat="@drawable/ic_back"
         app:tint="@color/white" />
 
     <Button
-        android:id="@+id/btnSPTProjetoCarimbo"
+        android:id="@+id/btnSPTrojetoAlterarCarimbo"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif-medium"
-        android:text="@string/btnSPTProjetoCarimboStr"
+        android:text="@string/BtnSptProjetoAlteracarimboStr"
         android:textAlignment="textEnd"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -84,12 +84,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerSPTProjeto"
+        android:id="@+id/recyclerSPTProjetoFuros"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnSPTProjetoCarimbo"
+        app:layout_constraintBottom_toTopOf="@+id/btnSPTrojetoAlterarCarimbo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+        app:layout_constraintTop_toBottomOf="@+id/TollbarSptProjeto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

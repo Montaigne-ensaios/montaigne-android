@@ -7,7 +7,7 @@
     tools:context=".activity.SPTEditar">
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/FieldSptEditarNmPrjeto"
         android:layout_width="290dp"
         android:layout_height="52dp"
         android:layout_marginTop="5dp"
@@ -16,173 +16,173 @@
         android:hint="hint"
         android:inputType="textPersonName"
         android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtCarimboNomeProjeto1"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarNomedProj"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtCarimboNomeProjeto1"
-        app:layout_constraintTop_toBottomOf="@+id/txtCarimboNomeProjeto1" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptEditarNomedProj"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarNomedProj" />
 
     <TextView
-        android:id="@+id/txtSPTCarimboNome8"
+        android:id="@+id/TxtSptEditarGolpesAmstr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/golpes"
+        android:text="@string/TxtSptEditarGolpesStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView26"
-        app:layout_constraintStart_toEndOf="@+id/textView26"
-        app:layout_constraintTop_toTopOf="@+id/textView26" />
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptEditarProfdidaDAmstr"
+        app:layout_constraintStart_toEndOf="@+id/TxtSptEditarProfdidaDAmstr"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptEditarProfdidaDAmstr" />
 
     <TextView
-        android:id="@+id/txtSPTCarimboNome9"
+        android:id="@+id/TxtSptEditarNspt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/NSPT"
+        android:text="@string/TxtSptEditarNSPTStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCarimboNome10"
-        app:layout_constraintStart_toEndOf="@+id/txtSPTCarimboNome10"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCarimboNome10"
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptEditarPentraçãoGolpes"
+        app:layout_constraintStart_toEndOf="@+id/TxtSptEditarPentraçãoGolpes"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptEditarPentraçãoGolpes"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/txtSPTCarimboNome10"
+        android:id="@+id/TxtSptEditarPentraçãoGolpes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/penetração"
+        android:text="@string/TxtSptEditarPenetraçãoStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCarimboNome8"
-        app:layout_constraintStart_toEndOf="@+id/txtSPTCarimboNome8"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCarimboNome8" />
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptEditarGolpesAmstr"
+        app:layout_constraintStart_toEndOf="@+id/TxtSptEditarGolpesAmstr"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptEditarGolpesAmstr" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/TxtSptEditarProfdidaDAmstr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/Profundidade"
+        android:text="@string/TxtSptEditarProfundidadeStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textNivFuro1"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarNvdAguaFuroN"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textNivFuro1"
-        app:layout_constraintTop_toBottomOf="@+id/textNivFuro1" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptEditarNvdAguaFuroN"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarNvdAguaFuroN" />
 
     <ImageButton
-        android:id="@+id/imgbntHome3"
+        android:id="@+id/BntSptEditarHome"
         android:layout_width="50dp"
         android:layout_height="38dp"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/bntGerarRelatorio1"
+        app:layout_constraintBottom_toBottomOf="@+id/BntSptEditarGerarRelatorio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/bntGerarRelatorio1"
-        app:layout_constraintTop_toTopOf="@+id/bntGerarRelatorio1"
+        app:layout_constraintStart_toEndOf="@+id/BntSptEditarGerarRelatorio"
+        app:layout_constraintTop_toTopOf="@+id/BntSptEditarGerarRelatorio"
         app:srcCompat="@drawable/ic_home" />
 
     <TextView
-        android:id="@+id/textNivelDágua1"
+        android:id="@+id/TxtSptEditarNvdFuroN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/nivel_dágua"
+        android:text="@string/TxtSptEditarNvdfuroStr"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textReferNivel"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarRefdNivel"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textReferNivel"
-        app:layout_constraintTop_toBottomOf="@+id/textReferNivel" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptEditarRefdNivel"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarRefdNivel" />
 
     <TextView
-        android:id="@+id/textNivFuro1"
+        android:id="@+id/TxtSptEditarNvdAguaFuroN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Criar String nivel do furo"
+        android:text="@string/TxtSptEditarNvaguaStr"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textNivelDágua1"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarNvdFuroN"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textNivelDágua1"
-        app:layout_constraintTop_toBottomOf="@+id/textNivelDágua1" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptEditarNvdFuroN"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarNvdFuroN" />
 
     <TextView
-        android:id="@+id/textReferNivel"
+        android:id="@+id/TxtSptEditarRefdNivel"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/Referencia_de_nivel"
+        android:text="@string/TxtSptEditarRefdnivelStr"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textDataInicioF1"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarDatInicioNFuro"
         app:layout_constraintHorizontal_bias="0.013"
-        app:layout_constraintStart_toStartOf="@+id/textDataInicioF1"
-        app:layout_constraintTop_toBottomOf="@+id/textDataFinalF1" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptEditarDatInicioNFuro"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarDatFinalNFuro" />
 
     <TextView
-        android:id="@+id/textDataFinalF1"
+        android:id="@+id/TxtSptEditarDatFinalNFuro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/data_final"
+        android:text="@string/TxtSptEditarDatfinalStr"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textDataInicioF1"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarDatInicioNFuro"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textDataInicioF1"
-        app:layout_constraintTop_toBottomOf="@+id/textDataInicioF1" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptEditarDatInicioNFuro"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarDatInicioNFuro" />
 
     <TextView
-        android:id="@+id/textDataInicioF1"
+        android:id="@+id/TxtSptEditarDatInicioNFuro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/data_inicio"
+        android:text="@string/TxtSptEditarDatainicioStr"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtCarimboNomeProjeto1"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarNomedProj"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtCarimboNomeProjeto1"
-        app:layout_constraintTop_toBottomOf="@+id/txtCarimboNomeProjeto1" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptEditarNomedProj"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarNomedProj" />
 
     <TextView
-        android:id="@+id/txtCarimboNomeProjeto1"
+        android:id="@+id/TxtSptEditarNomedProj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/nome_do_projeto"
+        android:text="@string/TxtSptEditarNameprojetoStr"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textRevisFuro1"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarTituloRevisãdFuro"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imgBntVoltarUltimaAmost"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar6" />
+        app:layout_constraintStart_toStartOf="@+id/BntSptEditarBackSptCriar"
+        app:layout_constraintTop_toBottomOf="@+id/TollbarSptEditar" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar6"
-        android:layout_width="440dp"
-        android:layout_height="74dp"
+        android:id="@+id/TollbarSptEditar"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -190,13 +190,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textRevisFuro1"
+        android:id="@+id/TxtSptEditarTituloRevisãdFuro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Criar String"
+        android:text="Revisão do furo SP0N"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -206,28 +206,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imgBntVoltarUltimaAmost"
+        android:id="@+id/BntSptEditarBackSptCriar"
         android:layout_width="43dp"
         android:layout_height="38dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/textRevisFuro1"
-        app:layout_constraintEnd_toStartOf="@+id/textRevisFuro1"
-        app:layout_constraintTop_toTopOf="@+id/textRevisFuro1"
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptEditarTituloRevisãdFuro"
+        app:layout_constraintEnd_toStartOf="@+id/TxtSptEditarTituloRevisãdFuro"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptEditarTituloRevisãdFuro"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@android:drawable/btn_dialog"
+        app:srcCompat="@drawable/ic_back"
         app:tint="@color/white" />
 
     <Button
-        android:id="@+id/bntGerarRelatorio1"
+        android:id="@+id/BntSptEditarGerarRelatorio"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
-        android:text="@string/GERAR_RELATORIO"
+        android:text="@string/BntSPTEditarGerarelatorioStr"
         android:textAllCaps="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textNivFuro1"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarNvdAguaFuroN"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textNivFuro1" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptEditarNvdAguaFuroN" />
 </androidx.constraintlayout.widget.ConstraintLayout>

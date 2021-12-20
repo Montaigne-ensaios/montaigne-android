@@ -5,36 +5,75 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:drawable/btn_dialog"
+    android:background="@drawable/fundoapp"
     tools:context=".activity.MainActivity">
 
     <TextView
-        android:id="@+id/txtTitulo"
+        android:id="@+id/TxtMainBemvindos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:fontFamily="serif"
-        android:text="@string/app_name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_marginBottom="172dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/TxtMainBoasvindas"
+        android:textAlignment="viewStart"
         android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <TextView
-        android:id="@+id/txtSubTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="110dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/text1"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ImgViewMainAppLogo"
+        android:layout_width="349dp"
+        android:layout_height="466dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382"
+        app:srcCompat="@drawable/logo" />
+
+    <View
+        android:id="@+id/ViewMainDivisor"
+        android:layout_width="263dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtMainBemvindos" />
+
+    <TextView
+        android:id="@+id/TxtMainEmailApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/TxtSobreEmailappStr"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ViewMainDivisor"
+        app:layout_constraintStart_toStartOf="@+id/ViewMainDivisor"
+        app:layout_constraintTop_toBottomOf="@+id/ViewMainDivisor"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtMainEmailApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/TxtMainToqueNtela"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ViewMainDivisor"
+        app:layout_constraintEnd_toEndOf="@+id/ViewMainDivisor"
+        app:layout_constraintStart_toStartOf="@+id/ViewMainDivisor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

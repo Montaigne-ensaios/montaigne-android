@@ -9,13 +9,13 @@
     tools:layout_editor_absoluteY="4dp">
 
     <Button
-        android:id="@+id/btnSPTCriarFim"
+        android:id="@+id/BntSptCriarFinalizarEnsaio"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif-medium"
         android:padding="5dp"
-        android:text="String Finalizar ensaio"
+        android:text="@string/BtnSPTCriarFinlzaEnsStr"
         android:textAllCaps="true"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,112 +23,112 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/btnSPTCriarHome"
+        android:id="@+id/bntSptCriarHome"
         android:layout_width="50dp"
         android:layout_height="38dp"
         android:layout_marginStart="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/btnSPTCriarFim"
+        app:layout_constraintBottom_toBottomOf="@+id/BntSptCriarFinalizarEnsaio"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnSPTCriarFim"
+        app:layout_constraintTop_toTopOf="@+id/BntSptCriarFinalizarEnsaio"
         app:srcCompat="@drawable/ic_home" />
 
     <TextView
-        android:id="@+id/txtSPTCriarAgua"
+        android:id="@+id/TxtSptCriarNdagua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/nivel_dágua"
+        android:text="@string/TxtSptCriarNvaguaStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarTitulo"
-        app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toEndOf="@+id/btnSPTCriarBack"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarTitulo" />
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarTitulodFuro"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/BntSPTCriarBackCrbUnico"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTitulodFuro" />
 
     <TextView
-        android:id="@+id/txtSPTCriarProf"
+        android:id="@+id/TxtSptCriarProfdadAmostr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="string profundidade1"
+        android:text="@string/TxtSptcriarProfundidadeStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarAmostra"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarTitulodAmostraN"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarAmostra"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarAmostra" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarTitulodAmostraN"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTitulodAmostraN" />
 
     <TextView
-        android:id="@+id/txtSPTCriarSegmento"
+        android:id="@+id/TxtSptCriarSegmentAmtra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/segmentos"
+        android:text="@string/TxtSptCriarSegmentosAmstraStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarAmostra"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarTitulodAmostraN"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarAmostra"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarAmostra" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarTitulodAmostraN"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTitulodAmostraN" />
 
     <TextView
-        android:id="@+id/txtSPTCriarGolpes"
+        android:id="@+id/TxtSptCriarGolpes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/golpes"
+        android:text="@string/TxtSptCriarGolpesStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/txtSPTCriarPen"
+        app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarPenetraçPGolpe"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/txtSPTCriarSegmento"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarAmostra" />
+        app:layout_constraintStart_toEndOf="@+id/TxtSptCriarSegmentAmtra"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTitulodAmostraN" />
 
     <TextView
-        android:id="@+id/txtSPTCriarPen"
+        android:id="@+id/TxtSptCriarPenetraçPGolpe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/penetração"
+        android:text="@string/TxtSptCriarPenetraçãoStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarGolpes"
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarGolpes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarGolpes" />
+        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarGolpes" />
 
     <TextView
-        android:id="@+id/txtSPTCriarAmostra"
+        android:id="@+id/TxtSptCriarTitulodAmostraN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/Amostra_1"
+        android:text="Amostra N"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarAgua"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarNdagua"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnSPTCriarHelpAgua"
-        app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarAgua" />
+        app:layout_constraintStart_toStartOf="@+id/bntSptCriarHelpNvagua"
+        app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarNvdAgua" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar4"
-        android:layout_width="440dp"
-        android:layout_height="74dp"
+        android:id="@+id/TollbarSptCriar"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -136,13 +136,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtSPTCriarTitulo"
+        android:id="@+id/TxtSptCriarTitulodFuro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="string ensaio do furo"
+        android:text="Furo N- SP0N"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -152,20 +152,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/btnSPTCriarBack"
-        android:layout_width="43dp"
-        android:layout_height="38dp"
+        android:id="@+id/BntSPTCriarBackCrbUnico"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarTitulo"
-        app:layout_constraintEnd_toStartOf="@+id/txtSPTCriarTitulo"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarTitulo"
-        app:srcCompat="@android:drawable/btn_dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarTitulodFuro"
+        app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarTitulodFuro"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarTitulodFuro"
+        app:srcCompat="@drawable/ic_back"
         app:tint="@color/white" />
 
     <EditText
-        android:id="@+id/fieldSPTCriarAgua"
+        android:id="@+id/fieldSPTCriarNvdAgua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -174,24 +174,24 @@
         android:hint="hint"
         android:inputType="number"
         android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarAgua"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarNdagua"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btnSPTCriarHelpAgua"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarAgua" />
+        app:layout_constraintStart_toStartOf="@+id/bntSptCriarHelpNvagua"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarNdagua" />
 
     <EditText
-        android:id="@+id/fieldSPTCriarProf"
+        android:id="@+id/fieldSPTCriarProfdadeAmstr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:drawableRight="@android:drawable/btn_dialog"
         android:ems="10"
-        android:hint="@string/Profundidade"
+        android:hint="hint"
         android:inputType="number"
         android:padding="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarProf"
-        app:layout_constraintStart_toEndOf="@+id/txtSPTCriarProf"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarProf" />
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarProfdadAmostr"
+        app:layout_constraintStart_toEndOf="@+id/TxtSptCriarProfdadAmostr"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarProfdadAmostr" />
 
     <EditText
         android:id="@+id/fieldSPTCriarGlp1"
@@ -205,9 +205,9 @@
         android:inputType="number"
         android:maxLength="4"
         android:padding="6dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarGolpes"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarGolpes"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarGolpes" />
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarGolpes"
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarGolpes"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarGolpes" />
 
     <EditText
         android:id="@+id/fieldSPTCriarPen1"
@@ -221,9 +221,9 @@
         android:inputType="number"
         android:maxLength="4"
         android:padding="6dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarPen"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarPen"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarPen" />
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarPenetraçPGolpe"
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarPenetraçPGolpe"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarPenetraçPGolpe" />
 
     <EditText
         android:id="@+id/fieldSPTCriarPen2"
@@ -288,39 +288,28 @@
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarGlp2" />
 
     <ImageButton
-        android:id="@+id/btnSPTCriarHelpAgua"
+        android:id="@+id/bntSptCriarHelpNvagua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
         android:background="@color/transparente"
         android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarAgua"
-        app:layout_constraintEnd_toStartOf="@+id/txtSPTCriarAgua"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btnSPTCriarBack"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarAgua"
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarNdagua"
+        app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarNdagua"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="@+id/BntSPTCriarBackCrbUnico"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarNdagua"
         app:srcCompat="@android:drawable/btn_dialog" />
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="391dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/marrom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarAgua" />
 
     <ImageView
         android:id="@+id/imgSPTCriarSeg1"
         android:layout_width="50dp"
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtSPTCriarSegmento"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarSegmentAmtra"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarSegmento"
-        app:layout_constraintTop_toBottomOf="@+id/txtSPTCriarSegmento"
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarSegmentAmtra"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarSegmentAmtra"
         app:srcCompat="@android:drawable/btn_dialog"
         app:tint="@color/black" />
 
@@ -329,60 +318,55 @@
         android:layout_width="28dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
-        android:background="@android:drawable/btn_dialog"
+        android:background="@drawable/ic_adicionar"
         app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCriarGlp1"
         app:layout_constraintStart_toEndOf="@+id/fieldSPTCriarGlp1"
         app:layout_constraintTop_toTopOf="@+id/fieldSPTCriarGlp1"
-        app:srcCompat="@android:drawable/btn_dialog"
-        app:tint="@color/white" />
+        app:tint="@color/transparente" />
 
     <ImageButton
         android:id="@+id/btnSPTCriarp2"
         android:layout_width="28dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
-        android:background="@android:drawable/btn_dialog"
+        android:background="@drawable/ic_adicionar"
         app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCriarGlp2"
         app:layout_constraintStart_toEndOf="@+id/fieldSPTCriarGlp2"
         app:layout_constraintTop_toTopOf="@+id/fieldSPTCriarGlp2"
-        app:srcCompat="@android:drawable/btn_dialog"
-        app:tint="@color/white" />
+        app:tint="@color/transparente" />
 
     <ImageButton
         android:id="@+id/btnSPTCriarp3"
         android:layout_width="28dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
-        android:background="@android:drawable/btn_dialog"
+        android:background="@drawable/ic_adicionar"
         app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCriarGlp3"
         app:layout_constraintStart_toEndOf="@+id/fieldSPTCriarGlp3"
         app:layout_constraintTop_toTopOf="@+id/fieldSPTCriarGlp3"
-        app:srcCompat="@android:drawable/btn_dialog"
-        app:tint="@color/white" />
+        app:tint="@color/transparente" />
 
     <ImageButton
         android:id="@+id/btnSPTCriarm1"
         android:layout_width="28dp"
         android:layout_height="30dp"
         android:layout_marginEnd="10dp"
-        android:background="@android:drawable/btn_dialog"
+        android:background="@drawable/ic_menos"
         app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCriarGlp1"
         app:layout_constraintEnd_toStartOf="@+id/fieldSPTCriarGlp1"
         app:layout_constraintTop_toTopOf="@+id/fieldSPTCriarGlp1"
-        app:srcCompat="@drawable/ic_menos"
-        app:tint="@color/white" />
+        app:tint="@color/transparente" />
 
     <ImageButton
         android:id="@+id/btnSPTCriarm2"
         android:layout_width="28dp"
         android:layout_height="30dp"
         android:layout_marginEnd="10dp"
-        android:background="@android:drawable/btn_dialog"
+        android:background="@drawable/ic_menos"
         app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCriarGlp2"
         app:layout_constraintEnd_toStartOf="@+id/fieldSPTCriarGlp2"
         app:layout_constraintTop_toTopOf="@+id/fieldSPTCriarGlp2"
         app:layout_constraintVertical_bias="0.25"
-        app:srcCompat="@drawable/ic_menos"
         app:tint="@color/white" />
 
     <ImageButton
@@ -390,12 +374,11 @@
         android:layout_width="28dp"
         android:layout_height="30dp"
         android:layout_marginEnd="10dp"
-        android:background="@android:drawable/btn_dialog"
+        android:background="@drawable/ic_menos"
         app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCriarGlp3"
         app:layout_constraintEnd_toStartOf="@+id/fieldSPTCriarGlp3"
         app:layout_constraintTop_toTopOf="@+id/fieldSPTCriarGlp3"
-        app:srcCompat="@drawable/ic_menos"
-        app:tint="@color/white" />
+        app:tint="@color/transparente" />
 
     <ImageView
         android:id="@+id/imgSPTCriarSeg2"
@@ -418,40 +401,42 @@
         app:srcCompat="@android:drawable/btn_dialog" />
 
     <ImageButton
-        android:id="@+id/btnSPTCriarSave"
+        android:id="@+id/BntSptCriarSalvarFuro"
         android:layout_width="32dp"
         android:layout_height="38dp"
         android:layout_marginStart="110dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:tint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/txtSPTCriarTitulo"
-        app:layout_constraintStart_toEndOf="@+id/txtSPTCriarTitulo"
-        app:layout_constraintTop_toTopOf="@+id/txtSPTCriarTitulo"
-        app:srcCompat="@drawable/ic_salvar" />
+        app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarTitulodFuro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TxtSptCriarTitulodFuro"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarTitulodFuro"
+        app:srcCompat="@drawable/ic_salvar"
+        app:tint="@color/white" />
 
     <Button
-        android:id="@+id/btnSPTCriarProx"
+        android:id="@+id/bntSptCriarProxAmostra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="@string/proxima_amostra"
+        android:text="@string/BntSptcriarPrxamtraStr"
+        android:textAllCaps="true"
         android:textStyle="bold"
-        app:backgroundTint="@color/transparente"
-        app:layout_constraintEnd_toStartOf="@+id/txtSPTCriarGolpes"
+        app:backgroundTint="@color/marrom"
+        app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarGolpes"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtSPTCriarSegmento"
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarSegmentAmtra"
         app:layout_constraintTop_toBottomOf="@+id/imgSPTCriarSeg3" />
 
     <ImageView
-        android:id="@+id/imgIndicativa"
+        android:id="@+id/ImgViewSptCriarIlustrativo"
         android:layout_width="50dp"
         android:layout_height="43dp"
         android:layout_marginStart="5dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnSPTCriarProx"
-        app:layout_constraintStart_toEndOf="@+id/btnSPTCriarProx"
-        app:layout_constraintTop_toTopOf="@+id/btnSPTCriarProx"
+        app:layout_constraintBottom_toBottomOf="@+id/bntSptCriarProxAmostra"
+        app:layout_constraintStart_toEndOf="@+id/bntSptCriarProxAmostra"
+        app:layout_constraintTop_toTopOf="@+id/bntSptCriarProxAmostra"
         app:layout_constraintVertical_bias="0.541"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:srcCompat="@drawable/ic_proxima_amotra" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -53,7 +53,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
             // todo: implementar salvamento da imagem
         });
 
-        imgSalvar = findViewById(R.id.imgSPTCarimboSalvar);
+        imgSalvar = findViewById(R.id.BntSPTCarimboSalvarCarimbo);
         imgSalvar.setOnClickListener(v -> {
             // todo: implementar salvamento ou mudar o caráter deste botão
 
@@ -72,7 +72,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
         });
 
         // botão de voltar
-        imgVoltar = findViewById(R.id.imgSPTCarimboBack);
+        imgVoltar = findViewById(R.id.bntSPTCarimboBack);
         imgVoltar.setOnClickListener(v -> finish());
         // todo: implementar confirmação de não salvar?
     }
