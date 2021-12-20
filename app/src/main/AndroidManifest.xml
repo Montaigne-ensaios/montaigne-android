@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
-        android:icon="@mipmap/ic_logoapp"
+        android:icon="@drawable/logo"
         android:label="@string/txtAppname"
         android:roundIcon="@mipmap/ic_logoapp_round"
         android:supportsRtl="true"

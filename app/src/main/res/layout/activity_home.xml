@@ -63,8 +63,8 @@
 
     <ImageButton
         android:id="@+id/BntHomeExcluirProjeto"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         app:layout_constraintBottom_toBottomOf="@+id/TxtHomeMeusProjts"
@@ -78,8 +78,8 @@
 
     <ImageButton
         android:id="@+id/BntHomeInfoSobre"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
@@ -89,7 +89,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/TextHomeAppname"
-        app:srcCompat="@android:drawable/btn_dialog"
+        app:srcCompat="@drawable/ic_info"
         app:tint="@color/white" />
 
     <androidx.recyclerview.widget.RecyclerView
