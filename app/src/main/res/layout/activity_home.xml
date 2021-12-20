@@ -38,7 +38,7 @@
         android:id="@+id/TxtHomeTipodensaio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="serif"
         android:text="@string/TxtHomeTipdensaioStr"
         android:textColor="@color/black"
