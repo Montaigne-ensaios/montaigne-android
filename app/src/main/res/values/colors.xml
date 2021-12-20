@@ -15,4 +15,6 @@
     <color name="marrom_claro">#FA5902</color>
     <color name="principal">#bf360c</color>
     <color name="transparente">#00FFFFFF</color>
+    <color name="cinza">#E0E0E0</color>
+    <color name="cinza_escuro">#616161</color>
 </resources>
