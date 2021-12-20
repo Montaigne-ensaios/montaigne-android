@@ -89,7 +89,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/TextHomeAppname"
-        app:srcCompat="@drawable/ic_inf"
+        app:srcCompat="@android:drawable/btn_dialog"
         app:tint="@color/white" />
 
     <androidx.recyclerview.widget.RecyclerView
