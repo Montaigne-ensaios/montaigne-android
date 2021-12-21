@@ -130,9 +130,9 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+                app:layout_constraintEnd_toEndOf="@+id/FieldSptEditarNvdAguaFuroN"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/editTextNumber"
+                app:layout_constraintStart_toStartOf="@+id/FieldSptEditarNvdAguaFuroN"
                 app:layout_constraintTop_toTopOf="@+id/TxtSptEditarGolpesAmstr" />
 
             <TextView
@@ -147,7 +147,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarDatFinalNFuro"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/TxtSptEditarDatFinalNFuro"
-                app:layout_constraintTop_toBottomOf="@+id/FieldSptEditarDataInic" />
+                app:layout_constraintTop_toBottomOf="@+id/FieldSptEditarDataFinal" />
 
             <TextView
                 android:id="@+id/TxtSptEditarNvdAguaFuroN"
@@ -161,7 +161,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarRefdNivel"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/TxtSptEditarRefdNivel"
-                app:layout_constraintTop_toBottomOf="@+id/editTextNumber5" />
+                app:layout_constraintTop_toBottomOf="@+id/FieldSptEditarRefdNivel" />
 
             <TextView
                 android:id="@+id/TxtSptEditarRefdNivel"
@@ -175,7 +175,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarNvdFuroN"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/TxtSptEditarNvdFuroN"
-                app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+                app:layout_constraintTop_toBottomOf="@+id/FieldSptEditarNvdFuroN" />
 
             <TextView
                 android:id="@+id/TxtSptEditarDatFinalNFuro"
@@ -189,7 +189,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarDatInicioNFuro"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/TxtSptEditarDatInicioNFuro"
-                app:layout_constraintTop_toBottomOf="@+id/fieldSptEditarDataInic" />
+                app:layout_constraintTop_toBottomOf="@+id/FieldSptEditarDataInic" />
 
             <TextView
                 android:id="@+id/TxtSptEditarDatInicioNFuro"
@@ -222,13 +222,14 @@
                 android:id="@+id/TxtSptEditarGolpesAmstr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/TxtSptEditarGolpesStr"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@+id/TxtSptEditarProfdidaDAmstr"
-                app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+                app:layout_constraintTop_toBottomOf="@+id/FieldSptEditarNvdAguaFuroN" />
 
             <TextView
                 android:id="@+id/TxtSptEditarPentraçãoGolpes"
@@ -239,13 +240,13 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+                app:layout_constraintEnd_toEndOf="@+id/FieldSptEditarNvdAguaFuroN"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/TxtSptEditarGolpesAmstr"
-                app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+                app:layout_constraintTop_toBottomOf="@+id/FieldSptEditarNvdAguaFuroN" />
 
             <EditText
-                android:id="@+id/FieldSptEditarDataInic"
+                android:id="@+id/FieldSptEditarDataFinal"
                 style="@style/Edit_Text"
                 android:layout_width="290dp"
                 android:layout_height="52dp"
@@ -261,14 +262,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarDatFinalNFuro" />
 
             <EditText
-                android:id="@+id/fieldSptEditarDataInic"
+                android:id="@+id/FieldSptEditarDataInic"
                 style="@style/Edit_Text"
                 android:layout_width="290dp"
                 android:layout_height="52dp"
                 android:layout_marginTop="10dp"
                 android:drawableRight="@drawable/ic_edit"
                 android:ems="10"
-                android:hint="hint"
+                android:hint="Data de inicio"
                 android:inputType="date"
                 android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="@+id/FieldSptEditarNmPrjeto"
@@ -277,7 +278,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarDatInicioNFuro" />
 
             <EditText
-                android:id="@+id/editTextNumber3"
+                android:id="@+id/FieldSptEditarNvdFuroN"
                 style="@style/Edit_Text"
                 android:layout_width="290dp"
                 android:layout_height="52dp"
@@ -293,15 +294,15 @@
                 app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarNvdFuroN" />
 
             <EditText
-                android:id="@+id/editTextNumber5"
+                android:id="@+id/FieldSptEditarRefdNivel"
                 style="@style/Edit_Text"
                 android:layout_width="290dp"
                 android:layout_height="52dp"
                 android:layout_marginTop="10dp"
                 android:drawableRight="@drawable/ic_edit"
                 android:ems="10"
-                android:hint="hint"
-                android:inputType="number"
+                android:hint="Referencia de nivel"
+                android:inputType="number|numberDecimal"
                 android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarRefdNivel"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -309,36 +310,17 @@
                 app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarRefdNivel" />
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/FieldSptEditarNvdAguaFuroN"
                 style="@style/Edit_Text"
                 android:layout_width="290dp"
                 android:layout_height="52dp"
-                android:layout_marginTop="10dp"
                 android:drawableRight="@drawable/ic_edit"
                 android:ems="10"
                 android:hint="hint"
                 android:inputType="date"
                 android:padding="12dp"
-                app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarNvdAguaFuroN"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/TxtSptEditarNvdAguaFuroN"
-                app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarNvdAguaFuroN" />
-
-            <EditText
-                android:id="@+id/editTextNumber6"
-                style="@style/Edit_Text"
-                android:layout_width="290dp"
-                android:layout_height="52dp"
-                android:layout_marginTop="80dp"
-                android:drawableRight="@drawable/ic_edit"
-                android:ems="10"
-                android:hint="hint"
-                android:inputType="date"
-                android:padding="12dp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/editTextNumber"
-                app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+                tools:layout_editor_absoluteX="24dp"
+                tools:layout_editor_absoluteY="533dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

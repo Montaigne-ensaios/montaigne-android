@@ -14,9 +14,9 @@
     <string name="TxtSptCriarPenetraçãoStr">Penetração</string>
     <string name="TxtSptCriarGolpesStr">Golpes</string>
     <string name="TxtSptcriarProfundidadeStr">Profundidade:</string>
+    <string name="TxtSptEditarProfundidadeStr">Profundidade</string>
     <string name="TxtSptEditarPenetraçãoStr">Penetração</string>
     <string name="TxtSptEditarGolpesStr">Golpes</string>
-    <string name="TxtSptEditarProfundidadeStr">Profundidade:</string>
     <string name="TxtSptcarimboNameprojetoStr">Nome do projeto: *</string>
     <string name="TxtSptEditarNameprojetoStr">Nome do projeto: *</string>
     <string name="TxtSptcarimboDatainicioStr">Data de inicio: *</string>
