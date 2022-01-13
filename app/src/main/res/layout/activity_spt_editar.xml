@@ -111,15 +111,14 @@
                 android:id="@+id/TxtSptEditarNspt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="28dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/TxtSptEditarNSPTStr"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="@color/black"
                 android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/TxtSptEditarPentraçãoGolpes"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.16"
-                app:layout_constraintStart_toEndOf="@+id/TxtSptEditarPentraçãoGolpes"
+                app:layout_constraintStart_toEndOf="@+id/FieldSptEditarNvdAguaFuroN"
                 app:layout_constraintTop_toTopOf="@+id/TxtSptEditarPentraçãoGolpes" />
 
             <TextView
@@ -131,10 +130,8 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="@+id/FieldSptEditarNvdAguaFuroN"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/FieldSptEditarNvdAguaFuroN"
-                app:layout_constraintTop_toTopOf="@+id/TxtSptEditarGolpesAmstr" />
+                app:layout_constraintTop_toBottomOf="@+id/FieldSptEditarNvdAguaFuroN" />
 
             <TextView
                 android:id="@+id/TxtSptEditarNvdFuroN"
@@ -224,7 +221,7 @@
                 android:id="@+id/TxtSptEditarGolpesAmstr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="28dp"
+                android:layout_marginStart="22dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/TxtSptEditarGolpesStr"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
@@ -235,15 +232,14 @@
 
             <TextView
                 android:id="@+id/TxtSptEditarPentraçãoGolpes"
-                android:layout_width="84dp"
+                android:layout_width="96dp"
                 android:layout_height="22dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/TxtSptEditarPenetraçãoStr"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="@+id/FieldSptEditarNvdAguaFuroN"
-                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintEnd_toStartOf="@+id/TxtSptEditarNspt"
                 app:layout_constraintStart_toEndOf="@+id/TxtSptEditarGolpesAmstr"
                 app:layout_constraintTop_toBottomOf="@+id/FieldSptEditarNvdAguaFuroN" />
 
@@ -326,22 +322,6 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/TxtSptEditarNvdAguaFuroN"
                 app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarNvdAguaFuroN" />
-
-            <EditText
-                android:id="@+id/fieldSptEditarNvdAguaFuroN"
-                style="@style/Edit_Text"
-                android:layout_width="337dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="20dp"
-                android:drawableRight="@drawable/ic_edit"
-                android:ems="10"
-                android:hint="hint"
-                android:inputType="date"
-                android:padding="12dp"
-                app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarPentraçãoGolpes"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/FieldSptEditarNvdAguaFuroN"
-                app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarGolpesAmstr" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
