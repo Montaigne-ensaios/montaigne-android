@@ -64,7 +64,7 @@ public class SPTProjeto extends AppCompatActivity {
         btnCarimbo = findViewById(R.id.btnSPTrojetoAlterarCarimbo);
         btnCarimbo.setOnClickListener(v -> {
             // intentn para a activity de carimbo
-            Intent intent = new Intent(SPTProjeto.this, SPTCarimbo.class);
+            Intent intent = new Intent(SPTProjeto.this, SPTCarimboDef.class);
             intent.putExtra("idProjeto", idProjeto);
             startActivity(intent);
         });

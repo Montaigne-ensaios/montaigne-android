@@ -14,10 +14,10 @@
             android:name=".activity.Sobre"
             android:exported="true" />
         <activity
-            android:name=".activity.SPTNFuro"
+            android:name=".activity.SPTDadosFuro"
             android:exported="true" />
         <activity
-            android:name=".activity.SPTCarimbo"
+            android:name=".activity.SPTCarimboDef"
             android:exported="true" />
         <activity
             android:name=".activity.SPTEditar"

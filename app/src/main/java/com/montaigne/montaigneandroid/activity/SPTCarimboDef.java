@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -23,17 +24,18 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeListener {
+public class SPTCarimboDef extends AppCompatActivity implements View.OnFocusChangeListener {
     private long idProjeto = -1L;  // long recuperado da intent que diz o id do projeto
     private long idFuro = -1L;
     private HashMap<String, EditText> fields = new HashMap<>();
-    private ImageView imgLogoEmpresa, imgSalvar, imgVoltar;
+    private ImageView imgLogoEmpresa;
+    private ImageButton btnVoltar, btnSalvar;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spt_carimbo);
+        setContentView(R.layout.activity_spt_carimbo_def);
 
         // recupera dados da intent
         idProjeto = getIntent().getLongExtra("idProjeto", -1);
@@ -46,19 +48,19 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void setupButtons(){
-        imgLogoEmpresa = findViewById(R.id.imgSPTCarimboImg);
+        imgLogoEmpresa = findViewById(R.id.imgSPTCarimboDefImg);
         imgLogoEmpresa.setOnClickListener(v -> {
             Toast.makeText(this, "Recurso de imagem precisa ser implementado",
                     Toast.LENGTH_SHORT).show();
             // todo: implementar salvamento da imagem
         });
 
-        imgSalvar = findViewById(R.id.BntSPTCarimboSalvarCarimbo);
-        imgSalvar.setOnClickListener(v -> {
+        btnSalvar = findViewById(R.id.btnSPTCarimboDefSalvar);
+        btnSalvar.setOnClickListener(v -> {
             // todo: implementar salvamento ou mudar o caráter deste botão
 
             if(salvar()) {
-                Intent intent = new Intent(SPTCarimbo.this, SPTCriar.class);
+                Intent intent = new Intent(SPTCarimboDef.this, SPTCriar.class);
                 intent.putExtra("idProjeto", idProjeto);
                 intent.putExtra("idFuro", idFuro);
                 intent.putExtra("nCamada", 1);
@@ -72,21 +74,21 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
         });
 
         // botão de voltar
-        imgVoltar = findViewById(R.id.bntSPTCarimboBack);
-        imgVoltar.setOnClickListener(v -> finish());
+        btnVoltar = findViewById(R.id.btnSPTCarimboDefBack);
+        btnVoltar.setOnClickListener(v -> finish());
         // todo: implementar confirmação de não salvar?
     }
 
     private void setupFields(){
         // adiciona cada campo de texto a um hashmap
-        fields.put("Nome", (EditText) findViewById(R.id.fieldSPTCarimboNome));
-        fields.put("Inicio", (EditText) findViewById(R.id.fieldSPTCarimboDataIni));
-        fields.put("Empresa", (EditText) findViewById(R.id.fieldSPTCarimboEmpresa));
-        fields.put("Tel", (EditText) findViewById(R.id.fieldSPTCarimboTel));
-        fields.put("Tecnico", (EditText) findViewById(R.id.fieldSPTCarimboTecnico));
-        fields.put("Cliente", (EditText) findViewById(R.id.fieldSPTCarimboCli));
-        fields.put("NFuros", (EditText) findViewById(R.id.fieldSPTCarimboNFuros));
-        fields.put("Local", (EditText) findViewById(R.id.fieldSPTCarimboNome));
+        fields.put("Nome", (EditText) findViewById(R.id.fieldSPTCarimboDefNome));
+        fields.put("Inicio", (EditText) findViewById(R.id.fieldSPTCarimboDefDataIni));
+        fields.put("Empresa", (EditText) findViewById(R.id.fieldSPTCarimboDefEmpresa));
+        fields.put("Tel", (EditText) findViewById(R.id.fieldSPTCarimboDefTel));
+        fields.put("Tecnico", (EditText) findViewById(R.id.fieldSPTCarimboDefTecnico));
+        fields.put("Cliente", (EditText) findViewById(R.id.fieldSPTCarimboDefCli));
+        fields.put("NFuros", (EditText) findViewById(R.id.fieldSPTCarimboDefNFuros));
+        fields.put("Local", (EditText) findViewById(R.id.fieldSPTCarimboDefNome));
 
         // adiciona um listener para cada field
         for(Map.Entry<String, EditText> set : fields.entrySet()){
