@@ -118,6 +118,7 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.16"
                 app:layout_constraintStart_toEndOf="@+id/TxtSptEditarPentraçãoGolpes"
                 app:layout_constraintTop_toTopOf="@+id/TxtSptEditarPentraçãoGolpes" />
 
@@ -209,12 +210,13 @@
                 android:id="@+id/TxtSptEditarNomedProj"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/TxtSptEditarNameprojetoStr"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.102"
+                app:layout_constraintHorizontal_bias="0.103"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -241,7 +243,7 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="@+id/FieldSptEditarNvdAguaFuroN"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.47"
                 app:layout_constraintStart_toEndOf="@+id/TxtSptEditarGolpesAmstr"
                 app:layout_constraintTop_toBottomOf="@+id/FieldSptEditarNvdAguaFuroN" />
 
@@ -269,7 +271,7 @@
                 android:layout_marginTop="10dp"
                 android:drawableRight="@drawable/ic_edit"
                 android:ems="10"
-                android:hint="Data de inicio"
+                android:hint="XX/XX/XX"
                 android:inputType="date"
                 android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="@+id/FieldSptEditarNmPrjeto"
@@ -314,13 +316,32 @@
                 style="@style/Edit_Text"
                 android:layout_width="290dp"
                 android:layout_height="52dp"
+                android:layout_marginTop="10dp"
                 android:drawableRight="@drawable/ic_edit"
                 android:ems="10"
                 android:hint="hint"
                 android:inputType="date"
                 android:padding="12dp"
-                tools:layout_editor_absoluteX="24dp"
-                tools:layout_editor_absoluteY="533dp" />
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarNvdAguaFuroN"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/TxtSptEditarNvdAguaFuroN"
+                app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarNvdAguaFuroN" />
+
+            <EditText
+                android:id="@+id/fieldSptEditarNvdAguaFuroN"
+                style="@style/Edit_Text"
+                android:layout_width="337dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:drawableRight="@drawable/ic_edit"
+                android:ems="10"
+                android:hint="hint"
+                android:inputType="date"
+                android:padding="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptEditarPentraçãoGolpes"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/FieldSptEditarNvdAguaFuroN"
+                app:layout_constraintTop_toBottomOf="@+id/TxtSptEditarGolpesAmstr" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
