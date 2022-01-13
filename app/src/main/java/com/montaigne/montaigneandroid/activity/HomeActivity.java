@@ -52,8 +52,8 @@ public class HomeActivity extends AppCompatActivity {
         recyclerCategorias.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
 
         // adiciona elementos ao recycler (isso talvez seja movido para outro lugar):
-        adapterCategorias.addCategoria("SPT - Ensaio de reconhecimento simples", SPTCarimbo.class);
-        adapterCategorias.addCategoria("Proctor Normal - Ensaio de compactação", SPTCarimbo.class);
+        adapterCategorias.addCategoria("SPT - Ensaio de reconhecimento simples", SPTCarimboDef.class);
+        adapterCategorias.addCategoria("Proctor Normal - Ensaio de compactação", SPTCarimboDef.class);
         // todo: passar string pros resources
     }
 

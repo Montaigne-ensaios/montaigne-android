@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -65,7 +64,7 @@ public class SPTProjeto extends AppCompatActivity {
         btnCarimbo = findViewById(R.id.btnSPTProjetoCarimbo);
         btnCarimbo.setOnClickListener(v -> {
             // intentn para a activity de carimbo
-            Intent intent = new Intent(SPTProjeto.this, SPTCarimbo.class);
+            Intent intent = new Intent(SPTProjeto.this, SPTCarimboDef.class);
             intent.putExtra("idProjeto", idProjeto);
             startActivity(intent);
         });

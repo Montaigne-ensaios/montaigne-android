@@ -24,7 +24,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeListener {
+public class SPTCarimboDef extends AppCompatActivity implements View.OnFocusChangeListener {
     private long idProjeto = -1L;  // long recuperado da intent que diz o id do projeto
     private long idFuro = -1L;
     private HashMap<String, EditText> fields = new HashMap<>();
@@ -60,7 +60,7 @@ public class SPTCarimbo extends AppCompatActivity implements View.OnFocusChangeL
             // todo: implementar salvamento ou mudar o caráter deste botão
 
             if(salvar()) {
-                Intent intent = new Intent(SPTCarimbo.this, SPTCriar.class);
+                Intent intent = new Intent(SPTCarimboDef.this, SPTCriar.class);
                 intent.putExtra("idProjeto", idProjeto);
                 intent.putExtra("idFuro", idFuro);
                 intent.putExtra("nCamada", 1);
