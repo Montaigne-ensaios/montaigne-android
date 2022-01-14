@@ -34,23 +34,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/btnSPTCarimboDefBack"
-        android:layout_width="43dp"
-        android:layout_height="38dp"
-        android:layout_marginEnd="20dp"
-        android:background="@color/transparente"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/TxtCarimboDefinitivo"
-        app:layout_constraintEnd_toStartOf="@+id/TxtCarimboDefinitivo"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/TxtCarimboDefinitivo"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_back"
-        app:tint="@color/white"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
         android:id="@+id/btnSPTCarimboDefSalvar"
         android:layout_width="40dp"
         android:layout_height="40dp"
@@ -78,6 +61,23 @@
         app:layout_constraintTop_toTopOf="@+id/BntSptCarimboDefProx"
         app:srcCompat="@drawable/ic_home" />
 
+    <ImageButton
+        android:id="@+id/btnSPTCarimboDefBack"
+        android:layout_width="43dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/transparente"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/TxtCarimboDefinitivo"
+        app:layout_constraintEnd_toStartOf="@+id/TxtCarimboDefinitivo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TxtCarimboDefinitivo"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_back"
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <Button
         android:id="@+id/BntSptCarimboDefProx"
         android:layout_width="200dp"
@@ -91,18 +91,18 @@
 
     <ScrollView
         android:id="@+id/ScrollViewSptCarimboDef"
-        android:layout_width="394dp"
-        android:layout_height="567dp"
+        android:layout_width="400dp"
+        android:layout_height="570dp"
         app:layout_constraintBottom_toTopOf="@+id/BntSptCarimboDefProx"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TollbarSptCarimboDef"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="fill_parent"
+            android:layout_height="565dp">
 
             <TextView
                 android:id="@+id/TxtSptCarimboDefAvisAltAutm"
@@ -346,8 +346,8 @@
                 android:ems="10"
                 android:hint="Nome do cliente"
 
-                android:padding="12dp"
                 android:inputType="textPersonName"
+                android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefCliente"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefCliente"
@@ -372,11 +372,11 @@
                 android:layout_width="290dp"
                 android:layout_height="52dp"
                 android:layout_marginTop="10dp"
+                android:drawableRight="@drawable/ic_contato"
                 android:ems="10"
                 android:hint="Contato "
-                android:padding="12dp"
-                android:drawableRight="@drawable/ic_contato"
                 android:inputType="phone"
+                android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefContato"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefContato"
@@ -426,6 +426,22 @@
                 app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefLocalObr"
                 app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDefLocalObr" />
 
+            <EditText
+                android:id="@+id/fieldSPTCarimboDefRefdNivel"
+                style="@style/Edit_Text"
+                android:layout_width="290dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@drawable/ic_referencia_nivel"
+                android:ems="10"
+                android:hint="Referencia de nível"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefRefdNivel"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefRefdNivel"
+                app:layout_constraintTop_toBottomOf="@+id/TxtSptCarimboDefRefdNivel" />
+
             <TextView
                 android:id="@+id/TxtSptCarimboDefRefdNivel"
                 android:layout_width="190dp"
@@ -454,22 +470,6 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/txtSptCarimboDefQutdFuro"
                 app:layout_constraintTop_toBottomOf="@+id/txtSptCarimboDefQutdFuro" />
-
-            <EditText
-                android:id="@+id/fieldSPTCarimboDefRefdNivel"
-                style="@style/Edit_Text"
-                android:layout_width="290dp"
-                android:layout_height="52dp"
-                android:layout_marginTop="10dp"
-                android:drawableRight="@drawable/ic_referencia_nivel"
-                android:ems="10"
-                android:hint="Referencia de nível"
-                android:inputType="textPersonName"
-                android:padding="12dp"
-                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefRefdNivel"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefRefdNivel"
-                app:layout_constraintTop_toBottomOf="@+id/TxtSptCarimboDefRefdNivel" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
