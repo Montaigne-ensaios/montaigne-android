@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif-condensed-light"
-        android:text="string/aviso_carimbo"
+        android:text="@string/TxtSptCarimboDefAvisoSvAutom"
         android:textColor="@color/principal"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/imgSPTCarimboDefImg"
@@ -62,7 +62,7 @@
         android:layout_marginStart="70dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="string/projeto_carimbo"
+        android:text="Carimbo Definitivo"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -83,17 +83,17 @@
         app:layout_constraintEnd_toStartOf="@+id/txtCarimboDefinitivo"
         app:layout_constraintTop_toTopOf="@+id/txtCarimboDefinitivo"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@android:drawable/btn_dialog"
+        app:srcCompat="@drawable/ic_back"
         app:tint="@color/white" />
 
 
     <TextView
-        android:id="@+id/txtCarimboNomeProjeto"
+        android:id="@+id/TxtSptCarimboDefNmProjt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="string/nome_do_projeto"
+        android:text="@string/TxtSptCarimboDefNameprojetoStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -103,18 +103,18 @@
         app:layout_constraintTop_toBottomOf="@+id/imgSPTCarimboDefImg" />
 
     <TextView
-        android:id="@+id/txtEmpresa"
+        android:id="@+id/TxtSptCarimboDefEmpresa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="string/empresa"
+        android:text="@string/TxtSptCarimboDefEmpresaStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtCarimboNomeProjeto"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefNmProjt"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtCarimboNomeProjeto"
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefNmProjt"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDefNome" />
 
     <TextView
@@ -127,9 +127,9 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/txtEmpresa"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefEmpresa"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtEmpresa"
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefEmpresa"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDefEmpresa" />
 
     <ImageButton
@@ -143,7 +143,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txtCarimboDefinitivo"
         app:layout_constraintVertical_bias="0.96"
-        app:srcCompat="@android:drawable/btn_dialog"
+        app:srcCompat="@drawable/ic_salvar"
         app:tint="@color/white" />
 
     <EditText
@@ -156,10 +156,10 @@
         android:hint="string/nome"
         android:inputType="textPersonName"
         android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtCarimboNomeProjeto"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefNmProjt"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtCarimboNomeProjeto"
-        app:layout_constraintTop_toBottomOf="@+id/txtCarimboNomeProjeto" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefNmProjt"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCarimboDefNmProjt" />
 
 
     <EditText
@@ -172,10 +172,10 @@
         android:hint="string/empresa1"
         android:inputType="textPersonName"
         android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtEmpresa"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefEmpresa"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtEmpresa"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmpresa" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefEmpresa"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptCarimboDefEmpresa" />
 
     <EditText
         android:id="@+id/fieldSPTCarimboDefTecnico"
@@ -272,8 +272,8 @@
         android:ems="10"
         android:hint="Telefone"
         android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/fieldSPTCarimboDefNFuros"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/imgSPTCarimboDefImg"
+        app:layout_constraintTop_toTopOf="@+id/imgSPTCarimboDefImg" />
 
     <EditText
         android:id="@+id/fieldSPTCarimboDefCli"
@@ -292,8 +292,9 @@
         android:ems="10"
         android:hint="Número de furos"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/txtCarimboNomeProjeto"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefNmProjt"
+        app:layout_constraintStart_toStartOf="@+id/fieldSPTCarimboDefNome"
+        app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDefTel" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
