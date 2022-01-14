@@ -9,7 +9,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/TollbarSptCarimboDef"
-        android:layout_width="440dp"
+        android:layout_width="fill_parent"
         android:layout_height="74dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
@@ -45,12 +45,13 @@
         app:layout_constraintTop_toTopOf="@+id/txtCarimboDefinitivo"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_back"
-        app:tint="@color/white" />
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/btnSPTCarimboDefSalvar"
-        android:layout_width="26dp"
-        android:layout_height="33dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
@@ -64,7 +65,7 @@
     <ImageButton
         android:id="@+id/imgBntHome1"
         android:layout_width="50dp"
-        android:layout_height="38dp"
+        android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
@@ -86,189 +87,322 @@
 
     <ScrollView
         android:id="@+id/ScrollViewSptCarimboDef"
-        android:layout_width="391dp"
-        android:layout_height="570dp"
-        app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCarimboDefTecnico"
+        android:layout_width="394dp"
+        android:layout_height="567dp"
+        app:layout_constraintBottom_toTopOf="@+id/fieldSPTCarimboDefProx"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TollbarSptCarimboDef">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/txtAvisoAlterAutomatic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-condensed-light"
                 android:text="@string/TxtSptCarimboDefAvisoSvAutom"
                 android:textColor="@color/principal"
                 android:textSize="18sp"
-                tools:layout_editor_absoluteX="67dp"
-                tools:layout_editor_absoluteY="92dp" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
                 android:id="@+id/imgbntHelpNomedTecnic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
                 android:background="@color/transparente"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/ic_help"
-                tools:layout_editor_absoluteX="348dp"
-                tools:layout_editor_absoluteY="604dp" />
-
-            <TextView
-                android:id="@+id/textAvisoObrigatorio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-condensed-light"
-                android:text="@string/TxtSptCarimboDefTextObrigatorioStr"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                tools:layout_editor_absoluteX="42dp"
-                tools:layout_editor_absoluteY="600dp" />
+                app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCarimboDefEmpresa"
+                app:layout_constraintStart_toEndOf="@+id/fieldSPTCarimboDefEmpresa"
+                app:layout_constraintTop_toTopOf="@+id/fieldSPTCarimboDefEmpresa"
+                app:srcCompat="@drawable/ic_help" />
 
             <TextView
                 android:id="@+id/TxtSptCarimboDefNmProjt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/TxtSptCarimboDefNameprojetoStr"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="@color/black"
                 android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.15"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="265dp" />
+                app:layout_constraintTop_toBottomOf="@+id/imgbntPorFotoLogo" />
 
             <TextView
                 android:id="@+id/TxtSptCarimboDefEmpresa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/TxtSptCarimboDefEmpresaStr"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                tools:layout_editor_absoluteY="185dp" />
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefNmtecnc"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/fieldSPTCarimboDefNmProjt"
+                app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDefTecnico" />
+
+            <TextView
+                android:id="@+id/TxtSptCarimboDefCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/TxtSptCarimboDefNmclienteStr"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/fieldSPTCarimboDefContato"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/fieldSPTCarimboDefContato"
+                app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDefContato" />
+
+            <TextView
+                android:id="@+id/TxtSptCarimboDefLocalObr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/TxtSptCarimboDefLocalsondagemStr"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefCliente"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefCliente"
+                app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDefClient" />
+
+            <TextView
+                android:id="@+id/TxtSptCarimboDefContato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/TxtSptCarimboDefContatoStr"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefEmpresa"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefEmpresa"
+                app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDefEmpresa" />
 
             <TextView
                 android:id="@+id/TxtSptCarimboDefNmtecnc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:text="@string/TxtSptCarimboDefNmtecncStr"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                tools:layout_editor_absoluteY="240dp" />
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefNmProjt"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefNmProjt"
+                app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDefNmProjt" />
 
             <EditText
-                android:id="@+id/fieldSPTCarimboDefNome"
+                android:id="@+id/fieldSPTCarimboDefNmProjt"
                 style="@style/Edit_Text"
                 android:layout_width="290dp"
                 android:layout_height="52dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
                 android:drawableRight="@drawable/ic_edit"
                 android:ems="10"
                 android:hint="string/nome"
                 android:inputType="textPersonName"
                 android:padding="12dp"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="470dp" />
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefNmProjt"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefNmProjt"
+                app:layout_constraintTop_toBottomOf="@+id/TxtSptCarimboDefNmProjt" />
 
             <EditText
                 android:id="@+id/fieldSPTCarimboDefEmpresa"
                 style="@style/Edit_Text"
                 android:layout_width="290dp"
                 android:layout_height="52dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
                 android:drawableRight="@android:drawable/btn_dialog"
                 android:ems="10"
                 android:hint="string/empresa1"
                 android:inputType="textPersonName"
                 android:padding="12dp"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="313dp" />
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefEmpresa"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefEmpresa"
+                app:layout_constraintTop_toBottomOf="@+id/TxtSptCarimboDefEmpresa" />
 
             <EditText
                 android:id="@+id/fieldSPTCarimboDefTecnico"
                 style="@style/Edit_Text"
                 android:layout_width="290dp"
                 android:layout_height="52dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
                 android:drawableRight="@android:drawable/btn_dialog"
                 android:ems="10"
                 android:hint="string/nomedotecnico"
                 android:inputType="textPersonName"
                 android:padding="12dp"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="381dp" />
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefNmtecnc"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefNmtecnc"
+                app:layout_constraintTop_toBottomOf="@+id/TxtSptCarimboDefNmtecnc" />
 
             <ImageView
                 android:id="@+id/imgSPTCarimboDefImg"
                 android:layout_width="169dp"
                 android:layout_height="144dp"
+                android:layout_marginTop="10dp"
                 android:background="@color/cinza"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAvisoAlterAutomatic"
                 app:srcCompat="@drawable/ic_perfil"
-                app:tint="@color/white"
-                tools:layout_editor_absoluteX="106dp"
-                tools:layout_editor_absoluteY="62dp" />
+                app:tint="@color/white" />
+
+            <EditText
+                android:id="@+id/fieldSPTCarimboDefClient"
+                style="@style/Edit_Text"
+                android:layout_width="290dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:hint="Nome do cliente"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefCliente"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefCliente"
+                app:layout_constraintTop_toBottomOf="@+id/TxtSptCarimboDefCliente" />
 
             <ImageButton
                 android:id="@+id/imgbntPorFotoLogo"
                 :tint="@color/black"
                 android:layout_width="43dp"
                 android:layout_height="38dp"
+                android:layout_marginTop="5dp"
                 android:background="@color/transparente"
                 android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="@+id/imgSPTCarimboDefImg"
+                app:layout_constraintStart_toStartOf="@+id/imgSPTCarimboDefImg"
+                app:layout_constraintTop_toBottomOf="@+id/imgSPTCarimboDefImg"
                 app:srcCompat="@drawable/ic_add_image" />
 
-            <ImageButton
-                android:id="@+id/imgbntHelpEmpresa"
+            <EditText
+                android:id="@+id/fieldSPTCarimboDefContato"
+                style="@style/Edit_Text"
+                android:layout_width="290dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Contato com a empresa"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefContato"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefContato"
+                app:layout_constraintTop_toBottomOf="@+id/TxtSptCarimboDefContato" />
+
+            <TextView
+                android:id="@+id/textAvisoObrigatorio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/transparente"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/ic_help"
-                tools:layout_editor_absoluteX="348dp" />
+                android:layout_marginTop="80dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/TxtSptCarimboDefTextObrigatorioStr"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDefRefdNivel" />
 
             <EditText
-                android:id="@+id/fieldSPTCarimboDefDataIni"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/fieldSPTCarimboDefLocalObr"
+                style="@style/Edit_Text"
+                android:layout_width="290dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@android:drawable/btn_dialog"
                 android:ems="10"
+                android:hint="Local da obra"
                 android:inputType="textPersonName"
-                android:text="data de inicio"
-                tools:layout_editor_absoluteX="210dp" />
+                android:padding="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefLocalObr"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefLocalObr"
+                app:layout_constraintTop_toBottomOf="@+id/TxtSptCarimboDefLocalObr" />
 
-            <EditText
-                android:id="@+id/fieldSPTCarimboDefTel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Telefone"
-                android:inputType="phone" />
+            <TextView
+                android:id="@+id/txtSptCarimboDefQutdFuro"
+                android:layout_width="190dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/TxtSptCarimboDefNmrsdfuroStr"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefLocalObr"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefLocalObr"
+                app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDefLocalObr" />
 
-            <EditText
-                android:id="@+id/fieldSPTCarimboDefCli"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Cliente"
-                tools:layout_editor_absoluteX="210dp" />
+            <TextView
+                android:id="@+id/TxtSptCarimboDefRefdNivel"
+                android:layout_width="190dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/TxtSptCarimboDefRefdnivelStr"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtSptCarimboDefQutdFuro"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtSptCarimboDefQutdFuro"
+                app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDefNFuros" />
 
             <EditText
                 android:id="@+id/fieldSPTCarimboDefNFuros"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                style="@style/Edit_Text"
+                android:layout_width="290dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="Número de furos"
                 android:inputType="number"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="433dp" />
+                app:layout_constraintEnd_toEndOf="@+id/txtSptCarimboDefQutdFuro"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/txtSptCarimboDefQutdFuro"
+                app:layout_constraintTop_toBottomOf="@+id/txtSptCarimboDefQutdFuro" />
+
+            <EditText
+                android:id="@+id/fieldSPTCarimboDefRefdNivel"
+                style="@style/Edit_Text"
+                android:layout_width="290dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@android:drawable/btn_dialog"
+                android:ems="10"
+                android:hint="Referencia de nível"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefRefdNivel"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefRefdNivel"
+                app:layout_constraintTop_toBottomOf="@+id/TxtSptCarimboDefRefdNivel" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

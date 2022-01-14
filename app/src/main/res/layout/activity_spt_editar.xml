@@ -37,8 +37,8 @@
 
     <ImageButton
         android:id="@+id/BntSptEditarBackSptCriar"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
@@ -209,7 +209,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:fontFamily="sans-serif-condensed-medium"
-                android:text="@string/TxtSptEditarNameprojetoStr"
+                android:text="@string/TtSptEditarNameprojetoStr"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"

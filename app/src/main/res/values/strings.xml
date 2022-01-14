@@ -21,17 +21,18 @@
     <string name="TxtSptEditarDatainicioStr">Data de inicio: *</string>
     <string name="TxtSptNFuroDatainicioStr">Data de inicio: *</string>
 
-    <string name="TxtSptCarimboDefNameprojetoStr">Nome do projeto: *</string>
+    <string name="TxtSptCarimboDefNameprojetoStr">Nome do Projeto: *</string>
     <string name="TxtSptCarimboDefDatainicioStr">Data de inicio: *</string>
     <string name="TxtSptCarimboDefEmpresaStr">Empresa: *</string>
-    <string name="TxtSptCarimboDefTelefoneStr">Telefone:</string>
+    <string name="TxtSptCarimboDefContatoStr">Contato:</string>
     <string name="TxtSptCarimboDefNmtecncStr">Nome do Técnico: *</string>
     <string name="TxtSptCarimboDefNmclienteStr">Nome do Cliente: *</string>
-    <string name="TxtSptCarimboDefNmdfuroStr">Número de Furos: *</string>
-    <string name="TxtSptCarimboDefLocalsondagemStr">Local da sondagem: *</string>
+    <string name="TxtSptCarimboDefNmrsdfuroStr">Quantidade de Furos: *</string>
+    <string name="TxtSptCarimboDefLocalsondagemStr">Local da obra: *</string>
     <string name="TxtSptCarimboDefAvisoSvAutom">Alterações salvas automaticamente!</string>
     <string name="BntSptCarimboDefContinuação">Continuação </string>
     <string name="TxtSptCarimboDefTextObrigatorioStr">Os campos indicados com * são obrigatórios</string>
+    <string name="TxtSptCarimboDefRefdnivelStr">Referência de Nível: *</string>
 
 
 

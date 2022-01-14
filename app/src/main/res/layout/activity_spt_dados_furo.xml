@@ -6,21 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".activity.SPTDadosFuro">
 
+    <EditText
+        android:id="@+id/fieldSPTCarimboDadosFDataIni"
+        style="@style/Edit_Text"
+        android:layout_width="290dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="data de inicio"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptNfuroDataInicio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TxtSptNfuroDataInicio"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptNfuroDataInicio" />
+
     <TextView
         android:id="@+id/TxtSptNFuroTextObrgtorio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="200dp"
         android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif-condensed-light"
         android:text="@string/TxtSptNFuroTextObrigatorioStr"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/BntSptNFuroIniciarEnsaio"
-        app:layout_constraintEnd_toEndOf="@+id/FieldSptNFuroCodnadasFuroN"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/FieldSptNFuroCodnadasFuroN"
-        app:layout_constraintTop_toBottomOf="@+id/FieldSptNFuroCodnadasFuroN" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldSptNFuroNvdFuroN" />
 
     <ImageButton
         android:id="@+id/BntSptNfuroHome"
@@ -30,6 +43,8 @@
         android:background="@color/transparente"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="@+id/BntSptNFuroIniciarEnsaio"
+        app:layout_constraintEnd_toStartOf="@+id/BntSptNFuroIniciarEnsaio"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/BntSptNFuroIniciarEnsaio"
         app:srcCompat="@drawable/ic_home" />
@@ -50,14 +65,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginEnd="16dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/FieldSptNFuroDataInicio"
+        app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCarimboDadosFDataIni"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/FieldSptNFuroDataInicio"
-        app:layout_constraintTop_toTopOf="@+id/FieldSptNFuroDataInicio"
+        app:layout_constraintStart_toEndOf="@+id/fieldSPTCarimboDadosFDataIni"
+        app:layout_constraintTop_toTopOf="@+id/fieldSPTCarimboDadosFDataIni"
         app:srcCompat="@drawable/ic_help" />
 
     <ImageButton
@@ -81,13 +95,16 @@
         android:layout_marginStart="15dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/FieldSptNFuroCodnadasFuroN"
-        app:layout_constraintStart_toEndOf="@+id/FieldSptNFuroCodnadasFuroN"
-        app:layout_constraintTop_toTopOf="@+id/FieldSptNFuroCodnadasFuroN"
+        app:layout_constraintBottom_toBottomOf="@+id/fieldSptNFuroNvdFuroN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fieldSptNFuroNvdFuroN"
+        app:layout_constraintTop_toTopOf="@+id/fieldSptNFuroNvdFuroN"
         app:srcCompat="@drawable/ic_help" />
 
     <EditText
         android:id="@+id/FieldSptNFuroNvdFuroN"
+        style="@style/Edit_Text"
         android:layout_width="290dp"
         android:layout_height="52dp"
         android:layout_marginTop="10dp"
@@ -102,25 +119,26 @@
         app:layout_constraintTop_toBottomOf="@+id/TxtSptNFuroNvdFuroN" />
 
     <EditText
-        android:id="@+id/FieldSptNFuroDataInicio"
+        android:id="@+id/fieldSptNFuroNvdFuroN"
+        style="@style/Edit_Text"
         android:layout_width="290dp"
         android:layout_height="52dp"
         android:layout_marginTop="10dp"
         android:drawableRight="@android:drawable/btn_dialog"
         android:ems="10"
         android:hint="hint"
-        android:inputType="date"
+        android:inputType="number"
         android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptNfuroDataInicio"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptNFuroCodnadasFuroN"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TxtSptNfuroDataInicio"
-        app:layout_constraintTop_toBottomOf="@+id/TxtSptNfuroDataInicio" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptNFuroCodnadasFuroN"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptNFuroCodnadasFuroN" />
 
     <TextView
         android:id="@+id/TxtSptNFuroNvdFuroN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/TxtSptNFuroNvdfuroStr"
         android:textColor="@color/black"
@@ -128,7 +146,7 @@
         app:layout_constraintEnd_toEndOf="@+id/TxtSptNfuroDataInicio"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TxtSptNfuroDataInicio"
-        app:layout_constraintTop_toBottomOf="@+id/FieldSptNFuroDataInicio" />
+        app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDadosFDataIni" />
 
     <TextView
         android:id="@+id/TxtSptNFuroCodnadasFuroN"
@@ -197,19 +215,5 @@
         app:layout_constraintTop_toTopOf="@+id/TxtSptNFuroTituloCrbUnic"
         app:srcCompat="@drawable/ic_back"
         app:tint="@color/white" />
-
-    <Button
-        android:id="@+id/FieldSptNFuroCodnadasFuroN"
-        android:layout_width="290dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="10dp"
-        android:background="@android:drawable/btn_dialog"
-        android:drawableLeft="@android:drawable/btn_dialog"
-        android:text="string capturar_localização"
-        app:backgroundTint="@color/transparente"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptNFuroCodnadasFuroN"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TxtSptNFuroCodnadasFuroN"
-        app:layout_constraintTop_toBottomOf="@+id/TxtSptNFuroCodnadasFuroN" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

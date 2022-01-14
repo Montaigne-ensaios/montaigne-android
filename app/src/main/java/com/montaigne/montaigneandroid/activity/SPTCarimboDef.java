@@ -81,14 +81,13 @@ public class SPTCarimboDef extends AppCompatActivity implements View.OnFocusChan
 
     private void setupFields(){
         // adiciona cada campo de texto a um hashmap
-        fields.put("Nome", (EditText) findViewById(R.id.fieldSPTCarimboDefNome));
-        fields.put("Inicio", (EditText) findViewById(R.id.fieldSPTCarimboDefDataIni));
+        fields.put("Nome", (EditText) findViewById(R.id.fieldSPTCarimboDefNmProjt));
         fields.put("Empresa", (EditText) findViewById(R.id.fieldSPTCarimboDefEmpresa));
-        fields.put("Tel", (EditText) findViewById(R.id.fieldSPTCarimboDefTel));
+        fields.put("Tel", (EditText) findViewById(R.id.fieldSPTCarimboDefContato));
         fields.put("Tecnico", (EditText) findViewById(R.id.fieldSPTCarimboDefTecnico));
-        fields.put("Cliente", (EditText) findViewById(R.id.fieldSPTCarimboDefCli));
+        fields.put("Cliente", (EditText) findViewById(R.id.fieldSPTCarimboDefClient));
         fields.put("NFuros", (EditText) findViewById(R.id.fieldSPTCarimboDefNFuros));
-        fields.put("Local", (EditText) findViewById(R.id.fieldSPTCarimboDefNome));
+        fields.put("Local", (EditText) findViewById(R.id.fieldSPTCarimboDefLocalObr));
 
         // adiciona um listener para cada field
         for(Map.Entry<String, EditText> set : fields.entrySet()){
@@ -187,6 +186,7 @@ public class SPTCarimboDef extends AppCompatActivity implements View.OnFocusChan
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public void criarSondagens(int quantidade, Projeto projeto) throws Exception {
 
         for ( int i = 0; i < quantidade; i++) {
