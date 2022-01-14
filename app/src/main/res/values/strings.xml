@@ -31,6 +31,7 @@
     <string name="TxtSptCarimboDefLocalsondagemStr">Local da sondagem: *</string>
     <string name="TxtSptCarimboDefAvisoSvAutom">Alterações salvas automaticamente!</string>
     <string name="BntSptCarimboDefContinuação">Continuação </string>
+    <string name="TxtSptCarimboDefTextObrigatorioStr">Os campos indicados com * são obrigatórios</string>
 
 
 
