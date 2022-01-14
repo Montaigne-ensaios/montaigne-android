@@ -48,7 +48,7 @@ public class SPTCarimboDef extends AppCompatActivity implements View.OnFocusChan
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void setupButtons(){
-        imgLogoEmpresa = findViewById(R.id.imgSPTCarimboDefImg);
+        imgLogoEmpresa = findViewById(R.id.ImgSPTCarimboDefFtLogo);
         imgLogoEmpresa.setOnClickListener(v -> {
             Toast.makeText(this, "Recurso de imagem precisa ser implementado",
                     Toast.LENGTH_SHORT).show();
