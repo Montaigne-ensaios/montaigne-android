@@ -10,11 +10,12 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/TollbarSptCarimboDef"
         android:layout_width="fill_parent"
-        android:layout_height="74dp"
+        android:layout_height="80dp"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -50,21 +51,9 @@
         app:tint="@color/white" />
 
     <ImageButton
-        android:id="@+id/BntSptCarimboDefBackHome"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:background="@color/transparente"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/BntSptCarimboDefProx"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/BntSptCarimboDefProx"
-        app:srcCompat="@drawable/ic_home" />
-
-    <ImageButton
         android:id="@+id/btnSPTCarimboDefBack"
         android:layout_width="43dp"
-        android:layout_height="38dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
@@ -81,7 +70,7 @@
     <Button
         android:id="@+id/BntSptCarimboDefProx"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="56dp"
         android:layout_marginBottom="20dp"
         android:text="@string/BntSptCarimboDefContinuação"
 
@@ -89,10 +78,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <ImageButton
+        android:id="@+id/BntSptCarimboDefBackHome"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/transparente"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/BntSptCarimboDefProx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BntSptCarimboDefProx"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_home" />
+
     <ScrollView
         android:id="@+id/ScrollViewSptCarimboDef"
-        android:layout_width="400dp"
-        android:layout_height="570dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:padding="16sp"
         app:layout_constraintBottom_toTopOf="@+id/BntSptCarimboDefProx"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -101,8 +105,8 @@
         app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="fill_parent"
-            android:layout_height="565dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/TxtSptCarimboDefAvisAltAutm"

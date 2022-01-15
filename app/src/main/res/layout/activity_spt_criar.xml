@@ -153,7 +153,7 @@
 
     <ImageButton
         android:id="@+id/BntSPTCriarBackCrbUnico"
-        android:layout_width="40dp"
+        android:layout_width="43dp"
         android:layout_height="40dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
@@ -166,12 +166,13 @@
 
     <EditText
         android:id="@+id/fieldSPTCriarNvdAgua"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Edit_Text"
+        android:layout_width="290dp"
+        android:layout_height="52dp"
         android:layout_marginTop="10dp"
-        android:drawableRight="@android:drawable/btn_dialog"
+        android:drawableRight="@drawable/ic_edit"
         android:ems="10"
-        android:hint="hint"
+        android:hint="Nivel de água"
         android:inputType="number"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarNdagua"
@@ -181,10 +182,11 @@
 
     <EditText
         android:id="@+id/fieldSPTCriarProfdadeAmstr"
+        style="@style/Edit_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:drawableRight="@android:drawable/btn_dialog"
+        android:drawableRight="@drawable/ic_edit"
         android:ems="10"
         android:hint="hint"
         android:inputType="number"
@@ -299,7 +301,7 @@
         app:layout_constraintHorizontal_bias="0.33"
         app:layout_constraintStart_toStartOf="@+id/BntSPTCriarBackCrbUnico"
         app:layout_constraintTop_toTopOf="@+id/TxtSptCriarNdagua"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:srcCompat="@drawable/ic_help" />
 
     <ImageView
         android:id="@+id/imgSPTCriarSeg1"
@@ -310,7 +312,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TxtSptCriarSegmentAmtra"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarSegmentAmtra"
-        app:srcCompat="@android:drawable/btn_dialog"
+        app:srcCompat="@drawable/ic_help"
         app:tint="@color/black" />
 
     <ImageButton
@@ -402,8 +404,8 @@
 
     <ImageButton
         android:id="@+id/BntSptCriarSalvarFuro"
-        android:layout_width="32dp"
-        android:layout_height="38dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="110dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
