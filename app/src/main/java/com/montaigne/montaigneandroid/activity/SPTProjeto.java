@@ -61,7 +61,7 @@ public class SPTProjeto extends AppCompatActivity {
         btnRmFuro = findViewById(R.id.bntSptProjetoExcluirFuro);
         btnRmFuro.setOnClickListener(v -> {});  // todo: implementar remoção de furos
 
-        btnCarimbo = findViewById(R.id.btnSPTrojetoAlterarCarimbo);
+        btnCarimbo = findViewById(R.id.btnSPTProjetoAlterarCarimbo);
         btnCarimbo.setOnClickListener(v -> {
             // intentn para a activity de carimbo
             Intent intent = new Intent(SPTProjeto.this, SPTCarimboDef.class);

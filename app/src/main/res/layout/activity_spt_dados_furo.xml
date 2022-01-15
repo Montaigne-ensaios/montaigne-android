@@ -7,24 +7,25 @@
     tools:context=".activity.SPTDadosFuro">
 
     <EditText
-        android:id="@+id/fieldSPTCarimboDadosFDataIni"
+        android:id="@+id/fieldSPTDadosFuroDataInic"
         style="@style/Edit_Text"
         android:layout_width="290dp"
         android:layout_height="52dp"
         android:layout_marginTop="10dp"
         android:ems="10"
+        android:hint="Data de inicio"
+        android:drawableRight="@drawable/ic_data"
         android:inputType="textPersonName"
-        android:text="data de inicio"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptNfuroDataInicio"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptDadosFuroDataInicio"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TxtSptNfuroDataInicio"
-        app:layout_constraintTop_toBottomOf="@+id/TxtSptNfuroDataInicio" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptDadosFuroDataInicio"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptDadosFuroDataInicio" />
 
     <TextView
         android:id="@+id/TxtSptNFuroTextObrgtorio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
         android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif-condensed-light"
         android:text="@string/TxtSptNFuroTextObrigatorioStr"
@@ -32,8 +33,7 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/BntSptNFuroIniciarEnsaio"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fieldSptNFuroNvdFuroN" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/BntSptNfuroHome"
@@ -51,8 +51,8 @@
 
     <Button
         android:id="@+id/BntSptNFuroIniciarEnsaio"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:layout_height="56dp"
         android:layout_marginBottom="20dp"
         android:text="@string/BntSptNFuroIniciaEnsaioTxt"
 
@@ -61,120 +61,104 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/BntSptNFuroHelpDatInicio"
+        android:id="@+id/BntSptDadosFuroHelpDatInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCarimboDadosFDataIni"
+        app:layout_constraintBottom_toBottomOf="@+id/fieldSPTDadosFuroDataInic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/fieldSPTCarimboDadosFDataIni"
-        app:layout_constraintTop_toTopOf="@+id/fieldSPTCarimboDadosFDataIni"
+        app:layout_constraintStart_toEndOf="@+id/fieldSPTDadosFuroDataInic"
+        app:layout_constraintTop_toTopOf="@+id/fieldSPTDadosFuroDataInic"
         app:srcCompat="@drawable/ic_help" />
 
     <ImageButton
-        android:id="@+id/BntSptNFuroHelpNvdFuroN"
+        android:id="@+id/BntSptDadosFuroHelpNvdFuroN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/FieldSptNFuroNvdFuroN"
+        app:layout_constraintBottom_toBottomOf="@+id/FieldSptDadosFuroNvdFuroN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/FieldSptNFuroNvdFuroN"
-        app:layout_constraintTop_toTopOf="@+id/FieldSptNFuroNvdFuroN"
+        app:layout_constraintStart_toEndOf="@+id/FieldSptDadosFuroNvdFuroN"
+        app:layout_constraintTop_toTopOf="@+id/FieldSptDadosFuroNvdFuroN"
         app:srcCompat="@drawable/ic_help" />
 
     <ImageButton
-        android:id="@+id/BntSptNFuroHelpCdFuroN"
+        android:id="@+id/BntSptDadosFuroHelpCdFuroN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/fieldSptNFuroNvdFuroN"
+        app:layout_constraintBottom_toBottomOf="@+id/BntSptDadosFuroCapturarLocal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/fieldSptNFuroNvdFuroN"
-        app:layout_constraintTop_toTopOf="@+id/fieldSptNFuroNvdFuroN"
+        app:layout_constraintStart_toEndOf="@+id/BntSptDadosFuroCapturarLocal"
+        app:layout_constraintTop_toTopOf="@+id/BntSptDadosFuroCapturarLocal"
         app:srcCompat="@drawable/ic_help" />
 
     <EditText
-        android:id="@+id/FieldSptNFuroNvdFuroN"
+        android:id="@+id/FieldSptDadosFuroNvdFuroN"
         style="@style/Edit_Text"
         android:layout_width="290dp"
         android:layout_height="52dp"
         android:layout_marginTop="10dp"
-        android:drawableRight="@android:drawable/btn_dialog"
+        android:drawableRight="@drawable/ic_referencia_nivel"
         android:ems="10"
-        android:hint="hint"
+        android:hint="nível do furo"
         android:inputType="number"
         android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptNFuroNvdFuroN"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptNDadosFuroNvdFuroN"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TxtSptNFuroNvdFuroN"
-        app:layout_constraintTop_toBottomOf="@+id/TxtSptNFuroNvdFuroN" />
-
-    <EditText
-        android:id="@+id/fieldSptNFuroNvdFuroN"
-        style="@style/Edit_Text"
-        android:layout_width="290dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="10dp"
-        android:drawableRight="@android:drawable/btn_dialog"
-        android:ems="10"
-        android:hint="hint"
-        android:inputType="number"
-        android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptNFuroCodnadasFuroN"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TxtSptNFuroCodnadasFuroN"
-        app:layout_constraintTop_toBottomOf="@+id/TxtSptNFuroCodnadasFuroN" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptNDadosFuroNvdFuroN"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptNDadosFuroNvdFuroN" />
 
     <TextView
-        android:id="@+id/TxtSptNFuroNvdFuroN"
+        android:id="@+id/TxtSptNDadosFuroNvdFuroN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/TxtSptNFuroNvdfuroStr"
+        android:text="@string/TxtSptDadosFuroNvdFuroStr"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptNfuroDataInicio"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptDadosFuroDataInicio"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TxtSptNfuroDataInicio"
-        app:layout_constraintTop_toBottomOf="@+id/fieldSPTCarimboDadosFDataIni" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptDadosFuroDataInicio"
+        app:layout_constraintTop_toBottomOf="@+id/fieldSPTDadosFuroDataInic" />
 
     <TextView
-        android:id="@+id/TxtSptNFuroCodnadasFuroN"
+        android:id="@+id/TxtSptDadosFuroCodnadasFuroN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/TxtSptNFuroCodernadasFuroN"
+        android:text="@string/TxtSptDadosFuroCodernadasFuroN"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptNFuroNvdFuroN"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptNDadosFuroNvdFuroN"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TxtSptNFuroNvdFuroN"
-        app:layout_constraintTop_toBottomOf="@+id/FieldSptNFuroNvdFuroN" />
+        app:layout_constraintStart_toStartOf="@+id/TxtSptNDadosFuroNvdFuroN"
+        app:layout_constraintTop_toBottomOf="@+id/FieldSptDadosFuroNvdFuroN" />
 
     <TextView
-        android:id="@+id/TxtSptNfuroDataInicio"
+        android:id="@+id/TxtSptDadosFuroDataInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="@string/TxtSptNFuroDatainicioStr"
+        android:text="@string/TxtSptDadosFuroDatainicioStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/TxtSptNFuroTituloCrbUnic"
         app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="@+id/BntSptNfuroBackCrbDefinitivo"
+        app:layout_constraintStart_toStartOf="@+id/BntSptDadosFuroBackCrbDefinitivo"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptNFuroTituloCrbUnic" />
 
     <androidx.appcompat.widget.Toolbar
@@ -204,9 +188,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/BntSptNfuroBackCrbDefinitivo"
+        android:id="@+id/BntSptDadosFuroBackCrbDefinitivo"
         android:layout_width="43dp"
-        android:layout_height="38dp"
+        android:layout_height="40dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="@+id/TxtSptNFuroTituloCrbUnic"
@@ -215,5 +199,18 @@
         app:layout_constraintTop_toTopOf="@+id/TxtSptNFuroTituloCrbUnic"
         app:srcCompat="@drawable/ic_back"
         app:tint="@color/white" />
+
+    <Button
+        android:id="@+id/BntSptDadosFuroCapturarLocal"
+        style="@style/Edit_Text"
+        android:layout_width="290dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_local"
+        android:text="@string/BntSptDadosFuroCapturarLocalStr"
+        app:layout_constraintEnd_toEndOf="@+id/TxtSptDadosFuroCodnadasFuroN"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/TxtSptDadosFuroCodnadasFuroN"
+        app:layout_constraintTop_toBottomOf="@+id/TxtSptDadosFuroCodnadasFuroN" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

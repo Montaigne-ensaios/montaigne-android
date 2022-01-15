@@ -19,7 +19,11 @@
     <string name="TxtSptEditarGolpesStr">Golpes</string>
     <string name="TtSptEditarNameprojetoStr">Nome do projeto: *</string>
     <string name="TxtSptEditarDatainicioStr">Data de inicio: *</string>
-    <string name="TxtSptNFuroDatainicioStr">Data de inicio: *</string>
+
+    <string name="TxtSptDadosFuroDatainicioStr">Data de inicio: *</string>
+    <string name="TxtSptDadosFuroCodernadasFuroN">Coordernadas do Furo N: *</string>
+    <string name="TxtSptDadosFuroNvdFuroStr">Nível do Furo N: *</string>
+    <string name="BntSptDadosFuroCapturarLocalStr"> Capturar Localização</string>
 
     <string name="TxtSptCarimboDefNameprojetoStr">Nome do Projeto: *</string>
     <string name="TxtSptCarimboDefDatainicioStr">Data de inicio: *</string>
@@ -39,8 +43,6 @@
     <string name="TxtSptEditarDatfinalStr">Data Final: *</string>
     <string name="TxtSptEditarRefdnivelStr">Referência de Nível: *</string>
     <string name="TxtSptEditarNvdfuroStr">Nível do Furo N: *</string>
-    <string name="TxtSptNFuroNvdfuroStr">Nível do Furo N: *</string>
-    <string name="TxtSptNFuroCodernadasFuroN">Coordernadas do Furo N: *</string>
     <string name="TxtSptEditarNSPTStr">NSPT</string>
     <string name="TxtSptCriarNvaguaStr">Nivel de água(m):</string>
     <string name="TxtSptEditarNvaguaStr">Nivel de água(m):</string>
