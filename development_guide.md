@@ -645,7 +645,7 @@ onView(withId(R.id.view))
 # License
 
 ```
-Copyright 2015 Ribot Ltd.
+Copyright 2022 Montaigne Ltd.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
