@@ -17,4 +17,10 @@
     <color name="transparente">#00FFFFFF</color>
     <color name="cinza">#E0E0E0</color>
     <color name="cinza_escuro">#616161</color>
+
+    <!--Color.-->
+    <color name="fundo_claro">#EACDAF</color>
+    <color name="gradiente_claro">#FF5500</color>
+
+
 </resources>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
     tools:context=".activity.SPTCriar"
     tools:layout_editor_absoluteX="134dp"
     tools:layout_editor_absoluteY="4dp">
@@ -12,15 +13,14 @@
         android:id="@+id/BntSptCriarFinalizarEnsaio"
         android:layout_width="180dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/black"
         android:fontFamily="sans-serif-medium"
         android:padding="5dp"
         android:text="@string/BtnSPTCriarFinlzaEnsStr"
         android:textAllCaps="true"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="652dp" />
 
     <ImageButton
         android:id="@+id/bntSptCriarHome"
@@ -92,7 +92,7 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarPenetraçPGolpe"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toEndOf="@+id/TxtSptCriarSegmentAmtra"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTitulodAmostraN" />
 
@@ -114,7 +114,7 @@
         android:id="@+id/TxtSptCriarTitulodAmostraN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Amostra N"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
@@ -200,7 +200,7 @@
         android:layout_width="74dp"
         android:layout_height="38dp"
         android:layout_marginTop="30dp"
-        android:background="@android:drawable/btn_dialog"
+        android:background="@android:drawable/editbox_background"
         android:ems="10"
         android:hint="0"
 
@@ -216,7 +216,7 @@
         android:layout_width="74dp"
         android:layout_height="38dp"
         android:layout_marginTop="30dp"
-        android:background="@android:drawable/btn_dialog"
+        android:background="@android:drawable/editbox_background"
 
         android:ems="10"
         android:hint="15"
@@ -232,7 +232,7 @@
         android:layout_width="74dp"
         android:layout_height="38dp"
         android:layout_marginTop="30dp"
-        android:background="@android:drawable/btn_dialog"
+        android:background="@android:drawable/editbox_background"
 
         android:ems="10"
         android:hint="15"
@@ -249,7 +249,7 @@
         android:layout_height="38dp"
         android:layout_marginTop="30dp"
 
-        android:background="@android:drawable/btn_dialog"
+        android:background="@android:drawable/editbox_background"
         android:ems="10"
         android:hint="15"
         android:inputType="number"
@@ -264,7 +264,7 @@
         android:layout_width="74dp"
         android:layout_height="38dp"
         android:layout_marginTop="30dp"
-        android:background="@android:drawable/btn_dialog"
+        android:background="@android:drawable/editbox_background"
         android:ems="10"
         android:hint="0"
         android:inputType="number"
@@ -279,7 +279,7 @@
         android:layout_width="74dp"
         android:layout_height="38dp"
         android:layout_marginTop="30dp"
-        android:background="@android:drawable/btn_dialog"
+        android:background="@android:drawable/editbox_background"
         android:ems="10"
         android:hint="0"
         android:inputType="number"
@@ -312,7 +312,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/TxtSptCriarSegmentAmtra"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarSegmentAmtra"
-        app:srcCompat="@drawable/ic_help"
+        app:srcCompat="@drawable/icon_1"
         app:tint="@color/black" />
 
     <ImageButton
@@ -320,7 +320,7 @@
         android:layout_width="28dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
-        android:background="@drawable/ic_adicionar"
+        android:background="@drawable/icon_more"
         app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCriarGlp1"
         app:layout_constraintStart_toEndOf="@+id/fieldSPTCriarGlp1"
         app:layout_constraintTop_toTopOf="@+id/fieldSPTCriarGlp1"
@@ -331,7 +331,7 @@
         android:layout_width="28dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
-        android:background="@drawable/ic_adicionar"
+        android:background="@drawable/icon_more"
         app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCriarGlp2"
         app:layout_constraintStart_toEndOf="@+id/fieldSPTCriarGlp2"
         app:layout_constraintTop_toTopOf="@+id/fieldSPTCriarGlp2"
@@ -342,7 +342,7 @@
         android:layout_width="28dp"
         android:layout_height="30dp"
         android:layout_marginStart="10dp"
-        android:background="@drawable/ic_adicionar"
+        android:background="@drawable/icon_more"
         app:layout_constraintBottom_toBottomOf="@+id/fieldSPTCriarGlp3"
         app:layout_constraintStart_toEndOf="@+id/fieldSPTCriarGlp3"
         app:layout_constraintTop_toTopOf="@+id/fieldSPTCriarGlp3"
@@ -390,7 +390,7 @@
         app:layout_constraintEnd_toEndOf="@+id/imgSPTCriarSeg1"
         app:layout_constraintStart_toStartOf="@+id/imgSPTCriarSeg1"
         app:layout_constraintTop_toBottomOf="@+id/imgSPTCriarSeg1"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:srcCompat="@drawable/icon_2" />
 
     <ImageView
         android:id="@+id/imgSPTCriarSeg3"
@@ -400,7 +400,7 @@
         app:layout_constraintEnd_toEndOf="@+id/imgSPTCriarSeg2"
         app:layout_constraintStart_toStartOf="@+id/imgSPTCriarSeg2"
         app:layout_constraintTop_toBottomOf="@+id/imgSPTCriarSeg2"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:srcCompat="@drawable/icon_3" />
 
     <ImageButton
         android:id="@+id/BntSptCriarSalvarFuro"
@@ -416,29 +416,15 @@
         app:srcCompat="@drawable/ic_salvar"
         app:tint="@color/white" />
 
-    <Button
+    <ImageButton
         android:id="@+id/bntSptCriarProxAmostra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/BntSptcriarPrxamtraStr"
-        android:textAllCaps="true"
-        android:textStyle="bold"
-        app:backgroundTint="@color/marrom"
-        app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarGolpes"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarSegmentAmtra"
-        app:layout_constraintTop_toBottomOf="@+id/imgSPTCriarSeg3" />
-
-    <ImageView
-        android:id="@+id/ImgViewSptCriarIlustrativo"
-        android:layout_width="50dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="5dp"
-        app:layout_constraintBottom_toBottomOf="@+id/bntSptCriarProxAmostra"
-        app:layout_constraintStart_toEndOf="@+id/bntSptCriarProxAmostra"
-        app:layout_constraintTop_toTopOf="@+id/bntSptCriarProxAmostra"
-        app:layout_constraintVertical_bias="0.541"
-        app:srcCompat="@drawable/ic_proxima_amotra" />
+        android:layout_width="75dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="90dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/fieldSPTCriarPen3"
+        app:layout_constraintStart_toStartOf="@+id/fieldSPTCriarPen3"
+        app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarPen3"
+        app:srcCompat="@drawable/icon_more_amostra" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
