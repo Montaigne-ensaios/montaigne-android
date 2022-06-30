@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/black"
+    android:background="@color/fundo_2"
     tools:context=".activity.SPTCriar"
     tools:layout_editor_absoluteX="134dp"
     tools:layout_editor_absoluteY="4dp">
@@ -13,26 +13,30 @@
         android:id="@+id/BntSptCriarFinalizarEnsaio"
         android:layout_width="180dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="@color/black"
         android:fontFamily="sans-serif-medium"
         android:padding="5dp"
         android:text="@string/BtnSPTCriarFinlzaEnsStr"
         android:textAllCaps="true"
+        android:textColor="@color/white"
         android:textSize="14sp"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="652dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toEndOf="@+id/bntSptCriarHome" />
 
     <ImageButton
         android:id="@+id/bntSptCriarHome"
-        android:layout_width="50dp"
-        android:layout_height="38dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="@+id/BntSptCriarFinalizarEnsaio"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/BntSptCriarFinalizarEnsaio"
-        app:srcCompat="@drawable/ic_home" />
+        app:srcCompat="@drawable/ic_home_2" />
 
     <TextView
         android:id="@+id/TxtSptCriarNdagua"
@@ -52,31 +56,29 @@
     <TextView
         android:id="@+id/TxtSptCriarProfdadAmostr"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/TxtSptcriarProfundidadeStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarTitulodAmostraN"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarTitulodAmostraN"
-        app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTitulodAmostraN" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TxtSptCriarTitulodAmostraN" />
 
     <TextView
         android:id="@+id/TxtSptCriarSegmentAmtra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="80dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/TxtSptCriarSegmentosAmstraStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarTitulodAmostraN"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/TxtSptCriarTitulodAmostraN"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTitulodAmostraN" />
 
     <TextView
@@ -92,7 +94,7 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/TxtSptCriarPenetraçPGolpe"
-        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/TxtSptCriarSegmentAmtra"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarTitulodAmostraN" />
 
@@ -100,7 +102,7 @@
         android:id="@+id/TxtSptCriarPenetraçPGolpe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="32dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/TxtSptCriarPenetraçãoStr"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
@@ -114,22 +116,22 @@
         android:id="@+id/TxtSptCriarTitulodAmostraN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="18dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Amostra N"
+        android:text="Amostra 1"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarNdagua"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/bntSptCriarHelpNvagua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarNvdAgua" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/TollbarSptCriar"
         android:layout_width="fill_parent"
         android:layout_height="80dp"
-        android:background="?attr/colorPrimary"
+        android:background="@color/gradiente_claro"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -175,6 +177,7 @@
         android:hint="Nivel de água"
         android:inputType="number"
         android:padding="12dp"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarNdagua"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/bntSptCriarHelpNvagua"
@@ -188,9 +191,10 @@
         android:layout_marginStart="10dp"
         android:drawableRight="@drawable/ic_edit"
         android:ems="10"
-        android:hint="hint"
+        android:hint="xx"
         android:inputType="number"
         android:padding="12dp"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/TxtSptCriarProfdadAmostr"
         app:layout_constraintStart_toEndOf="@+id/TxtSptCriarProfdadAmostr"
         app:layout_constraintTop_toTopOf="@+id/TxtSptCriarProfdadAmostr" />
@@ -207,6 +211,7 @@
         android:inputType="number"
         android:maxLength="4"
         android:padding="6dp"
+        android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarGolpes"
         app:layout_constraintStart_toStartOf="@+id/TxtSptCriarGolpes"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarGolpes" />
@@ -223,6 +228,7 @@
         android:inputType="number"
         android:maxLength="4"
         android:padding="6dp"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/TxtSptCriarPenetraçPGolpe"
         app:layout_constraintStart_toStartOf="@+id/TxtSptCriarPenetraçPGolpe"
         app:layout_constraintTop_toBottomOf="@+id/TxtSptCriarPenetraçPGolpe" />
@@ -239,6 +245,7 @@
         android:inputType="number"
         android:maxLength="4"
         android:padding="6dp"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/fieldSPTCriarPen1"
         app:layout_constraintStart_toStartOf="@+id/fieldSPTCriarPen1"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarPen1" />
@@ -255,6 +262,7 @@
         android:inputType="number"
         android:maxLength="4"
         android:padding="6dp"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/fieldSPTCriarPen2"
         app:layout_constraintStart_toStartOf="@+id/fieldSPTCriarPen2"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarPen2" />
@@ -270,6 +278,7 @@
         android:inputType="number"
         android:maxLength="4"
         android:padding="6dp"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/fieldSPTCriarGlp1"
         app:layout_constraintStart_toStartOf="@+id/fieldSPTCriarGlp1"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarGlp1" />
@@ -285,6 +294,7 @@
         android:inputType="number"
         android:maxLength="4"
         android:padding="6dp"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/fieldSPTCriarGlp2"
         app:layout_constraintStart_toStartOf="@+id/fieldSPTCriarGlp2"
         app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarGlp2" />
@@ -404,7 +414,7 @@
 
     <ImageButton
         android:id="@+id/BntSptCriarSalvarFuro"
-        android:layout_width="40dp"
+        android:layout_width="30dp"
         android:layout_height="40dp"
         android:layout_marginStart="110dp"
         android:background="@color/transparente"
@@ -413,18 +423,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/TxtSptCriarTitulodFuro"
         app:layout_constraintTop_toTopOf="@+id/TxtSptCriarTitulodFuro"
-        app:srcCompat="@drawable/ic_salvar"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/icon_save"
         app:tint="@color/white" />
 
     <ImageButton
         android:id="@+id/bntSptCriarProxAmostra"
         android:layout_width="75dp"
         android:layout_height="65dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginBottom="20dp"
         android:background="#00FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/fieldSPTCriarPen3"
-        app:layout_constraintStart_toStartOf="@+id/fieldSPTCriarPen3"
-        app:layout_constraintTop_toBottomOf="@+id/fieldSPTCriarPen3"
+        app:layout_constraintBottom_toBottomOf="@+id/BntSptCriarFinalizarEnsaio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BntSptCriarFinalizarEnsaio"
+        app:layout_constraintTop_toTopOf="@+id/BntSptCriarFinalizarEnsaio"
         app:srcCompat="@drawable/icon_more_amostra" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

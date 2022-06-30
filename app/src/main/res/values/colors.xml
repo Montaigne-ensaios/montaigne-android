@@ -21,6 +21,7 @@
     <!--Color.-->
     <color name="fundo_claro">#EACDAF</color>
     <color name="gradiente_claro">#FF5500</color>
+    <color name="fundo_2">#F1E1D1</color>
 
 
 </resources>

@@ -36,8 +36,9 @@
 
     <ImageButton
         android:id="@+id/btnSPTCarimboDefSalvar"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
@@ -47,7 +48,7 @@
         app:layout_constraintStart_toEndOf="@+id/TxtCarimboDefinitivo"
         app:layout_constraintTop_toTopOf="@+id/TxtCarimboDefinitivo"
         app:layout_constraintVertical_bias="0.96"
-        app:srcCompat="@drawable/ic_salvar"
+        app:srcCompat="@drawable/icon_save"
         app:tint="@color/white" />
 
     <ImageButton
@@ -69,27 +70,30 @@
 
     <Button
         android:id="@+id/BntSptCarimboDefProx"
+        style="@style/Button"
         android:layout_width="200dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="20dp"
-        android:text="@string/BntSptCarimboDefContinuação"
+        android:layout_marginBottom="10dp"
 
+        android:text="@string/BntSptCarimboDefContinuação"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/BntSptCarimboDefBackHome"
-        android:layout_width="50dp"
+        android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@color/transparente"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="@+id/BntSptCarimboDefProx"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/BntSptCarimboDefProx"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_home" />
+        app:srcCompat="@drawable/ic_home_2" />
 
     <ScrollView
         android:id="@+id/ScrollViewSptCarimboDef"
@@ -115,7 +119,7 @@
                 android:layout_marginTop="10dp"
                 android:fontFamily="sans-serif-condensed-light"
                 android:text="@string/TxtSptCarimboDefAvisoSvAutom"
-                android:textColor="@color/principal"
+                android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -331,15 +335,14 @@
 
             <ImageView
                 android:id="@+id/ImgSPTCarimboDefFtLogo"
-                android:layout_width="170dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/cinza"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="20dp"
                 app:layout_constraintEnd_toEndOf="@+id/TxtSptCarimboDefAvisAltAutm"
+                app:layout_constraintHorizontal_bias="0.49"
                 app:layout_constraintStart_toStartOf="@+id/TxtSptCarimboDefAvisAltAutm"
                 app:layout_constraintTop_toBottomOf="@+id/TxtSptCarimboDefAvisAltAutm"
-                app:srcCompat="@drawable/ic_perfil"
-                app:tint="@color/white" />
+                app:srcCompat="@drawable/icon_perfil" />
 
             <EditText
                 android:id="@+id/fieldSPTCarimboDefClient"
@@ -360,7 +363,7 @@
             <ImageButton
                 android:id="@+id/ImgSptCarimboDefAddLogo"
                 :tint="@color/black"
-                android:layout_width="43dp"
+                android:layout_width="30dp"
                 android:layout_height="38dp"
                 android:layout_marginTop="5dp"
                 android:background="@color/transparente"
@@ -368,7 +371,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/ImgSPTCarimboDefFtLogo"
                 app:layout_constraintStart_toStartOf="@+id/ImgSPTCarimboDefFtLogo"
                 app:layout_constraintTop_toBottomOf="@+id/ImgSPTCarimboDefFtLogo"
-                app:srcCompat="@drawable/ic_add_image" />
+                app:srcCompat="@drawable/icon_photo_logo" />
 
             <EditText
                 android:id="@+id/fieldSPTCarimboDefContato"

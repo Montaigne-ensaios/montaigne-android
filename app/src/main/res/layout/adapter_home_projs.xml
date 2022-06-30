@@ -6,15 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
-    android:background="#00FFFFFF"
-    android:backgroundTint="#00FFFFFF"
-    app:cardCornerRadius="7dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
     app:cardElevation="7dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#9BD7D1">
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/imgProjsThumb"
@@ -35,6 +33,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginStart="8dp"
             android:layout_toEndOf="@+id/imgProjsThumb"
+            android:fontFamily="sans-serif-medium"
             android:text="Nome do Ensaio"
             android:textColor="@color/gradiente_claro"
             android:textSize="20sp"
@@ -49,7 +48,9 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
+            android:fontFamily="serif"
             android:text="Texto de descrição. \nEste texto pode ser substituido por múltiplos textViews."
+            android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/checkSelectProjs"

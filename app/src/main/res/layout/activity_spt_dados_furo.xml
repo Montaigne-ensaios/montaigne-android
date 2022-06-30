@@ -41,13 +41,13 @@
         android:layout_height="38dp"
         android:layout_marginStart="20dp"
         android:background="@color/transparente"
-        android:scaleType="centerCrop"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="@+id/BntSptNFuroIniciarEnsaio"
         app:layout_constraintEnd_toStartOf="@+id/BntSptNFuroIniciarEnsaio"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/BntSptNFuroIniciarEnsaio"
-        app:srcCompat="@drawable/ic_home" />
+        app:srcCompat="@drawable/ic_home_2" />
 
     <Button
         android:id="@+id/BntSptNFuroIniciarEnsaio"

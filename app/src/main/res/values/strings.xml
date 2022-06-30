@@ -1,14 +1,14 @@
 <resources>
     <string name="txtAppname">Montaigne - Ensaios Práticos</string>
     <string name="TxtMainBoasvindas">Bem vindos(a)!</string>
-    <string name="TxtHomeTipdensaioStr">Tipos de Ensaios:</string>
+    <string name="TxtHomeTipdensaioStr">TIPOS DE ENSAIOS:</string>
     <string name="TxtHomeSptnameStr">SPT-Ensaio de simples reconhecimento</string>
     <string name="TxtMainToqueNtela">Toque na tela para abrir</string>
     <string name="TxtSobreEmailappStr">montaigne.ensaios@protonmail.com</string>
     <string name="TxtSobreTituloStr">Sobre nós</string>
     <string name="TxtSobreDesenvolvedoreStr">O aplicativo foi desenvolvido por Anny Thaymara De Sousa Miranda, Ícaro Bruno Silbe Cortês, Júlia Mariana Dos Santos Freire, Nicole Dantas Lopes e Rodrigo Oliveira Lourenço.</string>
     <string name="TxtSobreEntrcotatoStr">Para entrar em contato conosco,  envie um e-mail para:montaige.ensaios@prontomail.com</string>
-    <string name="TxtHomeMeusprojetosStr">Meus Projetos:</string>
+    <string name="TxtHomeMeusprojetosStr">MEUS PROJETOS:</string>
     <string name="TxtSptCriarSegmentosAmstraStr">Segmentos</string>
     <string name="BntSptNFuroIniciaEnsaioTxt">Iniciar Ensaio</string>
     <string name="TxtSptCriarPenetraçãoStr">Penetração</string>

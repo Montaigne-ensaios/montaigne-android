@@ -6,53 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".activity.HomeActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/TollbarHome"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="#00323030"
-        android:minHeight="?attr/actionBarSize"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/TextHomeAppname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="30dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/txtAppname"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/TxtHomeTipodensaio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="serif"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="@string/TxtHomeTipdensaioStr"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/TextHomeAppname"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="@+id/BntHomeInfoSobre"
-        app:layout_constraintTop_toBottomOf="@+id/TextHomeAppname" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/TxtHomeMeusProjts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="@string/TxtHomeMeusprojetosStr"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -63,7 +37,7 @@
 
     <ImageButton
         android:id="@+id/BntHomeExcluirProjeto"
-        android:layout_width="37dp"
+        android:layout_width="30dp"
         android:layout_height="33dp"
         android:layout_marginEnd="20dp"
         android:background="@color/transparente"
@@ -75,28 +49,13 @@
         app:layout_constraintTop_toTopOf="@+id/TxtHomeMeusProjts"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/icon_excluir"
-        app:tint="#DD2C00" />
-
-    <ImageButton
-        android:id="@+id/BntHomeInfoSobre"
-        android:layout_width="30dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/transparente"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="@+id/TextHomeAppname"
-        app:layout_constraintEnd_toStartOf="@+id/TextHomeAppname"
-        app:layout_constraintHorizontal_bias="0.67"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/TextHomeAppname"
-        app:srcCompat="@drawable/icon_info"
-        app:tint="@color/black" />
+        app:tint="@color/gradiente_claro" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerHomeCategorias"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="@+id/BntHomeExcluirProjeto"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/TxtHomeMeusProjts"
@@ -106,9 +65,25 @@
         android:id="@+id/recyclerHomeProjs"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/BntHomeExcluirProjeto"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/TxtHomeMeusProjts"
-        app:layout_constraintTop_toBottomOf="@+id/TxtHomeMeusProjts" />
+        app:layout_constraintTop_toBottomOf="@+id/TxtHomeMeusProjts"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/txtAppname"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerHomeProjs" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
